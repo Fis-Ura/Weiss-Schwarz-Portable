@@ -1,0 +1,15 @@
+#GAME NAME:			Weiss - (PSP)
+
+#BLOCK NAME:			Card2_Block
+#TYPE:					NORMAL
+#METHOD:				POINTER_RELATIVE
+#POINTER ENDIAN:		LITTLE
+#POINTER TABLE START:		$14C1C8
+#POINTER TABLE STOP:		$14C1EB
+#POINTER SIZE:			$04
+#POINTER SPACE:			$00
+#ATLAS PTRS:			Yes
+#BASE POINTER:			$C0		//add $C0 to each pointer to get
+#TABLE:				sjis.tbl	//the string address
+#COMMENTS:			No
+#END BLOCK

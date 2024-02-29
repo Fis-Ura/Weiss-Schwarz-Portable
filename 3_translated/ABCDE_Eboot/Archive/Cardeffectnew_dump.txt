@@ -1,0 +1,6546 @@
+//GAME NAME:		Weiss - (PSP)
+
+// Define required TABLE variables and load the corresponding tables
+#VAR(Table_0, TABLE)
+#ADDTBL("C:\Users\Nick\Desktop\Weiss\ABCDEWEISS\sjis.tbl", Table_0)
+
+//BLOCK #000 NAME:		Cardeffectnew_Block
+#ACTIVETBL(Table_0) // Activate this block's starting TABLE
+
+#JMP($126E18, $13FEFB) // Jump to insertion point
+#HDR($C0) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $163828 - STRING #0 @ $126E18
+#W32($163828)
+[Cont][END]
+// current address: $126E1B
+
+//POINTER #1 @ $16382C - STRING #1 @ $126E1C
+#W32($16382C)
+[Act][END]
+// current address: $126E1F
+
+//POINTER #2 @ $163830 - STRING #2 @ $126E20
+#W32($163830)
+[Auto][END]
+// current address: $126E23
+
+//POINTER #3 @ $163834 - STRING #3 @ $126E24
+#W32($163834)
+[Backup][END]
+// current address: $126E27
+
+//POINTER #4 @ $163838 - STRING #4 @ $126E28
+#W32($163838)
+Alarm[END]
+// current address: $126E31
+
+//POINTER #5 @ $16383C - STRING #5 @ $126E34
+#W32($16383C)
+Encore[END]
+// current address: $126E3F
+
+//POINTER #6 @ $163840 - STRING #6 @ $126E40
+#W32($163840)
+Change[END]
+// current address: $126E49
+
+//POINTER #7 @ $163844 - STRING #7 @ $126E4C
+#W32($163844)
+Assist[END]
+// current address: $126E51
+
+//POINTER #8 @ $163848 - STRING #8 @ $126E54
+#W32($163848)
+Recollection[END]
+// current address: $126E59
+
+//POINTER #9 @ $16384C - STRING #9 @ $126E5C
+#W32($16384C)
+Experience[END]
+// current address: $126E61
+
+//POINTER #10 @ $163850 - STRING #10 @ $126E64
+#W32($163850)
+Brainstorm[END]
+// current address: $126E69
+
+//POINTER #11 @ $163854 - STRING #11 @ $126E6C
+#W32($163854)
+Backup 1000, Level1[END]
+// current address: $126E7F
+
+//POINTER #12 @ $163858 - STRING #12 @ $126E80
+#W32($163858)
+Backup 1500 Level1[END]
+// current address: $126E93
+
+//POINTER #13 @ $16385C - STRING #13 @ $126E94
+#W32($16385C)
+Backup 2000 Level1[END]
+// current address: $126EA7
+
+//POINTER #14 @ $163860 - STRING #14 @ $126EA8
+#W32($163860)
+Backup 2500 Level2[END]
+// current address: $126EBB
+
+//POINTER #15 @ $163864 - STRING #15 @ $126EBC
+#W32($163864)
+Backup 3000 Level2[END]
+// current address: $126ECF
+
+//POINTER #16 @ $163868 - STRING #16 @ $126ED0
+#W32($163868)
+Bond/[“いつも”のキョン][END]
+// current address: $126EEB
+
+//POINTER #17 @ $16386C - STRING #17 @ $126EEC
+#W32($16386C)
+Bond/[“幻想殺し”当麻][END]
+// current address: $126F05
+
+//POINTER #18 @ $163870 - STRING #18 @ $126F08
+#W32($163870)
+Bond/[“最後の夜天の主”はやて][END]
+// current address: $126F29
+
+//POINTER #19 @ $163874 - STRING #19 @ $126F2C
+#W32($163874)
+Bond/[“超能力者”美琴][END]
+// current address: $126F45
+
+//POINTER #20 @ $163878 - STRING #20 @ $126F48
+#W32($163878)
+Bond/[“八神家”はやて][END]
+// current address: $126F61
+
+//POINTER #21 @ $16387C - STRING #21 @ $126F64
+#W32($16387C)
+Bond/[“風紀委員”初春][END]
+// current address: $126F7D
+
+//POINTER #22 @ $163880 - STRING #22 @ $126F80
+#W32($163880)
+Bond/[“友達”アリサ][END]
+// current address: $126F97
+
+//POINTER #23 @ $163884 - STRING #23 @ $126F98
+#W32($163884)
+Bond/[“雷光”フェイト][END]
+// current address: $126FB1
+
+//POINTER #24 @ $163888 - STRING #24 @ $126FB4
+#W32($163888)
+Bond/[『星屑』 氷室][END]
+// current address: $126FCA
+
+//POINTER #25 @ $16388C - STRING #25 @ $126FCC
+#W32($16388C)
+Bond/[氷華＆インデックス][END]
+// current address: $126FE7
+
+//POINTER #26 @ $163890 - STRING #26 @ $126FE8
+#W32($163890)
+Bond/[母を想うフェイト][END]
+// current address: $127001
+
+//POINTER #27 @ $163894 - STRING #27 @ $127004
+#W32($163894)
+Bond/[エリオ＆キャロ][END]
+// current address: $12701B
+
+//POINTER #28 @ $163898 - STRING #28 @ $12701C
+#W32($163898)
+Bond/[ギンガ・ナカジマ][END]
+// current address: $127035
+
+//POINTER #29 @ $16389C - STRING #29 @ $127038
+#W32($16389C)
+Bond/[けなげでひたむき シャロ][END]
+// current address: $127058
+
+//POINTER #30 @ $1638A0 - STRING #30 @ $127058
+#W32($1638A0)
+Bond/[ゼスト・グランガイツ][END]
+// current address: $127075
+
+//POINTER #31 @ $1638A4 - STRING #31 @ $127078
+#W32($1638A4)
+Bond/[ネコミミ ネロ][END]
+// current address: $12708E
+
+//POINTER #32 @ $1638A8 - STRING #32 @ $127090
+#W32($1638A8)
+Bond/[ネコミミ みくる][END]
+// current address: $1270A8
+
+//POINTER #33 @ $1638AC - STRING #33 @ $1270A8
+#W32($1638AC)
+Bond/[マルチアーティスト絵理][END]
+// current address: $1270C7
+
+//POINTER #34 @ $1638B0 - STRING #34 @ $1270C8
+#W32($1638B0)
+Bond/[果てしない高さへの一歩 クド][END]
+// current address: $1270EC
+
+//POINTER #35 @ $1638B4 - STRING #35 @ $1270EC
+#W32($1638B4)
+Bond/[過去を求める音無][END]
+// current address: $127105
+
+//POINTER #36 @ $1638B8 - STRING #36 @ $127108
+#W32($1638B8)
+Bond/[浴衣のキョン][END]
+// current address: $12711D
+
+//POINTER #37 @ $1638BC - STRING #37 @ $127120
+#W32($1638BC)
+Bond/[葛木 宗一郎][END]
+// current address: $127134
+
+//POINTER #38 @ $1638C0 - STRING #38 @ $127134
+#W32($1638C0)
+Bond/[騎士王セイバー][END]
+// current address: $12714B
+
+//POINTER #39 @ $1638C4 - STRING #39 @ $12714C
+#W32($1638C4)
+Bond/[紅茶好き コーデリア][END]
+// current address: $127168
+
+//POINTER #40 @ $1638C8 - STRING #40 @ $127168
+#W32($1638C8)
+Bond/[祝福するなのは][END]
+// current address: $12717F
+
+//POINTER #41 @ $1638CC - STRING #41 @ $127180
+#W32($1638CC)
+Bond/[水着のライダー][END]
+// current address: $127197
+
+//POINTER #42 @ $1638D0 - STRING #42 @ $127198
+#W32($1638D0)
+Bond/[恥ずかしがり屋 エリー][END]
+// current address: $1271B6
+
+//POINTER #43 @ $1638D4 - STRING #43 @ $1271B8
+#W32($1638D4)
+Bond/[錬鉄の英霊アーチャー][END]
+// current address: $1271D5
+
+//POINTER #44 @ $1638D8 - STRING #44 @ $1271D8
+#W32($1638D8)
+Bond/[破城槌 イリヤ＆バーサーカー][END]
+// current address: $1271FC
+
+//POINTER #45 @ $1638DC - STRING #45 @ $1271FC
+#W32($1638DC)
+Bond/[麦わら帽子のかなで][END]
+// current address: $127217
+
+//POINTER #46 @ $1638E0 - STRING #46 @ $127218
+#W32($1638E0)
+Bond/[銀河の妖精 シェリル・ノーム][END]
+// current address: $12723C
+
+//POINTER #47 @ $1638E4 - STRING #47 @ $12723C
+#W32($1638E4)
+Bond/[超時空シンデレラ ランカ・リー][END]
+// current address: $127262
+
+//POINTER #48 @ $1638E8 - STRING #48 @ $127264
+#W32($1638E8)
+Bond/[YF-29デュランダル（アルト機）][END]
+// current address: $12728A
+
+//POINTER #49 @ $1638EC - STRING #49 @ $12728C
+#W32($1638EC)
+Bond/[雨宮 リンドウ][END]
+// current address: $1272A2
+
+//POINTER #50 @ $1638F0 - STRING #50 @ $1272A4
+#W32($1638F0)
+Bond/[悲しみに暮れるクラン][END]
+// current address: $1272C1
+
+//POINTER #51 @ $1638F4 - STRING #51 @ $1272C4
+#W32($1638F4)
+(1)[END]
+// current address: $1272C7
+
+//POINTER #52 @ $1638F8 - STRING #52 @ $1272C8
+#W32($1638F8)
+(2)[END]
+// current address: $1272CB
+
+//POINTER #53 @ $1638FC - STRING #53 @ $1272CC
+#W32($1638FC)
+(3)[END]
+// current address: $1272CF
+
+//POINTER #54 @ $163900 - STRING #54 @ $1272D0
+#W32($163900)
+(4)[END]
+// current address: $1272D3
+
+//POINTER #55 @ $163904 - STRING #55 @ $1272D4
+#W32($163904)
+(5)[END]
+// current address: $1272D7
+
+//POINTER #56 @ $163908 - STRING #56 @ $1272D8
+#W32($163908)
+(6)[END]
+// current address: $1272DB
+
+//POINTER #57 @ $16390C - STRING #57 @ $1272DC
+#W32($16390C)
+Put the top card of your Library in your Clock[END]
+// current address: $127308
+
+//POINTER #58 @ $163910 - STRING #58 @ $127308
+#W32($163910)
+ [Card_side] this card[END]
+// current address: $12731B
+
+//POINTER #59 @ $163914 - STRING #59 @ $12731C
+#W32($163914)
+Discard a card from hand to the Waiting Room, Send this to Memory[END]
+// current address: $12734C
+
+//POINTER #60 @ $163918 - STRING #60 @ $12734C
+#W32($163918)
+Send this to Memory.[END]
+// current address: $127365
+
+//POINTER #61 @ $16391C - STRING #61 @ $127368
+#W32($16391C)
+Discard this card from your hand to the Waiting Room[END]
+// current address: $127387
+
+//POINTER #62 @ $163920 - STRING #62 @ $127388
+#W32($163920)
+Discard a Climax card from hand to the Waiting Room, Send this to Memory[END]
+// current address: $1273C8
+
+//POINTER #63 @ $163924 - STRING #63 @ $1273C8
+#W32($163924)
+Discard a card from your hand to Waiting Room, put this in Waiting Room[END]
+// current address: $1273F8
+
+//POINTER #64 @ $163928 - STRING #64 @ $1273F8
+#W32($163928)
+Discard a Character from hand to the Waiting Room[END]
+// current address: $127416
+
+//POINTER #65 @ $16392C - STRING #65 @ $127418
+#W32($16392C)
+Discard an "アルカンシェル" from hand to the Waiting Room[END]
+// current address: $127442
+
+//POINTER #66 @ $163930 - STRING #66 @ $127444
+#W32($163930)
+ [Card_side] 1 of your《動物》Characters[END]
+// current address: $127468
+
+//POINTER #67 @ $163934 - STRING #67 @ $127468
+#W32($163934)
+Discard an "I can be shot" from hand to the Waiting Room[END]
+// current address: $127491
+
+//POINTER #68 @ $163938 - STRING #68 @ $127494
+#W32($163938)
+Discard a Climax card from your hand to the Waiting Room[END]
+// current address: $1274BA
+
+//POINTER #69 @ $16393C - STRING #69 @ $1274BC
+#W32($16393C)
+put this in the Waiting Room[END]
+// current address: $1274D5
+
+//POINTER #70 @ $163940 - STRING #70 @ $1274D8
+#W32($163940)
+ [Card_side] 2 Characters[END]
+// current address: $1274F2
+
+//POINTER #71 @ $163944 - STRING #71 @ $1274F4
+#W32($163944)
+ [Card_side] 1 of your Characters with "Assist"[END]
+// current address: $12751C
+
+//POINTER #72 @ $163948 - STRING #72 @ $12751C
+#W32($163948)
+Choose a "衣装変更" in your Memory and put it in the Waiting Room[END]
+// current address: $12754E
+
+//POINTER #73 @ $16394C - STRING #73 @ $127550
+#W32($16394C)
+Discard a card from your hand to the Waiting Room[END]
+// current address: $127566
+
+//POINTER #74 @ $163950 - STRING #74 @ $127568
+#W32($163950)
+Put 1 of your Characters from Stage in the Waiting Room[END]
+// current address: $12758E
+
+//POINTER #75 @ $163954 - STRING #75 @ $127590
+#W32($163954)
+ [Card_side] 1 of your《音楽》Characters[END]
+// current address: $1275B4
+
+//POINTER #76 @ $163958 - STRING #76 @ $1275B4
+#W32($163958)
+ [Card_side] 1 of your Characters[END]
+// current address: $1275CE
+
+//POINTER #77 @ $16395C - STRING #77 @ $1275D0
+#W32($16395C)
+Put a "プレゼント" from your Memory in your Waiting Room[END]
+// current address: $127604
+
+//POINTER #78 @ $163960 - STRING #78 @ $127604
+#W32($163960)
+ [Card_side] 2 of your Characters, Put a "ある日の風景" from your Memory in your Waiting Room[END]
+// current address: $127653
+
+//POINTER #79 @ $163964 - STRING #79 @ $127654
+#W32($163964)
+Put a "ある日の風景" from your Memory to the Waiting Room[END]
+// current address: $12768A
+
+//POINTER #80 @ $163968 - STRING #80 @ $12768C
+#W32($163968)
+Send 1 Character from hand to Memory[END]
+// current address: $1276AA
+
+//POINTER #81 @ $16396C - STRING #81 @ $1276AC
+#W32($16396C)
+ [Card_side] 1 of your other《音楽》Characters[END]
+// current address: $1276D4
+
+//POINTER #82 @ $163970 - STRING #82 @ $1276D4
+#W32($163970)
+Discard a card from hand to the Waiting Room, [Card_side] 1 of your [Card_up] Characters[END]
+// current address: $12770F
+
+//POINTER #83 @ $163974 - STRING #83 @ $127710
+#W32($163974)
+ [Card_side] 2 of your《動物》Characters[END]
+// current address: $127734
+
+//POINTER #84 @ $163978 - STRING #84 @ $127734
+#W32($163978)
+Put a card from hand to Clock[END]
+// current address: $127750
+
+//POINTER #85 @ $16397C - STRING #85 @ $127750
+#W32($16397C)
+Return 2 Characters from your Waiting Room to your Library.[END]
+// current address: $127790
+
+//POINTER #86 @ $163980 - STRING #86 @ $127790
+#W32($163980)
+Discard a《魔法》Character[END]
+// current address: $1277B8
+
+//POINTER #87 @ $163984 - STRING #87 @ $1277B8
+#W32($163984)
+[Card_side] 1 of your《メカ》Characters[END]
+// current address: $1277DC
+
+//POINTER #88 @ $163988 - STRING #88 @ $1277DC
+#W32($163988)
+Return this card to your hand[END]
+// current address: $1277F3
+
+//POINTER #89 @ $16398C - STRING #89 @ $1277F4
+#W32($16398C)
+Discard a《武器》Character[END]
+// current address: $12781C
+
+//POINTER #90 @ $163990 - STRING #90 @ $12781C
+#W32($163990)
+Discard a Climax card[END]
+// current address: $127842
+
+//POINTER #91 @ $163994 - STRING #91 @ $127844
+#W32($163994)
+Put a card from hand to your Clock, send this to Memory[END]
+// current address: $12787A
+
+//POINTER #92 @ $163998 - STRING #92 @ $12787C
+#W32($163998)
+[Card_side] 1 of your《風紀委員》Characters[END]
+// current address: $1278A4
+
+//POINTER #93 @ $16399C - STRING #93 @ $1278A4
+#W32($16399C)
+Discard a "聖ジョージの聖域" from hand to the Waiting Room[END]
+// current address: $1278D0
+
+//POINTER #94 @ $1639A0 - STRING #94 @ $1278D0
+#W32($1639A0)
+[Card_side] 1 of your Characters, Put an "明るい親子 愛＆舞" from your Memory to your Waiting Room[END]
+// current address: $127924
+
+//POINTER #95 @ $1639A4 - STRING #95 @ $127924
+#W32($1639A4)
+Put this in your Clock[END]
+// current address: $127943
+
+//POINTER #96 @ $1639A8 - STRING #96 @ $127944
+#W32($1639A8)
+[Card_side] 2 of your other Characters[END]
+// current address: $127962
+
+//POINTER #97 @ $1639AC - STRING #97 @ $127964
+#W32($1639AC)
+Put a《団長》Character from your Stage in your Clock[END]
+// current address: $12799A
+
+//POINTER #98 @ $1639B0 - STRING #98 @ $12799C
+#W32($1639B0)
+Put 1 of your 《時間》Characters from the Stage in the Waiting Room[END]
+// current address: $1279CC
+
+//POINTER #99 @ $1639B4 - STRING #99 @ $1279CC
+#W32($1639B4)
+Discard a Climax card from your hand to the Waiting Room, [Card_side] 2 of your Characters[END]
+// current address: $127A0D
+
+//POINTER #100 @ $1639B8 - STRING #100 @ $127A10
+#W32($1639B8)
+Put a Character with "フェイト" in name from your Stage in Clock, Send this to Memory[END]
+// current address: $127A72
+
+//POINTER #101 @ $1639BC - STRING #101 @ $127A74
+#W32($1639BC)
+Discard 1 card from your hand, put this card in your Clock Area[END]
+// current address: $127AAA
+
+//POINTER #102 @ $1639C0 - STRING #102 @ $127AAC
+#W32($1639C0)
+Put 1《サーヴァント》or《武器》Character on your Stage in your Clock[END]
+// current address: $127AF6
+
+//POINTER #103 @ $1639C4 - STRING #103 @ $127AF8
+#W32($1639C4)
+Put a Marker from under this in the Waiting Room[END]
+// current address: $127B22
+
+//POINTER #104 @ $1639C8 - STRING #104 @ $127B24
+#W32($1639C8)
+あなたの《マスター》のキャラを1枚【レスト】する[END]
+// current address: $127B4C
+
+//POINTER #105 @ $1639CC - STRING #105 @ $127B4C
+#W32($1639CC)
+手札を2枚控え室に置く[END]
+// current address: $127B62
+
+//POINTER #106 @ $1639D0 - STRING #106 @ $127B64
+#W32($1639D0)
+このカードの下のマーカーを2枚控え室に置く[END]
+// current address: $127B8E
+
+//POINTER #107 @ $1639D4 - STRING #107 @ $127B90
+#W32($1639D4)
+あなたの《探偵》のキャラを1枚【レスト】する[END]
+// current address: $127BB4
+
+//POINTER #108 @ $1639D8 - STRING #108 @ $127BB4
+#W32($1639D8)
+あなたの【スタンド】しているキャラを1枚【レスト】する[END]
+// current address: $127BD8
+
+//POINTER #109 @ $1639DC - STRING #109 @ $127BD8
+#W32($1639DC)
+あなたの《SOS団》のキャラを1枚【レスト】する[END]
+// current address: $127BFD
+
+//POINTER #110 @ $1639E0 - STRING #110 @ $127C00
+#W32($1639E0)
+あなたのカード名に「凛」を含むキャラを1枚【レスト】する[END]
+// current address: $127C30
+
+//POINTER #111 @ $1639E4 - STRING #111 @ $127C30
+#W32($1639E4)
+あなたの《マスター》のキャラを2枚【レスト】する[END]
+// current address: $127C58
+
+//POINTER #112 @ $1639E8 - STRING #112 @ $127C58
+#W32($1639E8)
+あなたのカード名に「士郎」を含むキャラを1枚【レスト】する[END]
+// current address: $127C8A
+
+//POINTER #113 @ $1639EC - STRING #113 @ $127C8C
+#W32($1639EC)
+あなたの《武器》のキャラを1枚【レスト】する[END]
+// current address: $127CB0
+
+//POINTER #114 @ $1639F0 - STRING #114 @ $127CB0
+#W32($1639F0)
+手札の「ノーザンクロス」を1枚公開し、ストック置場に置く[END]
+// current address: $127CE8
+
+//POINTER #115 @ $1639F4 - STRING #115 @ $127CE8
+#W32($1639F4)
+あなたの《カエル》のキャラを2枚【レスト】する[END]
+// current address: $127D0E
+
+//POINTER #116 @ $1639F8 - STRING #116 @ $127D10
+#W32($1639F8)
+あなたの《死》のキャラを1枚【レスト】する[END]
+// current address: $127D32
+
+//POINTER #117 @ $1639FC - STRING #117 @ $127D34
+#W32($1639FC)
+他のあなたの《王族》のキャラを1枚【レスト】する[END]
+// current address: $127D5C
+
+//POINTER #118 @ $163A00 - STRING #118 @ $127D5C
+#W32($163A00)
+手札をランダムに1枚控え室に置く[END]
+// current address: $127D7C
+
+//POINTER #119 @ $163A04 - STRING #119 @ $127D7C
+#W32($163A04)
+この能力は1ターンにつき1回まで発動する。[END]
+// current address: $127DA5
+
+//POINTER #120 @ $163A08 - STRING #120 @ $127DA8
+#W32($163A08)
+この能力は1ターンにつき2回まで発動する。[END]
+// current address: $127DD1
+
+//POINTER #121 @ $163A0C - STRING #121 @ $127DD4
+#W32($163A0C)
+この能力は1ターンにつき3回まで発動する。[END]
+// current address: $127DFD
+
+//POINTER #122 @ $163A10 - STRING #122 @ $127E00
+#W32($163A10)
+（このカードが舞台から控え室に置かれた時、[END]
+// current address: $127E2B
+
+//POINTER #123 @ $163A14 - STRING #123 @ $127E2C
+#W32($163A14)
+このカードがアタックした時、[END]
+// current address: $127E49
+
+//POINTER #124 @ $163A18 - STRING #124 @ $127E4C
+#W32($163A18)
+When this is placed from hand to the Climax Zone, [END]
+// current address: $127E81
+
+//POINTER #125 @ $163A1C - STRING #125 @ $127E84
+#W32($163A1C)
+ At the start of your Climax Phase, [END]
+// current address: $127EAD
+
+//POINTER #126 @ $163A20 - STRING #126 @ $127EB0
+#W32($163A20)
+（このカードがプレイされて舞台に置かれた時、[END]
+// current address: $127EDD
+
+//POINTER #127 @ $163A24 - STRING #127 @ $127EE0
+#W32($163A24)
+バトル中のこのカードが[Card_down]した時、[END]
+// current address: $127F01
+
+//POINTER #128 @ $163A28 - STRING #128 @ $127F04
+#W32($163A28)
+このカードが手札から舞台に置かれた時、[END]
+// current address: $127F2B
+
+//POINTER #129 @ $163A2C - STRING #129 @ $127F2C
+#W32($163A2C)
+あなたのクライマックス置場に「理想との決別」が置かれた時、[END]
+// current address: $127F67
+
+//POINTER #130 @ $163A30 - STRING #130 @ $127F68
+#W32($163A30)
+このカードがフロントアタックされた時、[END]
+// current address: $127F8F
+
+//POINTER #131 @ $163A34 - STRING #131 @ $127F90
+#W32($163A34)
+あなたがこのカードの『Backup 』を使った時、[END]
+// current address: $127FBB
+
+//POINTER #132 @ $163A38 - STRING #132 @ $127FBC
+#W32($163A38)
+他のあなたのキャラのバトル相手でレベル3以上のキャラが[Card_down]した時、[END]
+// current address: $127FFC
+
+//POINTER #133 @ $163A3C - STRING #133 @ $127FFC
+#W32($163A3C)
+あなたのクライマックス置場に「早く良くなってね[Heart]」が置かれた時、[END]
+// current address: $12803D
+
+//POINTER #134 @ $163A40 - STRING #134 @ $128040
+#W32($163A40)
+このカードがクロックの1番上にあり、あなたの、《魔法》か《お茶》のキャラが4枚以上なら、あなたのクライマックスフェイズの始めに、[END]
+// current address: $1280BF
+
+//POINTER #135 @ $163A44 - STRING #135 @ $1280C0
+#W32($163A44)
+このカードがフロントアタックした時、[END]
+// current address: $1280E5
+
+//POINTER #136 @ $163A48 - STRING #136 @ $1280E8
+#W32($163A48)
+このカードが[Card_down]した時、[END]
+// current address: $1280FF
+
+//POINTER #137 @ $163A4C - STRING #137 @ $128100
+#W32($163A4C)
+このカードが手札から舞台に置かれた時か『チェンジ』で舞台に置かれた時、[END]
+// current address: $128147
+
+//POINTER #138 @ $163A50 - STRING #138 @ $128148
+#W32($163A50)
+他のあなたのバトル中の《魔法》のキャラが[Card_down]した時、[END]
+// current address: $12817B
+
+//POINTER #139 @ $163A54 - STRING #139 @ $12817C
+#W32($163A54)
+他のあなたのバトル中のキャラが[Card_down]した時、[END]
+// current address: $1281A5
+
+//POINTER #140 @ $163A58 - STRING #140 @ $1281A8
+#W32($163A58)
+相手がイベントをプレイした時、[END]
+// current address: $1281C7
+
+//POINTER #141 @ $163A5C - STRING #141 @ $1281C8
+#W32($163A5C)
+あなたのクライマックス置場に「エクセリオンバスター」が置かれた時、[END]
+// current address: $12820B
+
+//POINTER #142 @ $163A60 - STRING #142 @ $12820C
+#W32($163A60)
+あなたのクライマックス置場に「癒しの力」が置かれた時、[END]
+// current address: $128243
+
+//POINTER #143 @ $163A64 - STRING #143 @ $128244
+#W32($163A64)
+あなたのクライマックス置場に「覚醒の時」が置かれた時、[END]
+// current address: $12827B
+
+//POINTER #144 @ $163A68 - STRING #144 @ $12827C
+#W32($163A68)
+あなたのクライマックス置場に「愛する者の為に」が置かれた時、[END]
+// current address: $1282B9
+
+//POINTER #145 @ $163A6C - STRING #145 @ $1282BC
+#W32($163A6C)
+このカードが控え室から舞台に置かれた時、[END]
+// current address: $1282E5
+
+//POINTER #146 @ $163A70 - STRING #146 @ $1282E8
+#W32($163A70)
+このカードとバトル中のキャラが[Card_down]した時、[END]
+// current address: $128311
+
+//POINTER #147 @ $163A74 - STRING #147 @ $128314
+#W32($163A74)
+このカードのトリガーチェックでクライマックスがでた時、[END]
+// current address: $12834B
+
+//POINTER #148 @ $163A78 - STRING #148 @ $12834C
+#W32($163A78)
+あなたのクライマックス置場に「フタリの記憶」が置かれた時、[END]
+// current address: $128387
+
+//POINTER #149 @ $163A7C - STRING #149 @ $128388
+#W32($163A7C)
+あなたのクライマックス置場に「Next Life」が置かれた時、[END]
+// current address: $1283C0
+
+//POINTER #150 @ $163A80 - STRING #150 @ $1283C0
+#W32($163A80)
+他のあなたのキャラが控え室から舞台に置かれた時、[END]
+// current address: $1283F1
+
+//POINTER #151 @ $163A84 - STRING #151 @ $1283F4
+#W32($163A84)
+相手の【スタンド】しているキャラが【レスト】した時、[END]
+// current address: $128417
+
+//POINTER #152 @ $163A88 - STRING #152 @ $128418
+#W32($163A88)
+このカードがサイドアタックした時、[END]
+// current address: $12843B
+
+//POINTER #153 @ $163A8C - STRING #153 @ $12843C
+#W32($163A8C)
+【スタンド】しているこのカードが【レスト】した時、[END]
+// current address: $12845D
+
+//POINTER #154 @ $163A90 - STRING #154 @ $128460
+#W32($163A90)
+他のあなたのバトルしているキャラが[Card_down]した時、[END]
+// current address: $12848D
+
+//POINTER #155 @ $163A94 - STRING #155 @ $128490
+#W32($163A94)
+あなたが『Backup 』を使った時、[END]
+// current address: $1284AF
+
+//POINTER #156 @ $163A98 - STRING #156 @ $1284B0
+#W32($163A98)
+相手が『集中』を使った時、その効果でクライマックスが控え室に置かれたなら、[END]
+// current address: $1284FB
+
+//POINTER #157 @ $163A9C - STRING #157 @ $1284FC
+#W32($163A9C)
+相手のアタックフェイズの始めに、[END]
+// current address: $12851D
+
+//POINTER #158 @ $163AA0 - STRING #158 @ $128520
+#W32($163AA0)
+他のあなたの《動物》のキャラが手札から舞台に置かれた時、[END]
+// current address: $128559
+
+//POINTER #159 @ $163AA4 - STRING #159 @ $12855C
+#W32($163AA4)
+あなたのアンコールステップの始めに、[END]
+// current address: $128581
+
+//POINTER #160 @ $163AA8 - STRING #160 @ $128584
+#W32($163AA8)
+このカードのバトル相手でレベル2以上のキャラが[Card_down]した時、[END]
+// current address: $1285BC
+
+//POINTER #161 @ $163AAC - STRING #161 @ $1285BC
+#W32($163AAC)
+このカードのバトル相手が[Card_down]した時、[END]
+// current address: $1285DF
+
+//POINTER #162 @ $163AB0 - STRING #162 @ $1285E0
+#W32($163AB0)
+あなたのクライマックス置場に「守るための力」が置かれた時、[END]
+// current address: $12861B
+
+//POINTER #163 @ $163AB4 - STRING #163 @ $12861C
+#W32($163AB4)
+このカードが舞台に置かれた時、[END]
+// current address: $12863B
+
+//POINTER #164 @ $163AB8 - STRING #164 @ $12863C
+#W32($163AB8)
+あなたのクライマックス置場に「死んだ世界戦線」が置かれた時、[END]
+// current address: $128679
+
+//POINTER #165 @ $163ABC - STRING #165 @ $12867C
+#W32($163ABC)
+このカードが舞台から控え室に置かれた時、[END]
+// current address: $1286A5
+
+//POINTER #166 @ $163AC0 - STRING #166 @ $1286A8
+#W32($163AC0)
+あなたのクライマックス置場に「助けに来ました！」が置かれた時、[END]
+// current address: $1286E7
+
+//POINTER #167 @ $163AC4 - STRING #167 @ $1286E8
+#W32($163AC4)
+あなたのクライマックス置場に「龍騎招来」が置かれた時、[END]
+// current address: $12871F
+
+//POINTER #168 @ $163AC8 - STRING #168 @ $128720
+#W32($163AC8)
+このカードとバトルしているキャラが[Card_down]した時、[END]
+// current address: $12874D
+
+//POINTER #169 @ $163ACC - STRING #169 @ $128750
+#W32($163ACC)
+バトルしているこのカードが[Card_down]した時、[END]
+// current address: $128775
+
+//POINTER #170 @ $163AD0 - STRING #170 @ $128778
+#W32($163AD0)
+他のあなたのキャラが舞台から控え室に置かれた時、[END]
+// current address: $1287A9
+
+//POINTER #171 @ $163AD4 - STRING #171 @ $1287AC
+#W32($163AD4)
+アンコールステップの始めに、[END]
+// current address: $1287C9
+
+//POINTER #172 @ $163AD8 - STRING #172 @ $1287CC
+#W32($163AD8)
+あなたが[Act]を使った時、[END]
+// current address: $1287E3
+
+//POINTER #173 @ $163ADC - STRING #173 @ $1287E4
+#W32($163ADC)
+あなたのキャラのトリガーチェックでクライマックスがでた時、[END]
+// current address: $12881F
+
+//POINTER #174 @ $163AE0 - STRING #174 @ $128820
+#W32($163AE0)
+あなたのクライマックス置場に「能力とちから」が置かれた時、[END]
+// current address: $12885B
+
+//POINTER #175 @ $163AE4 - STRING #175 @ $12885C
+#W32($163AE4)
+あなたのクライマックス置場に「学園都市最強の敵」が置かれた時、[END]
+// current address: $12889B
+
+//POINTER #176 @ $163AE8 - STRING #176 @ $12889C
+#W32($163AE8)
+このカードとバトル中のレベル1以上のキャラが[Card_down]した時、[END]
+// current address: $1288D2
+
+//POINTER #177 @ $163AEC - STRING #177 @ $1288D4
+#W32($163AEC)
+あなたのクライマックス置場に「せんせいの執念」が置かれた時、[END]
+// current address: $128911
+
+//POINTER #178 @ $163AF0 - STRING #178 @ $128914
+#W32($163AF0)
+他のあなたのレベル0以下のキャラが舞台から控え室に置かれた時、[END]
+// current address: $128952
+
+//POINTER #179 @ $163AF4 - STRING #179 @ $128954
+#W32($163AF4)
+相手のターンのカウンターステップの始めに、[END]
+// current address: $12897F
+
+//POINTER #180 @ $163AF8 - STRING #180 @ $128980
+#W32($163AF8)
+このカードとバトル中のレベル2以上のキャラが[Card_down]した時、[END]
+// current address: $1289B6
+
+//POINTER #181 @ $163AFC - STRING #181 @ $1289B8
+#W32($163AFC)
+あなたのクライマックス置場に「インデックスの得意技」が置かれた時、[END]
+// current address: $1289FB
+
+//POINTER #182 @ $163B00 - STRING #182 @ $1289FC
+#W32($163B00)
+あなたがイベントをプレイした時、[END]
+// current address: $128A1D
+
+//POINTER #183 @ $163B04 - STRING #183 @ $128A20
+#W32($163B04)
+あなたのクライマックス置場に「ALIVE」が置かれた時、[END]
+// current address: $128A54
+
+//POINTER #184 @ $163B08 - STRING #184 @ $128A54
+#W32($163B08)
+このカードが手札か控え室から、舞台に置かれた時、[END]
+// current address: $128A85
+
+//POINTER #185 @ $163B0C - STRING #185 @ $128A88
+#W32($163B0C)
+あなたのクライマックス置場に「プリコグ」が置かれた時、[END]
+// current address: $128ABF
+
+//POINTER #186 @ $163B10 - STRING #186 @ $128AC0
+#W32($163B10)
+他のあなたの「ちょっぴり不思議 絵理」とバトル中のキャラが[Card_down]した時、[END]
+// current address: $128B04
+
+//POINTER #187 @ $163B14 - STRING #187 @ $128B04
+#W32($163B14)
+あなたのクライマックス置場に「SOS団誕生！」が置かれた時、[END]
+// current address: $128B3E
+
+//POINTER #188 @ $163B18 - STRING #188 @ $128B40
+#W32($163B18)
+他のあなたの《SOS団》のキャラが手札か思い出置場から舞台に置かれた時、[END]
+// current address: $128B86
+
+//POINTER #189 @ $163B1C - STRING #189 @ $128B88
+#W32($163B1C)
+他のあなたのバトル中の《本》のキャラが[Card_down]した時、[END]
+// current address: $128BB9
+
+//POINTER #190 @ $163B20 - STRING #190 @ $128BBC
+#W32($163B20)
+あなたのドローフェイズの始めに、[END]
+// current address: $128BDD
+
+//POINTER #191 @ $163B24 - STRING #191 @ $128BE0
+#W32($163B24)
+他のあなたのカード名に「フェイト」を含むキャラとバトル中のキャラが[Card_down]した時、[END]
+// current address: $128C2D
+
+//POINTER #192 @ $163B28 - STRING #192 @ $128C30
+#W32($163B28)
+あなたのクライマックス置場に「ミミック遠坂」が置かれた時、[END]
+// current address: $128C6B
+
+//POINTER #193 @ $163B2C - STRING #193 @ $128C6C
+#W32($163B2C)
+あなたのクライマックス置場に「決戦！　デッドブリッジ」が置かれた時、[END]
+// current address: $128CB1
+
+//POINTER #194 @ $163B30 - STRING #194 @ $128CB4
+#W32($163B30)
+このカードがアタックする時、[END]
+// current address: $128CD1
+
+//POINTER #195 @ $163B34 - STRING #195 @ $128CD4
+#W32($163B34)
+あなたのクライマックス置場に「天地乖離す開闢の星」が置かれた時、[END]
+// current address: $128D15
+
+//POINTER #196 @ $163B38 - STRING #196 @ $128D18
+#W32($163B38)
+このカードのバトル中、あなたの受けたダメージがキャンセルされなかった時、[END]
+// current address: $128D61
+
+//POINTER #197 @ $163B3C - STRING #197 @ $128D64
+#W32($163B3C)
+あなたがレベルアップした時、[END]
+// current address: $128D81
+
+//POINTER #198 @ $163B40 - STRING #198 @ $128D84
+#W32($163B40)
+あなたのクライマックス置場に「斬り抉る戦神の剣」が置かれた時、[END]
+// current address: $128DC3
+
+//POINTER #199 @ $163B44 - STRING #199 @ $128DC4
+#W32($163B44)
+相手のクライマックスがクライマックス置場に置かれた時、[END]
+// current address: $128DFB
+
+//POINTER #200 @ $163B48 - STRING #200 @ $128DFC
+#W32($163B48)
+このカードが、アタックした時かアタックされた時、[END]
+// current address: $128E2D
+
+//POINTER #201 @ $163B4C - STRING #201 @ $128E30
+#W32($163B4C)
+あなたのクライマックス置場に「おやすみの夜」が置かれた時、[END]
+// current address: $128E6B
+
+//POINTER #202 @ $163B50 - STRING #202 @ $128E6C
+#W32($163B50)
+あなたのクライマックス置場に「夏の終わり」が置かれた時、[END]
+// current address: $128EA5
+
+//POINTER #203 @ $163B54 - STRING #203 @ $128EA8
+#W32($163B54)
+あなたのクライマックス置場に「コーデリアの告白」が置かれた時、[END]
+// current address: $128EE7
+
+//POINTER #204 @ $163B58 - STRING #204 @ $128EE8
+#W32($163B58)
+あなたのクライマックス置場に「騎英の手綱」が置かれた時、[END]
+// current address: $128F21
+
+//POINTER #205 @ $163B5C - STRING #205 @ $128F24
+#W32($163B5C)
+このカードとバトルしているレベル1以上のキャラが[Card_down]した時、[END]
+// current address: $128F5E
+
+//POINTER #206 @ $163B60 - STRING #206 @ $128F60
+#W32($163B60)
+あなたのクライマックス置場に「桜、幸せ？」が置かれた時、[END]
+// current address: $128F99
+
+//POINTER #207 @ $163B64 - STRING #207 @ $128F9C
+#W32($163B64)
+あなたのクライマックス置場に「冬の聖女ユスティーツァ」が置かれた時、[END]
+// current address: $128FE1
+
+//POINTER #208 @ $163B68 - STRING #208 @ $128FE4
+#W32($163B68)
+あなたのクライマックス置場に「Heaven's Feel」が置かれた時、[END]
+// current address: $129020
+
+//POINTER #209 @ $163B6C - STRING #209 @ $129020
+#W32($163B6C)
+あなたのクライマックス置場に「Unlimited Blade Works」が置かれた時、[END]
+// current address: $129064
+
+//POINTER #210 @ $163B70 - STRING #210 @ $129064
+#W32($163B70)
+他のあなたの《サーヴァント》のキャラが舞台から控え室に置かれた時、[END]
+// current address: $1290A7
+
+//POINTER #211 @ $163B74 - STRING #211 @ $1290A8
+#W32($163B74)
+あなたが山札をリフレッシュした時、[END]
+// current address: $1290CB
+
+//POINTER #212 @ $163B78 - STRING #212 @ $1290CC
+#W32($163B78)
+他のあなたの《探偵》のキャラが、手札から舞台に置かれた時、[END]
+// current address: $129107
+
+//POINTER #213 @ $163B7C - STRING #213 @ $129108
+#W32($163B7C)
+他のあなたのキャラのバトル相手が[Card_down]した時、[END]
+// current address: $129133
+
+//POINTER #214 @ $163B80 - STRING #214 @ $129134
+#W32($163B80)
+他のあなたのキャラが舞台からクロック置場に置かれた時、[END]
+// current address: $12916B
+
+//POINTER #215 @ $163B84 - STRING #215 @ $12916C
+#W32($163B84)
+あなたのキャラがダイレクトアタックした時、[END]
+// current address: $129197
+
+//POINTER #216 @ $163B88 - STRING #216 @ $129198
+#W32($163B88)
+他のあなたの「“歌は祈命”シェリル」が『チェンジ』で舞台に置かれた時、[END]
+// current address: $1291DF
+
+//POINTER #217 @ $163B8C - STRING #217 @ $1291E0
+#W32($163B8C)
+このカードがダイレクトアタックした時、[END]
+// current address: $129207
+
+//POINTER #218 @ $163B90 - STRING #218 @ $129208
+#W32($163B90)
+他のあなたのカード名に「シェリル」か「ランカ」を含むキャラがフロントアタックされた時、[END]
+// current address: $12925F
+
+//POINTER #219 @ $163B94 - STRING #219 @ $129260
+#W32($163B94)
+あなたのクライマックス置場に「虹いろ[Bear_icon]クマクマ」が置かれた時、[END]
+// current address: $12929F
+
+//POINTER #220 @ $163B98 - STRING #220 @ $1292A0
+#W32($163B98)
+あなたのクライマックス置場に「放課後オーバーフロウ」が置かれた時、[END]
+// current address: $1292E3
+
+//POINTER #221 @ $163B9C - STRING #221 @ $1292E4
+#W32($163B9C)
+他のあなたのカード名に「ランカ」を含むキャラがアタックした時、[END]
+// current address: $129323
+
+//POINTER #222 @ $163BA0 - STRING #222 @ $129324
+#W32($163BA0)
+他のあなたの《バジュラ》のキャラが手札から舞台に置かれた時、[END]
+// current address: $129361
+
+//POINTER #223 @ $163BA4 - STRING #223 @ $129364
+#W32($163BA4)
+このカードの与えたダメージがキャンセルされた時、[END]
+// current address: $129395
+
+//POINTER #224 @ $163BA8 - STRING #224 @ $129398
+#W32($163BA8)
+相手のキャラが手札から舞台に置かれた時、[END]
+// current address: $1293C1
+
+//POINTER #225 @ $163BAC - STRING #225 @ $1293C4
+#W32($163BAC)
+他のあなたのバトル中の《音楽》のキャラが[Card_down]した時、[END]
+// current address: $1293F7
+
+//POINTER #226 @ $163BB0 - STRING #226 @ $1293F8
+#W32($163BB0)
+あなたのクライマックス置場に「テイルズ オブ ジ アビス」が置かれた時、[END]
+// current address: $12943E
+
+//POINTER #227 @ $163BB4 - STRING #227 @ $129440
+#W32($163BB4)
+あなたのクライマックス置場に「ゴッドイーター」が置かれた時、[END]
+// current address: $12947D
+
+//POINTER #228 @ $163BB8 - STRING #228 @ $129480
+#W32($163BB8)
+あなたはコストを払ってよい。[END]
+// current address: $12949D
+
+//POINTER #229 @ $163BBC - STRING #229 @ $1294A0
+#W32($163BBC)
+前列にこのカードがいるなら、あなたはコストを払ってよい。[END]
+// current address: $1294D9
+
+//POINTER #230 @ $163BC0 - STRING #230 @ $1294DC
+#W32($163BC0)
+クライマックス置場に「フラワーガール」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12952B
+
+//POINTER #231 @ $163BC4 - STRING #231 @ $12952C
+#W32($163BC4)
+クライマックス置場に「I Want」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129573
+
+//POINTER #232 @ $163BC8 - STRING #232 @ $129574
+#W32($163BC8)
+クライマックス置場に「迷走Mind」があるなら、あなたはコストを払ってよい。[END]
+// current address: $1295BD
+
+//POINTER #233 @ $163BCC - STRING #233 @ $1295C0
+#W32($163BCC)
+クライマックス置場に「隣に…」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129607
+
+//POINTER #234 @ $163BD0 - STRING #234 @ $129608
+#W32($163BD0)
+クライマックス置場に「いっぱいいっぱい」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129659
+
+//POINTER #235 @ $163BD4 - STRING #235 @ $12965C
+#W32($163BD4)
+このカードが【スタンド】しているなら、あなたはコストを払ってよい。[END]
+// current address: $129695
+
+//POINTER #236 @ $163BD8 - STRING #236 @ $129698
+#W32($163BD8)
+クライマックス置場に「女の最高の幸せ」があるなら、あなたはコストを払ってよい。[END]
+// current address: $1296E7
+
+//POINTER #237 @ $163BDC - STRING #237 @ $1296E8
+#W32($163BDC)
+このカードが【レスト】しているなら、あなたはコストを払ってよい。[END]
+// current address: $129721
+
+//POINTER #238 @ $163BE0 - STRING #238 @ $129724
+#W32($163BE0)
+クライマックス置場に「えきぞちっくな誓い」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129777
+
+//POINTER #239 @ $163BE4 - STRING #239 @ $129778
+#W32($163BE4)
+クライマックス置場に「天体観測」があるなら、あなたはコストを払ってよい。[END]
+// current address: $1297C1
+
+//POINTER #240 @ $163BE8 - STRING #240 @ $1297C4
+#W32($163BE8)
+クライマックス置場に「報われた気持ち」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129813
+
+//POINTER #241 @ $163BEC - STRING #241 @ $129814
+#W32($163BEC)
+クライマックス置場に「プールサイドの遭遇」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129867
+
+//POINTER #242 @ $163BF0 - STRING #242 @ $129868
+#W32($163BF0)
+クライマックス置場に「飛べないアルビナの願い」があるなら、あなたはコストを払ってよい。[END]
+// current address: $1298BF
+
+//POINTER #243 @ $163BF4 - STRING #243 @ $1298C0
+#W32($163BF4)
+クライマックス置場に「スターライトブレイカー」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129917
+
+//POINTER #244 @ $163BF8 - STRING #244 @ $129918
+#W32($163BF8)
+クライマックス置場に「フレースヴェルグ」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129969
+
+//POINTER #245 @ $163BFC - STRING #245 @ $12996C
+#W32($163BFC)
+クライマックス置場に「迷いが晴れた時」があるなら、あなたはコストを払ってよい。[END]
+// current address: $1299BB
+
+//POINTER #246 @ $163C00 - STRING #246 @ $1299BC
+#W32($163C00)
+クライマックス置場に「ぶち抜けー！」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129A09
+
+//POINTER #247 @ $163C04 - STRING #247 @ $129A0C
+#W32($163C04)
+クライマックス置場に「火龍・一閃！！」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129A5B
+
+//POINTER #248 @ $163C08 - STRING #248 @ $129A5C
+#W32($163C08)
+他のあなたのキャラがいないなら、あなたはコストを払ってよい。[END]
+// current address: $129A99
+
+//POINTER #249 @ $163C0C - STRING #249 @ $129A9C
+#W32($163C0C)
+このカードとバトルしているキャラのレベルがこのカードのレベル以下なら、あなたはコストを払ってよい。[END]
+// current address: $129AFF
+
+//POINTER #250 @ $163C10 - STRING #250 @ $129B00
+#W32($163C10)
+後列にこのカードがいるなら、あなたはコストを払ってよい。[END]
+// current address: $129B39
+
+//POINTER #251 @ $163C14 - STRING #251 @ $129B3C
+#W32($163C14)
+クライマックス置場に「すべてを打ち消す力」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129B8F
+
+//POINTER #252 @ $163C18 - STRING #252 @ $129B90
+#W32($163C18)
+そのカードのトリガーアイコンが[Gate]なら、あなたはコストを払ってよい。[END]
+// current address: $129BD3
+
+//POINTER #253 @ $163C1C - STRING #253 @ $129BD4
+#W32($163C1C)
+クライマックス置場に「必要悪の教会の魔術師」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129C29
+
+//POINTER #254 @ $163C20 - STRING #254 @ $129C2C
+#W32($163C20)
+クライマックス置場に「風紀委員の覚悟」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129C7B
+
+//POINTER #255 @ $163C24 - STRING #255 @ $129C7C
+#W32($163C24)
+クライマックス置場に「超電磁砲」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129CC5
+
+//POINTER #256 @ $163C28 - STRING #256 @ $129CC8
+#W32($163C28)
+クライマックス置場に「Dazzling World」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129D17
+
+//POINTER #257 @ $163C2C - STRING #257 @ $129D18
+#W32($163C2C)
+そのカードのトリガーアイコンが[Wind]なら、あなたはコストを払ってよい。[END]
+// current address: $129D5B
+
+//POINTER #258 @ $163C30 - STRING #258 @ $129D5C
+#W32($163C30)
+クライマックス置場に「涼宮ハルヒの日常」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129DAD
+
+//POINTER #259 @ $163C34 - STRING #259 @ $129DB0
+#W32($163C34)
+他のあなたの《SOS団》のキャラが4枚以上なら、あなたはコストを払ってよい。[END]
+// current address: $129DF9
+
+//POINTER #260 @ $163C38 - STRING #260 @ $129DFC
+#W32($163C38)
+－－－－[END]
+// current address: $129E05
+
+//POINTER #261 @ $163C3C - STRING #261 @ $129E08
+#W32($163C3C)
+そのカードのトリガーアイコンが[Goldbag]なら、あなたはコストを払ってよい。[END]
+// current address: $129E4B
+
+//POINTER #262 @ $163C40 - STRING #262 @ $129E4C
+#W32($163C40)
+あなたの《団長》のキャラがいるなら、あなたはコストを払ってよい。[END]
+// current address: $129E8D
+
+//POINTER #263 @ $163C44 - STRING #263 @ $129E90
+#W32($163C44)
+クライマックス置場に「ファランクスシフト」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129EE3
+
+//POINTER #264 @ $163C48 - STRING #264 @ $129EE4
+#W32($163C48)
+クライマックス置場に「魔女の鉄槌」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129F2F
+
+//POINTER #265 @ $163C4C - STRING #265 @ $129F30
+#W32($163C4C)
+クライマックス置場に「スパイラル・ラダー」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129F83
+
+//POINTER #266 @ $163C50 - STRING #266 @ $129F84
+#W32($163C50)
+クライマックス置場に「キャスターの望み」があるなら、あなたはコストを払ってよい。[END]
+// current address: $129FD5
+
+//POINTER #267 @ $163C54 - STRING #267 @ $129FD8
+#W32($163C54)
+クライマックス置場に「黄金の別離」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A023
+
+//POINTER #268 @ $163C58 - STRING #268 @ $12A024
+#W32($163C58)
+クライマックス置場に「約束された勝利の剣」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A077
+
+//POINTER #269 @ $163C5C - STRING #269 @ $12A078
+#W32($163C5C)
+クライマックス置場に「いたずらな微笑み」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A0C9
+
+//POINTER #270 @ $163C60 - STRING #270 @ $12A0CC
+#W32($163C60)
+相手の「合同捜査 小衣＆シャロ」がいるなら、あなたはコストを払ってよい。[END]
+// current address: $12A114
+
+//POINTER #271 @ $163C64 - STRING #271 @ $12A114
+#W32($163C64)
+クライマックス置場に「黒猫のしおり」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A161
+
+//POINTER #272 @ $163C68 - STRING #272 @ $12A164
+#W32($163C68)
+クライマックス置場に「ダイレクトハック」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A1B5
+
+//POINTER #273 @ $163C6C - STRING #273 @ $12A1B8
+#W32($163C6C)
+クライマックス置場に「サイコキネシス」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A207
+
+//POINTER #274 @ $163C70 - STRING #274 @ $12A208
+#W32($163C70)
+クライマックス置場に「ふたりっきりのデート」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A25D
+
+//POINTER #275 @ $163C74 - STRING #275 @ $12A260
+#W32($163C74)
+クライマックス置場に「無限の剣製」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A2AB
+
+//POINTER #276 @ $163C78 - STRING #276 @ $12A2AC
+#W32($163C78)
+クライマックス置場に「アイモ」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A2F3
+
+//POINTER #277 @ $163C7C - STRING #277 @ $12A2F4
+#W32($163C7C)
+クライマックス置場に「オベリスク」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A33F
+
+//POINTER #278 @ $163C80 - STRING #278 @ $12A340
+#W32($163C80)
+クライマックス置場に「ライオン」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A389
+
+//POINTER #279 @ $163C84 - STRING #279 @ $12A38C
+#W32($163C84)
+あなたのクライマックス置場に「マクロス・アタック」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A3E7
+
+//POINTER #280 @ $163C88 - STRING #280 @ $12A3E8
+#W32($163C88)
+あなたのクライマックス置場に「サヨナラノツバサ」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A441
+
+//POINTER #281 @ $163C8C - STRING #281 @ $12A444
+#W32($163C8C)
+クライマックス置場に「アルカトラズ慰問ライブ」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A49B
+
+//POINTER #282 @ $163C90 - STRING #282 @ $12A49C
+#W32($163C90)
+クライマックス置場に「ギター狙撃」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A4E7
+
+//POINTER #283 @ $163C94 - STRING #283 @ $12A4E8
+#W32($163C94)
+クライマックス置場に「六神将」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A52F
+
+//POINTER #284 @ $163C98 - STRING #284 @ $12A530
+#W32($163C98)
+クライマックス置場に「エクスカリバー」があるなら、あなたはコストを払ってよい。[END]
+// current address: $12A57F
+
+//POINTER #285 @ $163C9C - STRING #285 @ $12A580
+#W32($163C9C)
+あなたは自分の山札の上から1枚を公開する。そのカードが自分のレベル以下のレベルの《パイロット》のキャラなら、あなたはコストを払ってよい。[END]
+// current address: $12A608
+
+//POINTER #286 @ $163CA0 - STRING #286 @ $12A608
+#W32($163CA0)
+クライマックス置場に「スタンバイ・レディ」があるなら、[END]
+// current address: $12A63F
+
+//POINTER #287 @ $163CA4 - STRING #287 @ $12A640
+#W32($163CA4)
+あなたのターン中、[END]
+// current address: $12A653
+
+//POINTER #288 @ $163CA8 - STRING #288 @ $12A654
+#W32($163CA8)
+このカードは、あなたの《本》のキャラがいないなら、[END]
+// current address: $12A687
+
+//POINTER #289 @ $163CAC - STRING #289 @ $12A688
+#W32($163CAC)
+前列にこのカードがいるなら、[END]
+// current address: $12A6A5
+
+//POINTER #290 @ $163CB0 - STRING #290 @ $12A6A8
+#W32($163CB0)
+クライマックス置場に「シュツルムファルケン」があるなら、[END]
+// current address: $12A6E1
+
+//POINTER #291 @ $163CB4 - STRING #291 @ $12A6E4
+#W32($163CB4)
+クライマックス置場に「雷光一閃」があるなら、[END]
+// current address: $12A711
+
+//POINTER #292 @ $163CB8 - STRING #292 @ $12A714
+#W32($163CB8)
+他のあなたのカード名に「なのは」を含むキャラがいるなら、[END]
+// current address: $12A74D
+
+//POINTER #293 @ $163CBC - STRING #293 @ $12A750
+#W32($163CBC)
+あなたの思い出が3枚以上なら、[END]
+// current address: $12A76E
+
+//POINTER #294 @ $163CC0 - STRING #294 @ $12A770
+#W32($163CC0)
+思い出置場にこのカードがあるなら、[END]
+// current address: $12A793
+
+//POINTER #295 @ $163CC4 - STRING #295 @ $12A794
+#W32($163CC4)
+あなたの思い出が2枚以上なら、[END]
+// current address: $12A7B2
+
+//POINTER #296 @ $163CC8 - STRING #296 @ $12A7B4
+#W32($163CC8)
+他のあなたの《動物》のキャラが2枚以上なら、[END]
+// current address: $12A7E0
+
+//POINTER #297 @ $163CCC - STRING #297 @ $12A7E0
+#W32($163CCC)
+クライマックス置場に「エターナルコフィン」があるなら、[END]
+// current address: $12A817
+
+//POINTER #298 @ $163CD0 - STRING #298 @ $12A818
+#W32($163CD0)
+クライマックス置場に「轟天爆砕」があるなら、[END]
+// current address: $12A845
+
+//POINTER #299 @ $163CD4 - STRING #299 @ $12A848
+#W32($163CD4)
+このカードのバトル相手のレベルがこのカードのレベル以下なら、[END]
+// current address: $12A885
+
+//POINTER #300 @ $163CD8 - STRING #300 @ $12A888
+#W32($163CD8)
+このカードの下にマーカーがあるなら、[END]
+// current address: $12A8AD
+
+//POINTER #301 @ $163CDC - STRING #301 @ $12A8B0
+#W32($163CDC)
+このカードの下にマーカーがないなら、[END]
+// current address: $12A8D5
+
+//POINTER #302 @ $163CE0 - STRING #302 @ $12A8D8
+#W32($163CE0)
+他のあなたの《魔法》のキャラが3枚以上なら、[END]
+// current address: $12A904
+
+//POINTER #303 @ $163CE4 - STRING #303 @ $12A904
+#W32($163CE4)
+このカードのバトル相手のレベルが1以下なら、[END]
+// current address: $12A930
+
+//POINTER #304 @ $163CE8 - STRING #304 @ $12A930
+#W32($163CE8)
+あなたの思い出置場にカードがあるなら、[END]
+// current address: $12A957
+
+//POINTER #305 @ $163CEC - STRING #305 @ $12A958
+#W32($163CEC)
+相手のクライマックス置場にクライマックスがあるなら、[END]
+// current address: $12A98D
+
+//POINTER #306 @ $163CF0 - STRING #306 @ $12A990
+#W32($163CF0)
+相手のターン中、[END]
+// current address: $12A9A1
+
+//POINTER #307 @ $163CF4 - STRING #307 @ $12A9A4
+#W32($163CF4)
+相手のターン中、あなたの思い出置場にカードがあるなら、[END]
+// current address: $12A9DB
+
+//POINTER #308 @ $163CF8 - STRING #308 @ $12A9DC
+#W32($163CF8)
+他のあなたの《音楽》のキャラが2枚以上なら、[END]
+// current address: $12AA08
+
+//POINTER #309 @ $163CFC - STRING #309 @ $12AA08
+#W32($163CFC)
+あなたの思い出置場に「寄り道」があるなら、[END]
+// current address: $12AA33
+
+//POINTER #310 @ $163D00 - STRING #310 @ $12AA34
+#W32($163D00)
+このカードとバトル中のキャラのレベルが0以下なら、[END]
+// current address: $12AA66
+
+//POINTER #311 @ $163D04 - STRING #311 @ $12AA68
+#W32($163D04)
+他のあなたの「癒し系あずさ」がいるなら、[END]
+// current address: $12AA91
+
+//POINTER #312 @ $163D08 - STRING #312 @ $12AA94
+#W32($163D08)
+クライマックス置場に「Kosmos,Cosmos」があるなら、[END]
+// current address: $12AAC6
+
+//POINTER #313 @ $163D0C - STRING #313 @ $12AAC8
+#W32($163D0C)
+クライマックス置場に「スタ→トスタ→」があるなら、[END]
+// current address: $12AAFB
+
+//POINTER #314 @ $163D10 - STRING #314 @ $12AAFC
+#W32($163D10)
+このカードがクロックの1番上にあるなら、[END]
+// current address: $12AB24
+
+//POINTER #315 @ $163D14 - STRING #315 @ $12AB24
+#W32($163D14)
+他のあなたのこのカード以上のパワーのキャラがいないなら、[END]
+// current address: $12AB5D
+
+//POINTER #316 @ $163D18 - STRING #316 @ $12AB60
+#W32($163D18)
+このカードの正面のキャラのレベルがこのカードのレベルより高いなら、[END]
+// current address: $12ABA3
+
+//POINTER #317 @ $163D1C - STRING #317 @ $12ABA4
+#W32($163D1C)
+あなたの思い出置場に「衣装変更」があるなら、[END]
+// current address: $12ABD1
+
+//POINTER #318 @ $163D20 - STRING #318 @ $12ABD4
+#W32($163D20)
+あなたのターン中、あなたの思い出置場に「衣装変更」があるなら、[END]
+// current address: $12AC13
+
+//POINTER #319 @ $163D24 - STRING #319 @ $12AC14
+#W32($163D24)
+あなたの手札があるなら、[END]
+// current address: $12AC2D
+
+//POINTER #320 @ $163D28 - STRING #320 @ $12AC30
+#W32($163D28)
+このカードは、あなたの《音楽》のキャラがいないなら、[END]
+// current address: $12AC65
+
+//POINTER #321 @ $163D2C - STRING #321 @ $12AC68
+#W32($163D2C)
+クライマックス置場に「ふるふるフューチャー☆」があるなら、[END]
+// current address: $12ACA3
+
+//POINTER #322 @ $163D30 - STRING #322 @ $12ACA4
+#W32($163D30)
+あなたのストックが6枚以上なら、[END]
+// current address: $12ACC4
+
+//POINTER #323 @ $163D34 - STRING #323 @ $12ACC4
+#W32($163D34)
+あなたの思い出置場の「寄り道」が2枚以上なら、[END]
+// current address: $12ACF2
+
+//POINTER #324 @ $163D38 - STRING #324 @ $12ACF4
+#W32($163D38)
+他のあなたの「高槻 やよい」がいるなら、[END]
+// current address: $12AD1C
+
+//POINTER #325 @ $163D3C - STRING #325 @ $12AD1C
+#W32($163D3C)
+他のあなたの前列のキャラがいないなら、[END]
+// current address: $12AD43
+
+//POINTER #326 @ $163D40 - STRING #326 @ $12AD44
+#W32($163D40)
+クライマックス置場に「キラメキラリ」があるなら、[END]
+// current address: $12AD75
+
+//POINTER #327 @ $163D44 - STRING #327 @ $12AD78
+#W32($163D44)
+あなたの思い出置場に「プレゼント」があるなら、[END]
+// current address: $12ADA7
+
+//POINTER #328 @ $163D48 - STRING #328 @ $12ADA8
+#W32($163D48)
+相手の「ハイタッチやよい」がいて、[END]
+// current address: $12ADCB
+
+//POINTER #329 @ $163D4C - STRING #329 @ $12ADCC
+#W32($163D4C)
+他のあなたのキャラがいないなら、[END]
+// current address: $12ADED
+
+//POINTER #330 @ $163D50 - STRING #330 @ $129DFC
+#W32($163D50)
+－－－－[END]
+// current address: $129E05
+
+//POINTER #331 @ $163D54 - STRING #331 @ $12ADF0
+#W32($163D54)
+クライマックス置場に「目が逢う瞬間」があるなら、[END]
+// current address: $12AE21
+
+//POINTER #332 @ $163D58 - STRING #332 @ $12AE24
+#W32($163D58)
+相手のターン中、あなたの思い出置場に「ある日の風景」があるなら、[END]
+// current address: $12AE65
+
+//POINTER #333 @ $163D5C - STRING #333 @ $12AE68
+#W32($163D5C)
+あなたの手札が5枚以上なら、[END]
+// current address: $12AE84
+
+//POINTER #334 @ $163D60 - STRING #334 @ $12AE84
+#W32($163D60)
+このカードのバトル相手のレベルが0以下なら、[END]
+// current address: $12AEB0
+
+//POINTER #335 @ $163D64 - STRING #335 @ $12AEB0
+#W32($163D64)
+クライマックス置場に「暴発事故」があるなら、[END]
+// current address: $12AEDD
+
+//POINTER #336 @ $163D68 - STRING #336 @ $12AEE0
+#W32($163D68)
+クライマックス置場に「生前の記憶」があるなら、[END]
+// current address: $12AF0F
+
+//POINTER #337 @ $163D6C - STRING #337 @ $12AF10
+#W32($163D6C)
+あなたのストックが5枚以上なら、[END]
+// current address: $12AF30
+
+//POINTER #338 @ $163D70 - STRING #338 @ $12AF30
+#W32($163D70)
+クライマックス置場に「ロード・トゥ・マイルハイ」があるなら、[END]
+// current address: $12AF6D
+
+//POINTER #339 @ $163D74 - STRING #339 @ $12AF70
+#W32($163D74)
+相手のターン中、あなたの思い出が2枚以上なら、[END]
+// current address: $12AF9E
+
+//POINTER #340 @ $163D78 - STRING #340 @ $12AFA0
+#W32($163D78)
+クライマックス置場に「舞い降りる天使」があるなら、[END]
+// current address: $12AFD3
+
+//POINTER #341 @ $163D7C - STRING #341 @ $12AFD4
+#W32($163D7C)
+他のあなたの《死》のキャラが2枚以上なら、[END]
+// current address: $12AFFE
+
+//POINTER #342 @ $163D80 - STRING #342 @ $12B000
+#W32($163D80)
+このカードがクロックの1番上にあり、あなたのレベルが2以上なら、[END]
+// current address: $12B03F
+
+//POINTER #343 @ $163D84 - STRING #343 @ $12B040
+#W32($163D84)
+このカードは、あなたの《死》のキャラが3枚以下なら、[END]
+// current address: $12B074
+
+//POINTER #344 @ $163D88 - STRING #344 @ $12B074
+#W32($163D88)
+あなたの《科学》のキャラが3枚以上なら、[END]
+// current address: $12B09C
+
+//POINTER #345 @ $163D8C - STRING #345 @ $12B09C
+#W32($163D8C)
+あなたの思い出置場の《科学》のキャラが2枚以上なら、[END]
+// current address: $12B0D0
+
+//POINTER #346 @ $163D90 - STRING #346 @ $12B0D0
+#W32($163D90)
+このカードは、あなたの《科学》のキャラが2枚以下なら、[END]
+// current address: $12B106
+
+//POINTER #347 @ $163D94 - STRING #347 @ $12B108
+#W32($163D94)
+相手のターン中、思い出置場にこのカードがあるなら、[END]
+// current address: $12B13B
+
+//POINTER #348 @ $163D98 - STRING #348 @ $12B13C
+#W32($163D98)
+他のあなたの、「守護騎士シャマル＆守護獣ザフィーラ」と「カリム・グラシア」がいるなら、[END]
+// current address: $12B193
+
+//POINTER #349 @ $163D9C - STRING #349 @ $12B194
+#W32($163D9C)
+クライマックス置場に「最後の模擬戦」があるなら、[END]
+// current address: $12B1C5
+
+//POINTER #350 @ $163DA0 - STRING #350 @ $12B1C8
+#W32($163DA0)
+このカードとバトルしているキャラのレベルが2以下なら、[END]
+// current address: $12B1FE
+
+//POINTER #351 @ $163DA4 - STRING #351 @ $12B200
+#W32($163DA4)
+クライマックス置場に「砕けないものなんて」があるなら、[END]
+// current address: $12B237
+
+//POINTER #352 @ $163DA8 - STRING #352 @ $12B238
+#W32($163DA8)
+他のあなたの、「烈火の将シグナム」と「鉄槌の騎士ヴィータ」と「風の癒し手シャマル」と「猛き守護獣ザフィーラ」がいるなら、[END]
+// current address: $12B2B1
+
+//POINTER #353 @ $163DAC - STRING #353 @ $12B2B4
+#W32($163DAC)
+他のあなたの、「エリオ＆キャロ」と「金の閃光 フェイト」がいるなら、[END]
+// current address: $12B2F8
+
+//POINTER #354 @ $163DB0 - STRING #354 @ $12B2F8
+#W32($163DB0)
+このカードがクロックの１番上にあるなら、[END]
+// current address: $12B321
+
+//POINTER #355 @ $163DB4 - STRING #355 @ $12B324
+#W32($163DB4)
+このカードは、あなたの後列にキャラがいないなら、[END]
+// current address: $12B355
+
+//POINTER #356 @ $163DB8 - STRING #356 @ $12B358
+#W32($163DB8)
+他のあなたの「ティアナ・ランスター」がいるなら、[END]
+// current address: $12B389
+
+//POINTER #357 @ $163DBC - STRING #357 @ $12B38C
+#W32($163DBC)
+他のあなたの、「次元犯罪者スカリエッティ」と「幻惑の使い手クアットロ」がいるなら、[END]
+// current address: $12B3DF
+
+//POINTER #358 @ $163DC0 - STRING #358 @ $12B3E0
+#W32($163DC0)
+クライマックス置場に「ディバインバスター」があるなら、[END]
+// current address: $12B417
+
+//POINTER #359 @ $163DC4 - STRING #359 @ $12B418
+#W32($163DC4)
+このカードは、あなたのキャラが2枚以上なら、[END]
+// current address: $12B444
+
+//POINTER #360 @ $163DC8 - STRING #360 @ $12B444
+#W32($163DC8)
+他のあなたの「スカリエッティの秘書ウーノ」がいるなら、[END]
+// current address: $12B47B
+
+//POINTER #361 @ $163DCC - STRING #361 @ $12B47C
+#W32($163DCC)
+このカードとバトルしているキャラのレベルが0以下なら、[END]
+// current address: $12B4B2
+
+//POINTER #362 @ $163DD0 - STRING #362 @ $12B4B4
+#W32($163DD0)
+他のあなたの、「センターガード ティアナ」と「キャリバーズ スバル＆ギンガ」がいるなら、[END]
+// current address: $12B50B
+
+//POINTER #363 @ $163DD4 - STRING #363 @ $12B50C
+#W32($163DD4)
+クライマックス置場に「ママと約束ね」があるなら、[END]
+// current address: $12B53D
+
+//POINTER #364 @ $163DD8 - STRING #364 @ $12B540
+#W32($163DD8)
+あなたの手札が相手の手札以下なら、[END]
+// current address: $12B563
+
+//POINTER #365 @ $163DDC - STRING #365 @ $12B564
+#W32($163DDC)
+あなたのクライマックス置場に「限定解除」があるなら、[END]
+// current address: $12B599
+
+//POINTER #366 @ $163DE0 - STRING #366 @ $12B59C
+#W32($163DE0)
+他のあなたのカード名に「ヴィヴィオ」を含むキャラがいるなら、[END]
+// current address: $12B5D9
+
+//POINTER #367 @ $163DE4 - STRING #367 @ $12B5DC
+#W32($163DE4)
+クライマックス置場に「風紀委員のお仕事」があるなら、[END]
+// current address: $12B611
+
+//POINTER #368 @ $163DE8 - STRING #368 @ $12B614
+#W32($163DE8)
+あなたのターン中、他のあなたの《超能力》のキャラが2枚以上なら、[END]
+// current address: $12B654
+
+//POINTER #369 @ $163DEC - STRING #369 @ $12B654
+#W32($163DEC)
+クライマックス置場に「ミサカネットワーク」があるなら、[END]
+// current address: $12B68B
+
+//POINTER #370 @ $163DF0 - STRING #370 @ $12B68C
+#W32($163DF0)
+あなたのターン中、あなたの思い出置場の「御坂妹」が2枚以上なら、[END]
+// current address: $12B6CC
+
+//POINTER #371 @ $163DF4 - STRING #371 @ $12B6CC
+#W32($163DF4)
+他のあなたのレベル3以上のキャラがいるなら、[END]
+// current address: $12B6F8
+
+//POINTER #372 @ $163DF8 - STRING #372 @ $12B6F8
+#W32($163DF8)
+他のあなたの「妹達」が2枚以上なら、[END]
+// current address: $12B71C
+
+//POINTER #373 @ $163DFC - STRING #373 @ $12B71C
+#W32($163DFC)
+あなたの思い出置場に「“無能力者”佐天」があるなら、[END]
+// current address: $12B751
+
+//POINTER #374 @ $163E00 - STRING #374 @ $12B754
+#W32($163E00)
+他のあなたの《風紀委員》のキャラが2枚以上なら、[END]
+// current address: $12B784
+
+//POINTER #375 @ $163E04 - STRING #375 @ $12B784
+#W32($163E04)
+クライマックス置場に「最高の友達」があるなら、[END]
+// current address: $12B7B3
+
+//POINTER #376 @ $163E08 - STRING #376 @ $12B7B4
+#W32($163E08)
+あなたの控え室のクライマックスが4枚以上なら、[END]
+// current address: $12B7E2
+
+//POINTER #377 @ $163E0C - STRING #377 @ $12B7E4
+#W32($163E0C)
+他のあなたの《カエル》のキャラが2枚以上なら、[END]
+// current address: $12B812
+
+//POINTER #378 @ $163E10 - STRING #378 @ $12B814
+#W32($163E10)
+他のあなたのレベル5以上のキャラがいるなら、[END]
+// current address: $12B840
+
+//POINTER #379 @ $163E14 - STRING #379 @ $12B840
+#W32($163E14)
+他のあなたの《超能力》のキャラが2枚以上なら、[END]
+// current address: $12B86E
+
+//POINTER #380 @ $163E18 - STRING #380 @ $12B870
+#W32($163E18)
+このカードのバトル中、このカードとバトル中のキャラが《魔法》か《超能力》なら、[END]
+// current address: $12B8BF
+
+//POINTER #381 @ $163E1C - STRING #381 @ $12B8C0
+#W32($163E1C)
+あなたの思い出置場に「修道女 インデックス」があるなら、[END]
+// current address: $12B8F8
+
+//POINTER #382 @ $163E20 - STRING #382 @ $12B8F8
+#W32($163E20)
+このカードとバトル中のキャラのレベルが2以下なら、[END]
+// current address: $12B92A
+
+//POINTER #383 @ $163E24 - STRING #383 @ $12B92C
+#W32($163E24)
+前列の中央の枠にこのカードがいるなら、[END]
+// current address: $12B953
+
+//POINTER #384 @ $163E28 - STRING #384 @ $12B954
+#W32($163E28)
+クライマックス置場に「サムデイ イン ザ レイン」があるなら、[END]
+// current address: $12B990
+
+//POINTER #385 @ $163E2C - STRING #385 @ $12B990
+#W32($163E2C)
+クライマックス置場に「禁則事項です」があるなら、[END]
+// current address: $12B9C1
+
+//POINTER #386 @ $163E30 - STRING #386 @ $12B9C4
+#W32($163E30)
+他のあなたの、《SOS団》か《和服》のキャラが3枚以上なら、[END]
+// current address: $12B9FD
+
+//POINTER #387 @ $163E34 - STRING #387 @ $12BA00
+#W32($163E34)
+他のあなたのキャラが2枚以下なら、[END]
+// current address: $12BA22
+
+//POINTER #388 @ $163E38 - STRING #388 @ $12BA24
+#W32($163E38)
+クライマックス置場に「情報制御空間の死闘」があるなら、[END]
+// current address: $12BA5B
+
+//POINTER #389 @ $163E3C - STRING #389 @ $12BA5C
+#W32($163E3C)
+クライマックス置場に「涼宮ハルヒの朗報」があるなら、[END]
+// current address: $12BA91
+
+//POINTER #390 @ $163E40 - STRING #390 @ $12BA94
+#W32($163E40)
+クライマックス置場に「sleeping beauty_」があるなら、[END]
+// current address: $12BAC9
+
+//POINTER #391 @ $163E44 - STRING #391 @ $12BACC
+#W32($163E44)
+クライマックス置場に「閉鎖空間」があるなら、[END]
+// current address: $12BAF9
+
+//POINTER #392 @ $163E48 - STRING #392 @ $12BAFC
+#W32($163E48)
+他のあなたの《団長》のキャラがいるなら、[END]
+// current address: $12BB25
+
+//POINTER #393 @ $163E4C - STRING #393 @ $12BB28
+#W32($163E4C)
+このカードは、あなたの前列のキャラが3枚以上なら、[END]
+// current address: $12BB5A
+
+//POINTER #394 @ $163E50 - STRING #394 @ $12BB5C
+#W32($163E50)
+他のあなたの《時間》のキャラが2枚以上なら、[END]
+// current address: $12BB88
+
+//POINTER #395 @ $163E54 - STRING #395 @ $12BB88
+#W32($163E54)
+クライマックス置場に「もうボロ儲けだよっ！」があるなら、[END]
+// current address: $12BBC1
+
+//POINTER #396 @ $163E58 - STRING #396 @ $12BBC4
+#W32($163E58)
+相手のキャラが4枚以上なら、[END]
+// current address: $12BBE0
+
+//POINTER #397 @ $163E5C - STRING #397 @ $12BBE0
+#W32($163E5C)
+このカードは、あなたの《時間》のキャラがいないなら、[END]
+// current address: $12BC15
+
+//POINTER #398 @ $163E60 - STRING #398 @ $12BC18
+#W32($163E60)
+クライマックス置場に「Happy Valentine」があるなら、[END]
+// current address: $12BC4C
+
+//POINTER #399 @ $163E64 - STRING #399 @ $12BC4C
+#W32($163E64)
+このカードは、あなたの《団長》のキャラがいないなら、[END]
+// current address: $12BC81
+
+//POINTER #400 @ $163E68 - STRING #400 @ $12BC84
+#W32($163E68)
+クライマックス置場に「うん、それ無理」があるなら、[END]
+// current address: $12BCB7
+
+//POINTER #401 @ $163E6C - STRING #401 @ $12BCB8
+#W32($163E6C)
+そのカードのトリガーアイコンが[Book]なら、[END]
+// current address: $12BCDF
+
+//POINTER #402 @ $163E70 - STRING #402 @ $12BCE0
+#W32($163E70)
+他のあなたの《本》のキャラが3枚以上なら、[END]
+// current address: $12BD0A
+
+//POINTER #403 @ $163E74 - STRING #403 @ $12BD0C
+#W32($163E74)
+このカードは、あなたの《宇宙人》のキャラがいないなら、[END]
+// current address: $12BD43
+
+//POINTER #404 @ $163E78 - STRING #404 @ $12BD44
+#W32($163E78)
+他のあなたの《使い魔》のキャラがいるなら、[END]
+// current address: $12BD6F
+
+//POINTER #405 @ $163E7C - STRING #405 @ $12BD70
+#W32($163E7C)
+他のあなたの、《魔法》か《動物》のキャラが2枚以上なら、[END]
+// current address: $12BDA8
+
+//POINTER #406 @ $163E80 - STRING #406 @ $12BDA8
+#W32($163E80)
+他のあなたの《マスター》のキャラが2枚以上なら、[END]
+// current address: $12BDD8
+
+//POINTER #407 @ $163E84 - STRING #407 @ $12BDD8
+#W32($163E84)
+あなたの控え室のクライマックスが1枚以下なら、[END]
+// current address: $12BE06
+
+//POINTER #408 @ $163E88 - STRING #408 @ $12BE08
+#W32($163E88)
+先攻プレイヤーの第１ターンなら、[END]
+// current address: $12BE29
+
+//POINTER #409 @ $163E8C - STRING #409 @ $12BE2C
+#W32($163E8C)
+他のあなたの「ステンノ＆エウリュアレ」がいるなら、[END]
+// current address: $12BE5F
+
+//POINTER #410 @ $163E90 - STRING #410 @ $12BE60
+#W32($163E90)
+クライマックス置場に「大切な場所」があるなら、[END]
+// current address: $12BE8F
+
+//POINTER #411 @ $163E94 - STRING #411 @ $12BE90
+#W32($163E94)
+クライマックス置場に「お気に入りの空間」があるなら、[END]
+// current address: $12BEC5
+
+//POINTER #412 @ $163E98 - STRING #412 @ $12BEC8
+#W32($163E98)
+あなたの控え室のカードが6枚以下なら、[END]
+// current address: $12BEEE
+
+//POINTER #413 @ $163E9C - STRING #413 @ $12BEF0
+#W32($163E9C)
+クライマックス置場に「エスコート」があるなら、[END]
+// current address: $12BF1F
+
+//POINTER #414 @ $163EA0 - STRING #414 @ $12BF20
+#W32($163EA0)
+あなたの控え室の「遠坂神社の巫女 凛」が3枚以上なら、[END]
+// current address: $12BF55
+
+//POINTER #415 @ $163EA4 - STRING #415 @ $12BF58
+#W32($163EA4)
+このカードのバトル中、このカードとバトル中のキャラが《悪魔》なら、[END]
+// current address: $12BF9B
+
+//POINTER #416 @ $163EA8 - STRING #416 @ $12BF9C
+#W32($163EA8)
+あなたの手札が相手の手札より少ないなら、[END]
+// current address: $12BFC5
+
+//POINTER #417 @ $163EAC - STRING #417 @ $12BFC8
+#W32($163EAC)
+クライマックス置場に「オペラとの出会い」があるなら、[END]
+// current address: $12BFFD
+
+//POINTER #418 @ $163EB0 - STRING #418 @ $12C000
+#W32($163EB0)
+あなたのレベル置場のカードのレベルの合計が2以上なら、[END]
+// current address: $12C036
+
+//POINTER #419 @ $163EB4 - STRING #419 @ $12C038
+#W32($163EB4)
+相手のクロックが0枚なら、[END]
+// current address: $12C052
+
+//POINTER #420 @ $163EB8 - STRING #420 @ $12C054
+#W32($163EB8)
+あなたのレベル置場のカードのレベルの合計が3以上なら、[END]
+// current address: $12C08A
+
+//POINTER #421 @ $163EBC - STRING #421 @ $12C08C
+#W32($163EBC)
+クライマックス置場に「トライアセンド」があるなら、[END]
+// current address: $12C0BF
+
+//POINTER #422 @ $163EC0 - STRING #422 @ $12C0C0
+#W32($163EC0)
+クライマックス置場に「ヌイグルミとエルキュール」があるなら、[END]
+// current address: $12C0FD
+
+//POINTER #423 @ $163EC4 - STRING #423 @ $12C100
+#W32($163EC4)
+クライマックス置場に「メリーゴーランド」があるなら、[END]
+// current address: $12C135
+
+//POINTER #424 @ $163EC8 - STRING #424 @ $12C138
+#W32($163EC8)
+あなたのストックが3枚以下なら、[END]
+// current address: $12C158
+
+//POINTER #425 @ $163ECC - STRING #425 @ $12C158
+#W32($163ECC)
+他のあなたの「神津 玲」がいるなら、[END]
+// current address: $12C17C
+
+//POINTER #426 @ $163ED0 - STRING #426 @ $12C17C
+#W32($163ED0)
+他のあなたの《警察》のキャラが2枚以上なら、[END]
+// current address: $12C1A8
+
+//POINTER #427 @ $163ED4 - STRING #427 @ $12C1A8
+#W32($163ED4)
+このカードとバトル中のキャラのレベルがこのカードのレベル以下なら、[END]
+// current address: $12C1EB
+
+//POINTER #428 @ $163ED8 - STRING #428 @ $12C1EC
+#W32($163ED8)
+相手のターン中、あなたのレベル置場のカードのレベルの合計が1以上なら、[END]
+// current address: $12C232
+
+//POINTER #429 @ $163EDC - STRING #429 @ $12C234
+#W32($163EDC)
+クライマックス置場に「ハイパーセンシティブ」があるなら、[END]
+// current address: $12C26D
+
+//POINTER #430 @ $163EE0 - STRING #430 @ $12C270
+#W32($163EE0)
+クライマックス置場に「スターライトブレイカー」があるなら、[END]
+// current address: $12C2AB
+
+//POINTER #431 @ $163EE4 - STRING #431 @ $12C2AC
+#W32($163EE4)
+他のあなたの「衛宮 士郎」がいるなら、[END]
+// current address: $12C2D2
+
+//POINTER #432 @ $163EE8 - STRING #432 @ $12C2D4
+#W32($163EE8)
+このカードとバトルしているキャラのレベルがこのカードのレベル以下なら、[END]
+// current address: $12C31B
+
+//POINTER #433 @ $163EEC - STRING #433 @ $12C31C
+#W32($163EEC)
+他のあなたの《先生》のキャラがいるなら、[END]
+// current address: $12C345
+
+//POINTER #434 @ $163EF0 - STRING #434 @ $12C348
+#W32($163EF0)
+他のあなたの《武器》のキャラが2枚以上なら、[END]
+// current address: $12C374
+
+//POINTER #435 @ $163EF4 - STRING #435 @ $12C374
+#W32($163EF4)
+あなたの山札が5枚以下なら、[END]
+// current address: $12C390
+
+//POINTER #436 @ $163EF8 - STRING #436 @ $12C390
+#W32($163EF8)
+このカードのバトル中、このカードとバトルしているキャラがレベル2以上なら、[END]
+// current address: $12C3DA
+
+//POINTER #437 @ $163EFC - STRING #437 @ $12C3DC
+#W32($163EFC)
+このカードのバトル中、このカードとバトルしているキャラが《魔法》なら、[END]
+// current address: $12C423
+
+//POINTER #438 @ $163F00 - STRING #438 @ $12C424
+#W32($163F00)
+他のあなたのレベル2以上のキャラがいるなら、[END]
+// current address: $12C450
+
+//POINTER #439 @ $163F04 - STRING #439 @ $12C450
+#W32($163F04)
+クライマックス置場に「別れの言葉」があるなら、[END]
+// current address: $12C47F
+
+//POINTER #440 @ $163F08 - STRING #440 @ $12C480
+#W32($163F08)
+このカードとバトルしているキャラのレベルが1以下なら、[END]
+// current address: $12C4B6
+
+//POINTER #441 @ $163F0C - STRING #441 @ $12C4B8
+#W32($163F0C)
+クライマックス置場に「冬の森」があるなら、[END]
+// current address: $12C4E3
+
+//POINTER #442 @ $163F10 - STRING #442 @ $12C4E4
+#W32($163F10)
+このカードは、あなたの《本》のキャラが1枚以下なら、[END]
+// current address: $12C518
+
+//POINTER #443 @ $163F14 - STRING #443 @ $12C518
+#W32($163F14)
+クライマックス置場に「私のこと、あなたに教えておく」があるなら、[END]
+// current address: $12C559
+
+//POINTER #444 @ $163F18 - STRING #444 @ $12C55C
+#W32($163F18)
+あなたのターン中、あなたの思い出置場にカードがあるなら、[END]
+// current address: $12C595
+
+//POINTER #445 @ $163F1C - STRING #445 @ $12C598
+#W32($163F1C)
+クライマックス置場に「私はここにいる」があるなら、[END]
+// current address: $12C5CB
+
+//POINTER #446 @ $163F20 - STRING #446 @ $12C5CC
+#W32($163F20)
+あなたの前列の中央の枠に他の《SOS団》のキャラがいるなら、[END]
+// current address: $12C606
+
+//POINTER #447 @ $163F24 - STRING #447 @ $12C608
+#W32($163F24)
+あなたのストックが2枚以下なら、[END]
+// current address: $12C628
+
+//POINTER #448 @ $163F28 - STRING #448 @ $12C628
+#W32($163F28)
+あなたのクライマックス置場に「導く役目」があるなら、[END]
+// current address: $12C65D
+
+//POINTER #449 @ $163F2C - STRING #449 @ $12C660
+#W32($163F2C)
+そのカードのトリガーアイコンが[Goldbar]なら、[END]
+// current address: $12C687
+
+//POINTER #450 @ $163F30 - STRING #450 @ $12C688
+#W32($163F30)
+他のあなたの、《時間》か《SOS団》のキャラが3枚以上なら、[END]
+// current address: $12C6C1
+
+//POINTER #451 @ $163F34 - STRING #451 @ $12C6C4
+#W32($163F34)
+あなたの《宇宙人》のキャラが2枚以上なら、[END]
+// current address: $12C6EE
+
+//POINTER #452 @ $163F38 - STRING #452 @ $12C6F0
+#W32($163F38)
+あなたの《宇宙人》のキャラが4枚以上なら、[END]
+// current address: $12C71A
+
+//POINTER #453 @ $163F3C - STRING #453 @ $12C71C
+#W32($163F3C)
+クライマックス置場に「残り二週間の夜」があるなら、[END]
+// current address: $12C74F
+
+//POINTER #454 @ $163F40 - STRING #454 @ $12C750
+#W32($163F40)
+クライマックス置場に「こっそりとトイズ」があるなら、[END]
+// current address: $12C785
+
+//POINTER #455 @ $163F44 - STRING #455 @ $12C788
+#W32($163F44)
+あなたのレベル置場のカードのレベルの合計が6以上なら、[END]
+// current address: $12C7BE
+
+//POINTER #456 @ $163F48 - STRING #456 @ $12C7C0
+#W32($163F48)
+クライマックス置場に「シャーロックの膝枕」があるなら、[END]
+// current address: $12C7F7
+
+//POINTER #457 @ $163F4C - STRING #457 @ $12C7F8
+#W32($163F4C)
+他のあなたの《音楽》のキャラが3枚以上なら、[END]
+// current address: $12C824
+
+//POINTER #458 @ $163F50 - STRING #458 @ $12C824
+#W32($163F50)
+他のあなたの、《音楽》か《パイロット》のキャラが3枚以上なら、[END]
+// current address: $12C862
+
+//POINTER #459 @ $163F54 - STRING #459 @ $12C864
+#W32($163F54)
+あなたの手札が4枚以下なら、[END]
+// current address: $12C880
+
+//POINTER #460 @ $163F58 - STRING #460 @ $12C880
+#W32($163F58)
+クライマックス置場に「ユニバーサル・バニー」があるなら、[END]
+// current address: $12C8B9
+
+//POINTER #461 @ $163F5C - STRING #461 @ $12C8BC
+#W32($163F5C)
+相手の前列のキャラが2枚以下なら、[END]
+// current address: $12C8DE
+
+//POINTER #462 @ $163F60 - STRING #462 @ $12C8E0
+#W32($163F60)
+あなたのレベル置場のカードのレベルの合計が4以上なら、[END]
+// current address: $12C916
+
+//POINTER #463 @ $163F64 - STRING #463 @ $12C918
+#W32($163F64)
+そのキャラのパワーがバトル相手より2000以上高いなら、[END]
+// current address: $12C94D
+
+//POINTER #464 @ $163F68 - STRING #464 @ $12C950
+#W32($163F68)
+他のあなたの《バジュラ》のキャラが4枚以上なら、[END]
+// current address: $12C980
+
+//POINTER #465 @ $163F6C - STRING #465 @ $12C980
+#W32($163F6C)
+クライマックス置場に「奇跡の生還」があるなら、[END]
+// current address: $12C9AF
+
+//POINTER #466 @ $163F70 - STRING #466 @ $12C9B0
+#W32($163F70)
+クライマックス置場に「アルカトラズ慰問ライブ」があるなら、[END]
+// current address: $12C9EB
+
+//POINTER #467 @ $163F74 - STRING #467 @ $12C9EC
+#W32($163F74)
+あなたのキャラすべてが《音楽》なら、[END]
+// current address: $12CA11
+
+//POINTER #468 @ $163F78 - STRING #468 @ $12CA14
+#W32($163F78)
+あなたのキャラすべてが《探偵》なら、[END]
+// current address: $12CA39
+
+//POINTER #469 @ $163F7C - STRING #469 @ $12CA3C
+#W32($163F7C)
+このカードの正面のキャラが特徴を持たないなら、[END]
+// current address: $12CA6B
+
+//POINTER #470 @ $163F80 - STRING #470 @ $12CA6C
+#W32($163F80)
+他のあなたのカード名に「当麻」を含むキャラがいるなら、[END]
+// current address: $12CAA3
+
+//POINTER #471 @ $163F84 - STRING #471 @ $12CAA4
+#W32($163F84)
+他の《音楽》のあなたのキャラが2枚以上いるなら、[END]
+// current address: $12CAD4
+
+//POINTER #472 @ $163F88 - STRING #472 @ $12CAD4
+#W32($163F88)
+クライマックス置場に「テイルズ オブ ジ アビス」があるなら、[END]
+// current address: $12CB10
+
+//POINTER #473 @ $163F8C - STRING #473 @ $12CB10
+#W32($163F8C)
+他のあなたの《神機》のキャラが2枚以上なら、[END]
+// current address: $12CB3C
+
+//POINTER #474 @ $163F90 - STRING #474 @ $12CB3C
+#W32($163F90)
+このカードは、あなたの《神機》のキャラがいないなら、[END]
+// current address: $12CB71
+
+//POINTER #475 @ $163F94 - STRING #475 @ $12CB74
+#W32($163F94)
+クライマックス置場に「ミスタードリラー」があるなら、[END]
+// current address: $12CBA9
+
+//POINTER #476 @ $163F98 - STRING #476 @ $12CBAC
+#W32($163F98)
+そうしたら、このカードがいた枠に【レスト】して置く）[END]
+// current address: $12CBD9
+
+//POINTER #477 @ $163F9C - STRING #477 @ $12CBDC
+#W32($163F9C)
+あなたは1枚引き、自分の手札を1枚選び、控え室に置く。[END]
+// current address: $12CC11
+
+//POINTER #478 @ $163FA0 - STRING #478 @ $12CC14
+#W32($163FA0)
+あなたのキャラすべてに、そのターン中、パワーを＋500。[END]
+// current address: $12CC4A
+
+//POINTER #479 @ $163FA4 - STRING #479 @ $12CC4C
+#W32($163FA4)
+あなたは1枚引く。[END]
+// current address: $12CC5E
+
+//POINTER #480 @ $163FA8 - STRING #480 @ $12CC60
+#W32($163FA8)
+put the top card of your Library in Stock, and all your Characters gain +1 Soul for the turn. [END]
+// current address: $12CCC7
+
+//POINTER #481 @ $163FAC - STRING #481 @ $12CCC8
+#W32($163FAC)
+このカードの前のあなたのキャラすべてに、パワーを＋500。[END]
+// current address: $12CD00
+
+//POINTER #482 @ $163FB0 - STRING #482 @ $12CD00
+#W32($163FB0)
+あなたは自分のカード名に「Yagami」を含むキャラを1枚選び、そのターン中、パワーを＋500。[END]
+// current address: $12CD55
+
+//POINTER #483 @ $163FB4 - STRING #483 @ $12CD58
+#W32($163FB4)
+そうしたら、あなたは自分の控え室の、「ソニックフォーム フェイト」か「“八神家”シグナム」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $12CDD7
+
+//POINTER #484 @ $163FB8 - STRING #484 @ $12CDD8
+#W32($163FB8)
+他のあなたのカード名に「フェイト」を含むキャラすべてに、次の能力を与える。『[Cont] このカードは相手の効果に選ばれない。』[END]
+// current address: $12CE4E
+
+//POINTER #485 @ $163FBC - STRING #485 @ $12CE50
+#W32($163FBC)
+他のあなたのキャラすべてに、パワーを＋1000。[END]
+// current address: $12CE7D
+
+//POINTER #486 @ $163FC0 - STRING #486 @ $12CE80
+#W32($163FC0)
+このカードは相手の効果に選ばれない。[END]
+// current address: $12CEA5
+
+//POINTER #487 @ $163FC4 - STRING #487 @ $12CEA8
+#W32($163FC4)
+このカードの正面のキャラのソウルを＋1。[END]
+// current address: $12CED0
+
+//POINTER #488 @ $163FC8 - STRING #488 @ $12CED0
+#W32($163FC8)
+All your Characters gain +1000 Power and +1 Soul. [END]
+// current address: $12CF08
+
+//POINTER #489 @ $163FCC - STRING #489 @ $12CF08
+#W32($163FCC)
+（[Wind]：このカードがトリガーした時、あなたは相手のキャラを1枚選び、手札に戻してよい）[END]
+// current address: $12CF5C
+
+//POINTER #490 @ $163FD0 - STRING #490 @ $12CF5C
+#W32($163FD0)
+そうしたら、あなたは自分の控え室の「“八神家”はやて」を1枚選び、手札に戻す）[END]
+// current address: $12CFAA
+
+//POINTER #491 @ $163FD4 - STRING #491 @ $12CFAC
+#W32($163FD4)
+そうしたら、あなたは自分の山札を見て《使い魔》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $12D026
+
+//POINTER #492 @ $163FD8 - STRING #492 @ $12D028
+#W32($163FD8)
+他のあなたの《魔法》のキャラすべてに、パワーを＋500。[END]
+// current address: $12D05E
+
+//POINTER #493 @ $163FDC - STRING #493 @ $12D060
+#W32($163FDC)
+（あなたは自分のフロントアタックされているキャラを1枚選び、そのターン中、パワーを＋3000）[END]
+// current address: $12D0BA
+
+//POINTER #494 @ $163FE0 - STRING #494 @ $12D0BC
+#W32($163FE0)
+手札からプレイできない。[END]
+// current address: $12D0D5
+
+//POINTER #495 @ $163FE4 - STRING #495 @ $12D0D8
+#W32($163FE4)
+あなたは相手のレベル3以下のキャラを1枚選ぶ。そのキャラは次の相手のスタンドフェイズに【スタンド】しない。[END]
+// current address: $12D137
+
+//POINTER #496 @ $163FE8 - STRING #496 @ $12D138
+#W32($163FE8)
+draw a card and choose 1 of your Characters, it gains +2000 Power and +1 Soul for the turn. [END]
+// current address: $12D18E
+
+//POINTER #497 @ $163FEC - STRING #497 @ $12D190
+#W32($163FEC)
+このカードの前のあなたの、《クローン》か《動物》のキャラすべてに、パワーを＋Ｘ。Ｘはそのキャラのレベル×500に等しい。[END]
+// current address: $12D206
+
+//POINTER #498 @ $163FF0 - STRING #498 @ $12D208
+#W32($163FF0)
+あなたは自分の手札の「“雷光”フェイト」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $12D256
+
+//POINTER #499 @ $163FF4 - STRING #499 @ $12D258
+#W32($163FF4)
+あなたのキャラすべてに、そのターン中、ソウルを＋1。[END]
+// current address: $12D28C
+
+//POINTER #500 @ $163FF8 - STRING #500 @ $12D28C
+#W32($163FF8)
+あなたは相手の控え室のカードを2枚まで選び、山札に戻す。その後、その山札をシャッフルし、そのターン中、このカードのパワーを＋3000。[END]
+// current address: $12D30E
+
+//POINTER #501 @ $163FFC - STRING #501 @ $12D310
+#W32($163FFC)
+あなたは自分の《武器》のキャラを1枚選び、そのターン中、パワーを＋1500。[END]
+// current address: $12D358
+
+//POINTER #502 @ $164000 - STRING #502 @ $12D358
+#W32($164000)
+そうしたら、あなたは自分の手札の「戯れるフェイト＆アルフ」を1枚選び、このカードがいた枠に防御キャラとして置く。[END]
+// current address: $12D3C8
+
+//POINTER #503 @ $164004 - STRING #503 @ $12D3C8
+#W32($164004)
+そうしたら、そのターン中、このカードのパワーを＋3500。[END]
+// current address: $12D3FF
+
+//POINTER #504 @ $164008 - STRING #504 @ $12D400
+#W32($164008)
+そのターン中、このカードのパワーを＋3000し、相手は『[Auto] アンコール』を使えない。（ルールによる『[Auto] アンコール ［(3)］』も使えない）[END]
+// current address: $12D482
+
+//POINTER #505 @ $16400C - STRING #505 @ $12D484
+#W32($16400C)
+そうしたら、そのターン中、このカードのパワーを＋4500。[END]
+// current address: $12D4BB
+
+//POINTER #506 @ $164010 - STRING #506 @ $12D4BC
+#W32($164010)
+あなたは相手のキャラを1枚選び、手札に戻してよい。[END]
+// current address: $12D4EE
+
+//POINTER #507 @ $164014 - STRING #507 @ $12D4F0
+#W32($164014)
+そうしたら、あなたは自分の控え室の「祝福するなのは」を1枚選び、手札に戻す）[END]
+// current address: $12D53C
+
+//POINTER #508 @ $164018 - STRING #508 @ $12D53C
+#W32($164018)
+あなたはすべてのプレイヤーの山札の上から3枚を、控え室に置く。[END]
+// current address: $12D57A
+
+//POINTER #509 @ $16401C - STRING #509 @ $12D57C
+#W32($16401C)
+（あなたは自分のフロントアタックされているキャラを1枚選び、そのターン中、パワーを＋1500）[END]
+// current address: $12D5D6
+
+//POINTER #510 @ $164020 - STRING #510 @ $12D5D8
+#W32($164020)
+このカードのパワーを＋1000し、ソウルを＋1。[END]
+// current address: $12D604
+
+//POINTER #511 @ $164024 - STRING #511 @ $12D604
+#W32($164024)
+そうしたら、あなたは相手の控え室のカードを1枚選び、山札に戻す。その山札をシャッフルする。[END]
+// current address: $12D65E
+
+//POINTER #512 @ $164028 - STRING #512 @ $12D660
+#W32($164028)
+相手の【スタンド】しているキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $12D69D
+
+//POINTER #513 @ $16402C - STRING #513 @ $12D6A0
+#W32($16402C)
+あなたは自分のカード名に「なのは」を含むキャラを1枚選び、そのターン中、パワーを＋1500。[END]
+// current address: $12D6F8
+
+//POINTER #514 @ $164030 - STRING #514 @ $12D6F8
+#W32($164030)
+あなたは自分のカード名に「フェイト」を含むキャラを1枚選び、そのターン中、パワーを＋1500。[END]
+// current address: $12D752
+
+//POINTER #515 @ $164034 - STRING #515 @ $12D754
+#W32($164034)
+このカードを思い出にする。[END]
+// current address: $12D76F
+
+//POINTER #516 @ $164038 - STRING #516 @ $12D770
+#W32($164038)
+あなたの、「“強敵”シグナム」と「“八神家”シグナム」すべてに、パワーを＋1000。[END]
+// current address: $12D7C1
+
+//POINTER #517 @ $16403C - STRING #517 @ $12D7C4
+#W32($16403C)
+あなたは自分の山札を見て《クローン》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $12D834
+
+//POINTER #518 @ $164040 - STRING #518 @ $12D834
+#W32($164040)
+（[Burn]：このターン中、このカードをトリガーした攻撃キャラが次に与えるダメージがキャンセルされた時、相手に1ダメージを与える）[END]
+// current address: $12D8AE
+
+//POINTER #519 @ $164044 - STRING #519 @ $12D8B0
+#W32($164044)
+他のあなたのキャラすべてに、パワーを＋500。[END]
+// current address: $12D8DC
+
+//POINTER #520 @ $164048 - STRING #520 @ $12D8DC
+#W32($164048)
+そうしたら、あなたはそのキャラをクロック置場に置く。[END]
+// current address: $12D911
+
+//POINTER #521 @ $16404C - STRING #521 @ $12D914
+#W32($16404C)
+このカードのパワーを＋2000。[END]
+// current address: $12D931
+
+//POINTER #522 @ $164050 - STRING #522 @ $12D934
+#W32($164050)
+そうしたら、あなたは自分の山札を見て《本》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $12D9AA
+
+//POINTER #523 @ $164054 - STRING #523 @ $12D9AC
+#W32($164054)
+そのターン中、このカードのパワーを＋5000。[END]
+// current address: $12D9D7
+
+//POINTER #524 @ $164058 - STRING #524 @ $12D9D8
+#W32($164058)
+他のあなたの「“友達”アリサ」すべてに、パワーを＋1000。[END]
+// current address: $12DA11
+
+//POINTER #525 @ $16405C - STRING #525 @ $12DA14
+#W32($16405C)
+そうしたら、あなたは自分の控え室の「“友達”アリサ」を1枚選び、手札に戻す）[END]
+// current address: $12DA60
+
+//POINTER #526 @ $164060 - STRING #526 @ $12DA60
+#W32($164060)
+そのターン中、このカードのパワーを＋1000。[END]
+// current address: $12DA8B
+
+//POINTER #527 @ $164064 - STRING #527 @ $12DA8C
+#W32($164064)
+このカードのレベルを＋1し、パワーを＋1500。[END]
+// current address: $12DAB8
+
+//POINTER #528 @ $164068 - STRING #528 @ $12DAB8
+#W32($164068)
+他のあなたの《動物》のキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $12DAFB
+
+//POINTER #529 @ $16406C - STRING #529 @ $12DAFC
+#W32($16406C)
+あなたは自分のカード名に「なのは」か「フェイト」を含むキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $12DB62
+
+//POINTER #530 @ $164070 - STRING #530 @ $12DB64
+#W32($164070)
+このカードの前のあなたのキャラすべてに、パワーを＋1000。[END]
+// current address: $12DB9D
+
+//POINTER #531 @ $164074 - STRING #531 @ $12DBA0
+#W32($164074)
+あなたは自分の山札の上から1枚を、ストック置場に置いてよい。[END]
+// current address: $12DBDC
+
+//POINTER #532 @ $164078 - STRING #532 @ $12DBDC
+#W32($164078)
+あなたは相手のキャラを1枚選び、そのターン中、パワーを－2000。[END]
+// current address: $12DC1A
+
+//POINTER #533 @ $16407C - STRING #533 @ $12DC1C
+#W32($16407C)
+あなたは相手のストックすべてを、控え室に置き、相手は自分の山札の上から同じ枚数をストック置場に置く。[END]
+// current address: $12DC81
+
+//POINTER #534 @ $164080 - STRING #534 @ $12DC84
+#W32($164080)
+そうしたら、あなたは自分の山札を見て「未来を変える力 クロノ」を1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $12DD05
+
+//POINTER #535 @ $164084 - STRING #535 @ $12DD08
+#W32($164084)
+そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの《動物》のキャラの枚数×500に等しい。[END]
+// current address: $12DD62
+
+//POINTER #536 @ $164088 - STRING #536 @ $12DD64
+#W32($164088)
+あなたは自分の山札の上から1枚を公開する。そのカードが《武器》のキャラなら、あなたはこのカードを思い出にしてよい。（公開したカードは元に戻す）[END]
+// current address: $12DDF2
+
+//POINTER #537 @ $16408C - STRING #537 @ $12DDF4
+#W32($16408C)
+そうしたら、あなたは自分の控え室の「仲良し四人組」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $12DE4C
+
+//POINTER #538 @ $164090 - STRING #538 @ $12DE4C
+#W32($164090)
+あなたは自分のクロック置場の《動物》のキャラを1枚選び、手札に戻す。このカードをクロック置場に置く。[END]
+// current address: $12DEB0
+
+//POINTER #539 @ $164094 - STRING #539 @ $12DEB0
+#W32($164094)
+あなたは相手のキャラを1枚選び、そのターン中、パワーを－2000。このカードを思い出にする。[END]
+// current address: $12DF08
+
+//POINTER #540 @ $164098 - STRING #540 @ $12DF08
+#W32($164098)
+あなたは自分のキャラを2枚まで選び、そのターン中、パワーを＋2000。このカードを思い出にする。[END]
+// current address: $12DF64
+
+//POINTER #541 @ $16409C - STRING #541 @ $12DF64
+#W32($16409C)
+（[Goldbag]：このカードがトリガーした時、あなたは自分の山札の上から1枚を、ストック置場に置いてよい）[END]
+// current address: $12DFC2
+
+//POINTER #542 @ $1640A0 - STRING #542 @ $12DFC4
+#W32($1640A0)
+（[Goldbar]：このカードがトリガーした時、あなたはこのカードを手札に戻す。あなたは自分の山札の上から1枚を、ストック置場に置いてよい）[END]
+// current address: $12E042
+
+//POINTER #543 @ $1640A4 - STRING #543 @ $12E044
+#W32($1640A4)
+そのターン中、このカードは次の能力を得る。『[Auto] このカードが[Card_down]した時、このカードのバトル相手のレベルがこのカードのレベル以下なら、あなたはそのキャラを[Card_down]してよい。』[END]
+// current address: $12E0E8
+
+//POINTER #544 @ $1640A8 - STRING #544 @ $12E0E8
+#W32($1640A8)
+そうしたら、あなたは相手のキャラを1枚選び、そのターン中、レベルを－1。[END]
+// current address: $12E12F
+
+//POINTER #545 @ $1640AC - STRING #545 @ $12E130
+#W32($1640AC)
+あなたはそのキャラを[Card_down]してよい。[END]
+// current address: $12E151
+
+//POINTER #546 @ $1640B0 - STRING #546 @ $12E154
+#W32($1640B0)
+あなたは自分のクロックの上から1枚を、控え室に置いてよい。[END]
+// current address: $12E18E
+
+//POINTER #547 @ $1640B4 - STRING #547 @ $12E190
+#W32($1640B4)
+そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）[END]
+// current address: $12E1D6
+
+//POINTER #548 @ $1640B8 - STRING #548 @ $12E1D8
+#W32($1640B8)
+あなたのカード名に「フェイト」を含むキャラすべてに、そのターン中、パワーを＋500。[END]
+// current address: $12E22A
+
+//POINTER #549 @ $1640BC - STRING #549 @ $12E22C
+#W32($1640BC)
+そうしたら、あなたは自分の控え室の「“雷光”フェイト」を1枚選び、手札に戻す）[END]
+// current address: $12E27A
+
+//POINTER #550 @ $1640C0 - STRING #550 @ $12E27C
+#W32($1640C0)
+あなたは自分の山札の上から1枚を、このカードの下にマーカーとして置く。[END]
+// current address: $12E2C2
+
+//POINTER #551 @ $1640C4 - STRING #551 @ $12E2C4
+#W32($1640C4)
+そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）[END]
+// current address: $12E30A
+
+//POINTER #552 @ $1640C8 - STRING #552 @ $12E30C
+#W32($1640C8)
+そうしたら、あなたは自分の控え室の「“揺るぎ無い意志”なのは」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $12E370
+
+//POINTER #553 @ $1640CC - STRING #553 @ $12E370
+#W32($1640CC)
+そのターン中、このカードのパワーを＋1500。[END]
+// current address: $12E39B
+
+//POINTER #554 @ $1640D0 - STRING #554 @ $12E39C
+#W32($1640D0)
+このカードのパワーを＋1000。[END]
+// current address: $12E3B9
+
+//POINTER #555 @ $1640D4 - STRING #555 @ $12E3BC
+#W32($1640D4)
+このカードは次の能力を得る。『[Auto] 他のあなたのバトル中のキャラが[Card_down]した時、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋1000。』[END]
+// current address: $12E445
+
+//POINTER #556 @ $1640D8 - STRING #556 @ $12E448
+#W32($1640D8)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $12E486
+
+//POINTER #557 @ $1640DC - STRING #557 @ $12E488
+#W32($1640DC)
+他のあなたのカード名に「なのは」を含むキャラすべてに、パワーを＋1000。[END]
+// current address: $12E4CF
+
+//POINTER #558 @ $1640E0 - STRING #558 @ $12E4D0
+#W32($1640E0)
+そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）[END]
+// current address: $12E516
+
+//POINTER #559 @ $1640E4 - STRING #559 @ $12E518
+#W32($1640E4)
+このカードは次の能力を得る。『[Auto] 他のあなたのバトル中のキャラが[Card_down]した時、そのターン中、このカードのパワーを＋2000。』[END]
+// current address: $12E58E
+
+//POINTER #560 @ $1640E8 - STRING #560 @ $12E590
+#W32($1640E8)
+そのターン中、このカードのパワーを＋2000。[END]
+// current address: $12E5BB
+
+//POINTER #561 @ $1640EC - STRING #561 @ $12E5BC
+#W32($1640EC)
+このカードはサイドアタックできない。[END]
+// current address: $12E5E1
+
+//POINTER #562 @ $1640F0 - STRING #562 @ $12E5E4
+#W32($1640F0)
+そうしたら、あなたは自分の控え室の《魔法》のキャラを1枚選び、手札に戻す。[END]
+// current address: $12E62E
+
+//POINTER #563 @ $1640F4 - STRING #563 @ $12E630
+#W32($1640F4)
+そうしたら、あなたは相手の控え室のカードを1枚選び、山札の上に置く。[END]
+// current address: $12E674
+
+//POINTER #564 @ $1640F8 - STRING #564 @ $12E674
+#W32($1640F8)
+そうしたら、あなたはこのカードの正面のレベル2以下のキャラを1枚選び、山札の上に置く。[END]
+// current address: $12E6C9
+
+//POINTER #565 @ $1640FC - STRING #565 @ $12E6CC
+#W32($1640FC)
+相手に1ダメージを与える。あなたは自分のキャラを1枚選び、そのターン中、パワーを＋3000。（ダメージキャンセルは発生する）[END]
+// current address: $12E743
+
+//POINTER #566 @ $164100 - STRING #566 @ $12E744
+#W32($164100)
+あなたは自分の控え室のカード名に「ヴィータ」を含むキャラを2枚まで選び、手札に戻し、自分の手札を1枚選び、控え室に置く。[END]
+// current address: $12E7BB
+
+//POINTER #567 @ $164104 - STRING #567 @ $12E7BC
+#W32($164104)
+あなたは相手のコスト1以下のキャラを1枚選び、山札の上に置く。このカードを思い出にする。[END]
+// current address: $12E813
+
+//POINTER #568 @ $164108 - STRING #568 @ $12E814
+#W32($164108)
+（[Gate]：このカードがトリガーした時、あなたは自分の控え室のキャラを1枚選び、手札に戻してよい）[END]
+// current address: $12E870
+
+//POINTER #569 @ $16410C - STRING #569 @ $12E870
+#W32($16410C)
+ All your Characters gain +2 Soul.[END]
+// current address: $12E896
+
+//POINTER #570 @ $164110 - STRING #570 @ $12E898
+#W32($164110)
+そうしたら、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの控え室のクライマックスの枚数×1000に等しい。[END]
+// current address: $12E905
+
+//POINTER #571 @ $164114 - STRING #571 @ $12E908
+#W32($164114)
+このカードは『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を得る。[END]
+// current address: $12E950
+
+//POINTER #572 @ $164118 - STRING #572 @ $12E950
+#W32($164118)
+そうしたら、あなたは自分の手札の「“八神家”はやて」を1枚選び、このカードがいた枠に防御キャラとして置く。[END]
+// current address: $12E9BA
+
+//POINTER #573 @ $16411C - STRING #573 @ $12E9BC
+#W32($16411C)
+あなたは他の自分の《魔法》のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $12EA08
+
+//POINTER #574 @ $164120 - STRING #574 @ $12EA08
+#W32($164120)
+他のあなたのカード名に「シグナム」を含むキャラすべてに、パワーを＋500。[END]
+// current address: $12EA50
+
+//POINTER #575 @ $164124 - STRING #575 @ $12EA50
+#W32($164124)
+あなたは自分の山札の上から3枚を、控え室に置く。それらのカードすべてが《魔法》のキャラなら、あなたは自分のクロックの上から1枚を、控え室に置く。[END]
+// current address: $12EADF
+
+//POINTER #576 @ $164128 - STRING #576 @ $12EAE0
+#W32($164128)
+あなたは自分のカード名に「ヴィータ」を含むキャラを1枚選び、そのターン中、ソウルを＋1。[END]
+// current address: $12EB37
+
+//POINTER #577 @ $16412C - STRING #577 @ $12EB38
+#W32($16412C)
+そうしたら、あなたは自分の山札を見て《魔法》か《使い魔》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $12EBBC
+
+//POINTER #578 @ $164130 - STRING #578 @ $12EBBC
+#W32($164130)
+そうしたら、あなたは自分の山札を見て「マスター はやて」を1枚まで選び、このカードがいた枠に置く。その山札をシャッフルする。[END]
+// current address: $12EC37
+
+//POINTER #579 @ $164134 - STRING #579 @ $12EC38
+#W32($164134)
+あなたは相手の山札を上から2枚まで見てカードを2枚まで選び、控え室に置く。残りのカードを山札に戻す。その山札をシャッフルする。[END]
+// current address: $12ECB5
+
+//POINTER #580 @ $164138 - STRING #580 @ $12ECB8
+#W32($164138)
+他のあなたのキャラすべてに、レベルを＋1。[END]
+// current address: $12ECE2
+
+//POINTER #581 @ $16413C - STRING #581 @ $12ECE4
+#W32($16413C)
+あなたは自分の山札を見てカード名に「はやて」を含むキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $12ED60
+
+//POINTER #582 @ $164140 - STRING #582 @ $12ED60
+#W32($164140)
+他のあなたの前列の中央の枠のキャラに、パワーを＋1000。[END]
+// current address: $12ED97
+
+//POINTER #583 @ $164144 - STRING #583 @ $12ED98
+#W32($164144)
+このカードの前のあなたのレベル2以上のキャラすべてに、パワーを＋1000。[END]
+// current address: $12EDDE
+
+//POINTER #584 @ $164148 - STRING #584 @ $12EDE0
+#W32($164148)
+そうしたら、あなたは自分の山札を見てカード名に「八神」を含むキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $12EE66
+
+//POINTER #585 @ $16414C - STRING #585 @ $12EE68
+#W32($16414C)
+他のあなたの《本》のキャラすべてに、パワーを＋1000。[END]
+// current address: $12EE9D
+
+//POINTER #586 @ $164150 - STRING #586 @ $12EEA0
+#W32($164150)
+そうしたら、あなたは自分のクロック置場の《本》のキャラを1枚選び、手札に戻す。[END]
+// current address: $12EEEE
+
+//POINTER #587 @ $164154 - STRING #587 @ $12EEF0
+#W32($164154)
+そうしたら、あなたは自分の控え室の「仮面の戦士」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $12EF46
+
+//POINTER #588 @ $164158 - STRING #588 @ $12EF48
+#W32($164158)
+あなたは相手の山札を上から6枚まで見てカードを6枚まで選び、控え室に置く。残りのカードを山札に戻す。その山札をシャッフルする。[END]
+// current address: $12EFC5
+
+//POINTER #589 @ $16415C - STRING #589 @ $12EFC8
+#W32($16415C)
+あなたのカード名に「はやて」を含むキャラすべてに、パワーを＋500。[END]
+// current address: $12F00A
+
+//POINTER #590 @ $164160 - STRING #590 @ $12F00C
+#W32($164160)
+（[Book]：このカードがトリガーした時、あなたは1枚引いてよい）[END]
+// current address: $12F046
+
+//POINTER #591 @ $164164 - STRING #591 @ $12F048
+#W32($164164)
+そうしたら、あなたは自分の控え室の「一生懸命な雪歩」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $12F0A2
+
+//POINTER #592 @ $164168 - STRING #592 @ $12F0A4
+#W32($164168)
+あなたは自分のキャラを2枚まで選び、そのターン中、パワーを＋1000し、《お茶》を与える。[END]
+// current address: $12F0FA
+
+//POINTER #593 @ $16416C - STRING #593 @ $12F0FC
+#W32($16416C)
+そうしたら、あなたは自分の控え室の「双海 真美」を1枚選び、このカードがいた枠に置く。（クライマックスフェイズの始めにこのカードがいないなら発動しない）[END]
+// current address: $12F193
+
+//POINTER #594 @ $164170 - STRING #594 @ $12F194
+#W32($164170)
+そのターン中、このカードのソウルを＋1。[END]
+// current address: $12F1BC
+
+//POINTER #595 @ $164174 - STRING #595 @ $12F1BC
+#W32($164174)
+そうしたら、あなたは自分の控え室の「双海 亜美」を1枚選び、このカードがいた枠に置く。（クライマックスフェイズの始めにこのカードがいないなら発動しない）[END]
+// current address: $12F253
+
+//POINTER #596 @ $164178 - STRING #596 @ $12F254
+#W32($164178)
+そうしたら、あなたは自分の控え室の「じゃじゃ馬お嬢様 伊織」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $12F2B5
+
+//POINTER #597 @ $16417C - STRING #597 @ $12F2B8
+#W32($16417C)
+このカードの前のあなたの《音楽》のキャラすべてに、パワーを＋1000。[END]
+// current address: $12F2FB
+
+//POINTER #598 @ $164180 - STRING #598 @ $12F2FC
+#W32($164180)
+そうしたら、あなたは自分の控え室の「誘い上手な美希」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $12F356
+
+//POINTER #599 @ $164184 - STRING #599 @ $12F358
+#W32($164184)
+そうしたら、あなたは自分の控え室の「お姫様 貴音」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $12F3AF
+
+//POINTER #600 @ $164188 - STRING #600 @ $12F3B0
+#W32($164188)
+あなたは自分の山札を上から1枚見て、山札の上か控え室に置く。[END]
+// current address: $12F3EC
+
+//POINTER #601 @ $16418C - STRING #601 @ $12F3EC
+#W32($16418C)
+あなたは自分の控え室のキャラを1枚選び、手札に戻す。[END]
+// current address: $12F420
+
+//POINTER #602 @ $164190 - STRING #602 @ $12F420
+#W32($164190)
+そのターン中、このカードは次の能力を得る。『[Auto] このカードとバトル中のキャラが[Card_down]した時、あなたはそのキャラを山札の上に置いてよい。』[END]
+// current address: $12F4A4
+
+//POINTER #603 @ $164194 - STRING #603 @ $12F4A4
+#W32($164194)
+あなたはそのキャラを山札の上に置いてよい。[END]
+// current address: $12F4CF
+
+//POINTER #604 @ $164198 - STRING #604 @ $12F4D0
+#W32($164198)
+あなたは自分の山札の上から1枚を公開する。そのカードがクライマックスなら、このカードを【レスト】する。（公開したカードは元に戻す）[END]
+// current address: $12F54A
+
+//POINTER #605 @ $16419C - STRING #605 @ $12F54C
+#W32($16419C)
+そうしたら、あなたは自分の控え室の「オールマイティ律子」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $12F5AA
+
+//POINTER #606 @ $1641A0 - STRING #606 @ $12F5AC
+#W32($1641A0)
+（あなたは自分のフロントアタックされているキャラを1枚選び、そのターン中、パワーを＋2000）[END]
+// current address: $12F606
+
+//POINTER #607 @ $1641A4 - STRING #607 @ $12F608
+#W32($1641A4)
+そうしたら、あなたは自分の控え室の「マイペースあずさ」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $12F664
+
+//POINTER #608 @ $1641A8 - STRING #608 @ $12F664
+#W32($1641A8)
+他のあなたの「ハイタッチやよい」すべてに、パワーを＋1000。[END]
+// current address: $12F69F
+
+//POINTER #609 @ $1641AC - STRING #609 @ $12F6A0
+#W32($1641AC)
+あなたは自分の山札を上から3枚まで見て、山札の上に好きな順番で置く。[END]
+// current address: $12F6E4
+
+//POINTER #610 @ $1641B0 - STRING #610 @ $12F6E4
+#W32($1641B0)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋1000し、ソウルを＋1。[END]
+// current address: $12F731
+
+//POINTER #611 @ $1641B4 - STRING #611 @ $12F734
+#W32($1641B4)
+そうしたら、あなたは自分の山札を見て《音楽》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $12F7AC
+
+//POINTER #612 @ $1641B8 - STRING #612 @ $12F7AC
+#W32($1641B8)
+そうしたら、そのターン中、このカードのパワーを＋6000。[END]
+// current address: $12F7E3
+
+//POINTER #613 @ $1641BC - STRING #613 @ $12F7E4
+#W32($1641BC)
+あなたの《双子》のキャラすべてに、そのターン中、パワーを＋1000し、ソウルを＋1。[END]
+// current address: $12F834
+
+//POINTER #614 @ $1641C0 - STRING #614 @ $12F834
+#W32($1641C0)
+あなたは自分の控え室の「双海 亜美」を1枚までと「双海 真美」を1枚まで選び、舞台の別々の枠に置く。そのターン中、それらのキャラのパワーを＋3000し、ソウルを＋1。[END]
+// current address: $12F8D2
+
+//POINTER #615 @ $1641C4 - STRING #615 @ $12F8D4
+#W32($1641C4)
+あなたの《音楽》のキャラすべてに、次の能力を与える。『[Act]［(1)］ そのターン中、このカードのソウルを＋1。』[END]
+// current address: $12F93D
+
+//POINTER #616 @ $1641C8 - STRING #616 @ $12F940
+#W32($1641C8)
+あなたは自分の《音楽》のキャラを1枚選び、そのターン中、レベルを＋1し、パワーを＋1000。[END]
+// current address: $12F997
+
+//POINTER #617 @ $1641CC - STRING #617 @ $12F998
+#W32($1641CC)
+このカードはアタックできない。[END]
+// current address: $12F9B7
+
+//POINTER #618 @ $1641D0 - STRING #618 @ $12F9B8
+#W32($1641D0)
+あなたは自分のバトルしているキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $12FA04
+
+//POINTER #619 @ $1641D4 - STRING #619 @ $12FA04
+#W32($1641D4)
+（あなたはフロントアタックされている自分のキャラを1枚選び、そのターン中、パワーを＋1500）[END]
+// current address: $12FA5E
+
+//POINTER #620 @ $1641D8 - STRING #620 @ $12FA60
+#W32($1641D8)
+このカードのパワーを＋1500。[END]
+// current address: $12FA7D
+
+//POINTER #621 @ $1641DC - STRING #621 @ $12FA80
+#W32($1641DC)
+あなたは自分の手札をランダムに1枚選んで公開し、自分のキャラをＸ枚まで選び、そのターン中、パワーを＋1000し、ソウルを＋2。Ｘは公開されたカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う）[END]
+// current address: $12FB49
+
+//POINTER #622 @ $1641E0 - STRING #622 @ $12FB4C
+#W32($1641E0)
+あなたは自分の山札を見て《音楽》のキャラを2枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。あなたは自分の手札を1枚選び、控え室に置く。このカードを思い出にする。[END]
+// current address: $12FBFD
+
+//POINTER #623 @ $1641E4 - STRING #623 @ $12FC00
+#W32($1641E4)
+あなたは1枚引き、自分のキャラを1枚選び、そのターン中、ソウルを＋3。[END]
+// current address: $12FC44
+
+//POINTER #624 @ $1641E8 - STRING #624 @ $12FC44
+#W32($1641E8)
+あなたの山札を公開し、相手はあなたの山札を見てレベル2以上のキャラを1枚選び、あなたの手札に加える。その山札をシャッフルする。[END]
+// current address: $12FCC1
+
+//POINTER #625 @ $1641EC - STRING #625 @ $12FCC4
+#W32($1641EC)
+そうしたら、あなたのキャラすべてに、そのターン中、パワーを＋3000。[END]
+// current address: $12FD07
+
+//POINTER #626 @ $1641F0 - STRING #626 @ $12FD08
+#W32($1641F0)
+そのターン中、このカードのパワーを＋3000。[END]
+// current address: $12FD33
+
+//POINTER #627 @ $1641F4 - STRING #627 @ $12FD34
+#W32($1641F4)
+あなたは自分のクロック置場のレベル2以下のキャラを1枚選び、舞台の好きな枠に置いてよい。そうしたら、あなたは自分の山札の上から2枚を、クロック置場に置く。[END]
+// current address: $12FDCC
+
+//POINTER #628 @ $1641F8 - STRING #628 @ $12FDCC
+#W32($1641F8)
+あなたの思い出置場の「寄り道」を1枚選び、ストック置場に置く。[END]
+// current address: $12FE0A
+
+//POINTER #629 @ $1641FC - STRING #629 @ $12FE0C
+#W32($1641FC)
+あなたは自分のクロック置場の、「衣装変更」か「寄り道」か「プレゼント」か「ある日の風景」を1枚選び、手札に戻してよい。そうしたら、あなたは自分の手札を1枚選び、クロック置場に置く。[END]
+// current address: $12FEBF
+
+//POINTER #630 @ $164200 - STRING #630 @ $12FEC0
+#W32($164200)
+そうしたら、あなたは自分の控え室の「動物大好き響」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $12FF18
+
+//POINTER #631 @ $164204 - STRING #631 @ $12FF18
+#W32($164204)
+あなたの手札のこのカードのレベルを－1。[END]
+// current address: $12FF40
+
+//POINTER #632 @ $164208 - STRING #632 @ $12FF40
+#W32($164208)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋1500。[END]
+// current address: $12FF7E
+
+//POINTER #633 @ $16420C - STRING #633 @ $12FF80
+#W32($16420C)
+あなたは相手のストックの上から1枚を、控え室に置いてよい。そうしたら、あなたは相手の控え室のカードを1枚選び、ストック置場に置く。[END]
+// current address: $130001
+
+//POINTER #634 @ $164210 - STRING #634 @ $130004
+#W32($164210)
+あなたのキャラすべてに、次の能力を与える。『[Act]［あなたの《音楽》のキャラを1枚【レスト】する］ そのターン中、このカードのパワーを＋1500。』[END]
+// current address: $130087
+
+//POINTER #635 @ $164214 - STRING #635 @ $130088
+#W32($164214)
+あなたの《動物》のキャラすべてに、そのターン中、《愛》を与える。[END]
+// current address: $1300C9
+
+//POINTER #636 @ $164218 - STRING #636 @ $1300CC
+#W32($164218)
+あなたは自分の手札をランダムに1枚選んで公開し、あなたのキャラすべてに、そのターン中パワーを＋Ｘ。Ｘは公開されたカードのレベル×1500に等しい。（クライマックスのレベルは0として扱う）[END]
+// current address: $130181
+
+//POINTER #637 @ $16421C - STRING #637 @ $130184
+#W32($16421C)
+相手のストックすべてを、控え室に置き、相手は自分の山札の上から同じ枚数をストック置場に置く。[END]
+// current address: $1301E1
+
+//POINTER #638 @ $164220 - STRING #638 @ $1301E4
+#W32($164220)
+そうしたら、あなたは自分の控え室の《音楽》のキャラを1枚選び、手札に戻し、相手の【スタンド】しているキャラすべてを、【レスト】する。[END]
+// current address: $130256
+
+//POINTER #639 @ $164224 - STRING #639 @ $130258
+#W32($164224)
+あなたは自分の控え室の「パワー全開やよい」を1枚まで選び、手札に戻し、そのターン中、このカードのパワーを＋3000。[END]
+// current address: $1302C8
+
+//POINTER #640 @ $164228 - STRING #640 @ $1302C8
+#W32($164228)
+そうしたら、あなたは自分の控え室の《音楽》のキャラを1枚選び、手札に戻す。[END]
+// current address: $130312
+
+//POINTER #641 @ $16422C - STRING #641 @ $130314
+#W32($16422C)
+そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）[END]
+// current address: $13035A
+
+//POINTER #642 @ $164230 - STRING #642 @ $13035C
+#W32($164230)
+そうしたら、あなたは自分の控え室の「200％元気！やよい」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $1303B9
+
+//POINTER #643 @ $164234 - STRING #643 @ $1303BC
+#W32($164234)
+あなたは自分の《音楽》のキャラを2枚まで選び、そのターン中、パワーを＋500。[END]
+// current address: $130407
+
+//POINTER #644 @ $164238 - STRING #644 @ $130408
+#W32($164238)
+このカードの前のあなたの『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を持つキャラすべてに、パワーを＋1000。[END]
+// current address: $13047A
+
+//POINTER #645 @ $16423C - STRING #645 @ $13047C
+#W32($16423C)
+すべてのプレイヤーに、1ダメージを与える。（ダメージキャンセルは発生する）[END]
+// current address: $1304C6
+
+//POINTER #646 @ $164240 - STRING #646 @ $1304C8
+#W32($164240)
+そうしたら、あなたは自分の控え室の「パワフルガール真」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $130524
+
+//POINTER #647 @ $164244 - STRING #647 @ $130524
+#W32($164244)
+そうしたら、あなたは自分の控え室の「歌への情熱 春香」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $13057F
+
+//POINTER #648 @ $164248 - STRING #648 @ $130580
+#W32($164248)
+あなたは自分の「水瀬 伊織」を1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $1305C5
+
+//POINTER #649 @ $16424C - STRING #649 @ $1305C8
+#W32($16424C)
+他のあなたの《音楽》のキャラすべてに、パワーを＋500。[END]
+// current address: $1305FE
+
+//POINTER #650 @ $164250 - STRING #650 @ $130600
+#W32($164250)
+すべてのプレイヤーが認めたなら、ハイタッチする。そうしたら、すべてのプレイヤーは1枚引く。（音には注意しましょう）[END]
+// current address: $130672
+
+//POINTER #651 @ $164254 - STRING #651 @ $130674
+#W32($164254)
+あなたは自分の《音楽》のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $1306BC
+
+//POINTER #652 @ $164258 - STRING #652 @ $1306BC
+#W32($164258)
+そのターン中、このカードのパワーを＋1000し、このカードは次の能力を得る。『[Auto] このカードとバトル中のキャラが[Card_down]した時、あなたはそのキャラを山札の上に置いてよい。』[END]
+// current address: $13075E
+
+//POINTER #653 @ $16425C - STRING #653 @ $130760
+#W32($16425C)
+すべてのプレイヤーは自分の控え室のカードすべてを、山札に戻す。それらの山札をシャッフルする。[END]
+// current address: $1307BD
+
+//POINTER #654 @ $164260 - STRING #654 @ $1307C0
+#W32($164260)
+あなたは自分の控え室の《音楽》のキャラを1枚選び、手札に戻す。このカードを思い出にする。[END]
+// current address: $130818
+
+//POINTER #655 @ $164264 - STRING #655 @ $130818
+#W32($164264)
+あなたの《音楽》のキャラすべてに、そのターン中、『[Auto] アンコール ［(1)］』を与える。[END]
+// current address: $13086B
+
+//POINTER #656 @ $164268 - STRING #656 @ $13086C
+#W32($164268)
+あなたは自分の山札を見て《音楽》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $1308D8
+
+//POINTER #657 @ $16426C - STRING #657 @ $1308D8
+#W32($16426C)
+このカードのパワーを＋10000。[END]
+// current address: $1308F6
+
+//POINTER #658 @ $164270 - STRING #658 @ $1308F8
+#W32($164270)
+そうしたら、あなたは自分の控え室の「歌の女神 千早」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $130951
+
+//POINTER #659 @ $164274 - STRING #659 @ $130954
+#W32($164274)
+そうしたら、あなたは相手の前列のレベル2以下のキャラを1枚選び、山札の下に置く。[END]
+// current address: $1309A3
+
+//POINTER #660 @ $164278 - STRING #660 @ $1309A4
+#W32($164278)
+あなたは自分のクロックの上から1枚を、控え室に置く。[END]
+// current address: $1309D8
+
+//POINTER #661 @ $16427C - STRING #661 @ $1309D8
+#W32($16427C)
+あなたは1枚引いてよい。そうしたら、あなたは自分の手札を1枚選び、控え室に置く。[END]
+// current address: $130A27
+
+//POINTER #662 @ $164280 - STRING #662 @ $130A28
+#W32($164280)
+あなたは自分の山札の上から4枚をめくり、控え室に置く。それらのカードのクライマックス1枚につき、あなたは1枚まで引く。[END]
+// current address: $130A9C
+
+//POINTER #663 @ $164284 - STRING #663 @ $130A9C
+#W32($164284)
+そうしたら、あなたは2枚まで引き、相手は1枚引く。[END]
+// current address: $130ACD
+
+//POINTER #664 @ $164288 - STRING #664 @ $130AD0
+#W32($164288)
+次の相手のターンの終わりまで、このカードのパワーを＋3000し、あなたはこのカードの正面のキャラを1枚選び、次の相手のターンの終わりまで、次の能力を与える。『[Cont] このカードはサイドアタックできない。このカードは他の枠に動かせない。』[END]
+// current address: $130BB3
+
+//POINTER #665 @ $16428C - STRING #665 @ $130BB4
+#W32($16428C)
+このカードはサイドアタックできない。このカードは他の枠に動かせない。[END]
+// current address: $130BF9
+
+//POINTER #666 @ $164290 - STRING #666 @ $130BFC
+#W32($164290)
+あなたは自分の山札の上から1枚を公開する。そのカードがクライマックスなら、そのターン中、このカードは次の能力を得る。『[Cont] このカードはアタックできない。』（公開したカードは元に戻す）[END]
+// current address: $130CB1
+
+//POINTER #667 @ $164294 - STRING #667 @ $130CB4
+#W32($164294)
+あなたはこのカードを前列の空いている枠に動かしてよい。[END]
+// current address: $130CEB
+
+//POINTER #668 @ $164298 - STRING #668 @ $130CEC
+#W32($164298)
+このカードの前のあなたのキャラすべてに、パワーを＋Ｘ。Ｘはそのキャラのレベル×500に等しい。[END]
+// current address: $130D48
+
+//POINTER #669 @ $16429C - STRING #669 @ $130D48
+#W32($16429C)
+あなたは1枚引き、自分のキャラを1枚選び、そのターン中、パワーを＋1500[END]
+// current address: $130D8D
+
+//POINTER #670 @ $1642A0 - STRING #670 @ $130D90
+#W32($1642A0)
+あなたは自分の手札の《音楽》のキャラを1枚選び、控え室に置いてよい。そうしたら、あなたは2枚まで引き、このカードを思い出にする。[END]
+// current address: $130E0F
+
+//POINTER #671 @ $1642A4 - STRING #671 @ $130E10
+#W32($1642A4)
+あなたは自分の手札をランダムに1枚選んで公開し、Ｘ枚引く。Ｘは公開されたカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う）[END]
+// current address: $130E9A
+
+//POINTER #672 @ $1642A8 - STRING #672 @ $130E9C
+#W32($1642A8)
+あなたは自分の手札をランダムに1枚選んで公開し、自分の控え室のレベルＸ以下のキャラを1枚選び、手札に戻す。Ｘは公開されたカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う）[END]
+// current address: $130F55
+
+//POINTER #673 @ $1642AC - STRING #673 @ $130F58
+#W32($1642AC)
+そうしたら、 あなたは自分の山札を見て《音楽》のキャラを1枚まで選び、控え室に置く。その山札をシャッフルする。[END]
+// current address: $130FC5
+
+//POINTER #674 @ $1642B0 - STRING #674 @ $130FC8
+#W32($1642B0)
+他のあなたの《死》のキャラすべてに、『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を与える。[END]
+// current address: $13102A
+
+//POINTER #675 @ $1642B4 - STRING #675 @ $13102C
+#W32($1642B4)
+あなたは他の自分の《動物》のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $131078
+
+//POINTER #676 @ $1642B8 - STRING #676 @ $131078
+#W32($1642B8)
+そうしたら、あなたは自分の山札の上から1枚を、ストック置場に置く。[END]
+// current address: $1310BA
+
+//POINTER #677 @ $1642BC - STRING #677 @ $1310BC
+#W32($1642BC)
+このカードの正面のキャラに、次の能力を与える。『[Cont] このカードはサイドアタックできない。』[END]
+// current address: $131116
+
+//POINTER #678 @ $1642C0 - STRING #678 @ $131118
+#W32($1642C0)
+他のあなたの《科学》のキャラすべてに、パワーを＋1000。[END]
+// current address: $13114F
+
+//POINTER #679 @ $1642C4 - STRING #679 @ $131150
+#W32($1642C4)
+そうしたら、あなたのキャラすべてに、そのターン中、パワーを＋1000し、ソウルを＋1。[END]
+// current address: $1311A2
+
+//POINTER #680 @ $1642C8 - STRING #680 @ $1311A4
+#W32($1642C8)
+あなたは自分の山札の上から1枚を公開する。そのカードのレベルが1以上ならストック置場に置く。（そうでないなら元に戻す。クライマックスのレベルは0として扱う）[END]
+// current address: $13123E
+
+//POINTER #681 @ $1642CC - STRING #681 @ $131240
+#W32($1642CC)
+あなたは他の自分のキャラを1枚まで選び、ストック置場に置き、自分のキャラを1枚選び、そのターン中、パワーを＋4000。[END]
+// current address: $1312B1
+
+//POINTER #682 @ $1642D0 - STRING #682 @ $1312B4
+#W32($1642D0)
+あなたは自分の控え室の《死》のキャラを2枚まで選び、手札に戻してよい。そうしたら、あなたは自分の手札を2枚選び、控え室に置く。[END]
+// current address: $131331
+
+//POINTER #683 @ $1642D4 - STRING #683 @ $131334
+#W32($1642D4)
+そうしたら、あなたは自分の控え室の「この世界からの卒業 ゆり」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $131397
+
+//POINTER #684 @ $1642D8 - STRING #684 @ $131398
+#W32($1642D8)
+このカードは次の能力を得る。『[Auto]［(1)］ このカードのバトル相手でレベル2以上のキャラが[Card_down]した時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、控え室に置く。』[END]
+// current address: $131454
+
+//POINTER #685 @ $1642DC - STRING #685 @ $131454
+#W32($1642DC)
+そうしたら、あなたは自分のクロックの上から1枚を、控え室に置く。[END]
+// current address: $131494
+
+//POINTER #686 @ $1642E0 - STRING #686 @ $131494
+#W32($1642E0)
+あなたはそのキャラを思い出にしてよい。[END]
+// current address: $1314BB
+
+//POINTER #687 @ $1642E4 - STRING #687 @ $1314BC
+#W32($1642E4)
+あなたは自分の『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を持つキャラを1枚選び、そのターン中、ソウルを＋1。[END]
+// current address: $131530
+
+//POINTER #688 @ $1642E8 - STRING #688 @ $131530
+#W32($1642E8)
+このカードは次の能力を得る。『[Auto] このカードのバトル相手でレベル2以上のキャラが[Card_down]した時、あなたは相手のキャラを1枚選び、そのターン中、パワーを－2000。』[END]
+// current address: $1315C8
+
+//POINTER #689 @ $1642EC - STRING #689 @ $1315C8
+#W32($1642EC)
+このカードのパワーを＋2000し、このカードは『[Auto] アンコール  ［手札のキャラを1枚控え室に置く］ 』を得る。[END]
+// current address: $131630
+
+//POINTER #690 @ $1642F0 - STRING #690 @ $131630
+#W32($1642F0)
+あなたは自分の山札の上から1枚を、ストック置場に置き、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの、ストックの枚数×500に等しい。[END]
+// current address: $1316B9
+
+//POINTER #691 @ $1642F4 - STRING #691 @ $1316BC
+#W32($1642F4)
+このカードの正面のキャラのソウルを－1。[END]
+// current address: $1316E4
+
+//POINTER #692 @ $1642F8 - STRING #692 @ $1316E4
+#W32($1642F8)
+そうしたら、あなたは他の自分のキャラを4枚まで選び、控え室に置き、相手にＸダメージを与える。Ｘはこの効果で控え室に置かれたキャラの枚数に等しい。（ダメージキャンセルは発生する）[END]
+// current address: $131794
+
+//POINTER #693 @ $1642FC - STRING #693 @ $131794
+#W32($1642FC)
+そうしたら、あなたは自分の控え室のカードすべてを、山札に戻す。その山札をシャッフルする。[END]
+// current address: $1317ED
+
+//POINTER #694 @ $164300 - STRING #694 @ $1317F0
+#W32($164300)
+（あなたは自分のフロントアタックされているキャラを1枚選び、そのターン中、パワーを＋2500）[END]
+// current address: $13184A
+
+//POINTER #695 @ $164304 - STRING #695 @ $13184C
+#W32($164304)
+そうしたら、あなたは1枚引き、そのターン中、このカードのパワーを＋2000。[END]
+// current address: $131894
+
+//POINTER #696 @ $164308 - STRING #696 @ $131894
+#W32($164308)
+あなたは他のキャラを1枚選び、そのターン中、レベルを＋1。[END]
+// current address: $1318CD
+
+//POINTER #697 @ $16430C - STRING #697 @ $1318D0
+#W32($16430C)
+そうしたら、あなたは自分の山札を見て《科学》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $131948
+
+//POINTER #698 @ $164310 - STRING #698 @ $131948
+#W32($164310)
+あなたは自分の《音楽》のキャラを1枚選び、そのターン中、ソウルを＋1。[END]
+// current address: $13198D
+
+//POINTER #699 @ $164314 - STRING #699 @ $131990
+#W32($164314)
+他のあなたの《死》のキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $1319D1
+
+//POINTER #700 @ $164318 - STRING #700 @ $1319D4
+#W32($164318)
+そうしたら、あなたは自分の山札を見て「戦う理由 かなで」を2枚まで選び、前列の別々の枠に置く。その山札をシャッフルする。[END]
+// current address: $131A4B
+
+//POINTER #701 @ $16431C - STRING #701 @ $131A4C
+#W32($16431C)
+そうしたら、あなたは自分の山札を見て《生徒会》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $131AC6
+
+//POINTER #702 @ $164320 - STRING #702 @ $131AC8
+#W32($164320)
+そうしたら、そのターン中、このカードのパワーを＋2500。[END]
+// current address: $131AFF
+
+//POINTER #703 @ $164324 - STRING #703 @ $131B00
+#W32($164324)
+そうしたら、あなたは自分の山札を見て「戦う理由 かなで」を1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $131B7B
+
+//POINTER #704 @ $164328 - STRING #704 @ $131B7C
+#W32($164328)
+他のあなたの『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を持つキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $131BEE
+
+//POINTER #705 @ $16432C - STRING #705 @ $131BF0
+#W32($16432C)
+このカードは『[Cont] 応援 このカードの前のあなたのキャラすべてに、パワーを＋500。』を得る。[END]
+// current address: $131C48
+
+//POINTER #706 @ $164330 - STRING #706 @ $131C48
+#W32($164330)
+そうしたら、あなたは自分の控え室の「麦わら帽子のかなで」を1枚選び、手札に戻す）[END]
+// current address: $131C98
+
+//POINTER #707 @ $164334 - STRING #707 @ $131C98
+#W32($164334)
+そうしたら、あなたは相手のレベル0以下のキャラを1枚選び、手札に戻し、ターンの終わりに、このカードを思い出にする。[END]
+// current address: $131D09
+
+//POINTER #708 @ $164338 - STRING #708 @ $131D0C
+#W32($164338)
+あなたは自分の《死》のキャラを1枚選び、そのターン中、パワーを＋3500。[END]
+// current address: $131D52
+
+//POINTER #709 @ $16433C - STRING #709 @ $131D54
+#W32($16433C)
+あなたは自分の山札を見て《死》のキャラを3枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。あなたは自分の手札を2枚選び、控え室に置く。[END]
+// current address: $131DE9
+
+//POINTER #710 @ $164340 - STRING #710 @ $131DEC
+#W32($164340)
+あなたは相手の前列のレベル2以下のキャラを1枚選び、思い出にする。[END]
+// current address: $131E2D
+
+//POINTER #711 @ $164344 - STRING #711 @ $131E30
+#W32($164344)
+そうしたら、あなたは自分のクロック置場の《動物》のキャラを1枚選び、手札に戻し、自分の手札を1枚選び、クロック置場に置く。[END]
+// current address: $131EA9
+
+//POINTER #712 @ $164348 - STRING #712 @ $131EAC
+#W32($164348)
+あなたは相手の前列のキャラを1枚選び、そのターン中、パワーを－1000。[END]
+// current address: $131EF0
+
+//POINTER #713 @ $16434C - STRING #713 @ $131EF0
+#W32($16434C)
+他のあなたのカード名に「クド」を含むキャラすべてに、パワーを＋500。[END]
+// current address: $131F34
+
+//POINTER #714 @ $164350 - STRING #714 @ $131F34
+#W32($164350)
+そうしたら、あなたは自分の控え室の「果てしない高さへの一歩 クド」を1枚選び、手札に戻す）[END]
+// current address: $131F8D
+
+//POINTER #715 @ $164354 - STRING #715 @ $131F90
+#W32($164354)
+このカードを手札に戻す。[END]
+// current address: $131FA9
+
+//POINTER #716 @ $164358 - STRING #716 @ $131FAC
+#W32($164358)
+あなたは自分のクライマックスフェイズに、クライマックスを手札からプレイできない。[END]
+// current address: $131FFD
+
+//POINTER #717 @ $16435C - STRING #717 @ $132000
+#W32($16435C)
+そうしたら、あなたは自分の控え室の「果てしない高さへの一歩 クド」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $132067
+
+//POINTER #718 @ $164360 - STRING #718 @ $132068
+#W32($164360)
+他のあなたのキャラすべてに、そのターン中、レベルを＋1。[END]
+// current address: $1320A0
+
+//POINTER #719 @ $164364 - STRING #719 @ $1320A0
+#W32($164364)
+あなたは自分のクライマックス置場のクライマックスを1枚選び、ストック置場に置いてよい。[END]
+// current address: $1320F6
+
+//POINTER #720 @ $164368 - STRING #720 @ $1320F8
+#W32($164368)
+そうしたら、あなたは自分の山札を見てカード名に「椎菜」を含むキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13217E
+
+//POINTER #721 @ $16436C - STRING #721 @ $132180
+#W32($16436C)
+あなたは自分のクロック置場の《動物》のキャラを2枚まで選び、手札に加える。あなたの山札の上から2枚を、クロック置場に置く。[END]
+// current address: $1321F9
+
+//POINTER #722 @ $164370 - STRING #722 @ $1321FC
+#W32($164370)
+あなたのカード名に「クド」を含むキャラすべてに、パワーを＋500。[END]
+// current address: $13223C
+
+//POINTER #723 @ $164374 - STRING #723 @ $13223C
+#W32($164374)
+あなたは自分の山札を見てカード名に「クド」を含むキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $1322B6
+
+//POINTER #724 @ $164378 - STRING #724 @ $1322B8
+#W32($164378)
+そうしたら、あなたは自分の控え室の《死》のキャラを1枚選び、手札に戻す。[END]
+// current address: $132300
+
+//POINTER #725 @ $16437C - STRING #725 @ $132300
+#W32($16437C)
+そうしたら、あなたは自分の山札を見てレベル2以下の《死》のキャラを1枚まで選び、舞台のキャラのいない枠に置く。その山札をシャッフルする。[END]
+// current address: $132387
+
+//POINTER #726 @ $164380 - STRING #726 @ $132388
+#W32($164380)
+そうしたら、そのターン中、このカードのパワーを＋2000。[END]
+// current address: $1323BF
+
+//POINTER #727 @ $164384 - STRING #727 @ $1323C0
+#W32($164384)
+このカードの前のあなたの《死》のキャラすべてに、レベルを＋1し、パワーを＋500。[END]
+// current address: $13240F
+
+//POINTER #728 @ $164388 - STRING #728 @ $132410
+#W32($164388)
+他のあなたの『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を持つキャラすべてに、パワーを＋1000。[END]
+// current address: $132476
+
+//POINTER #729 @ $16438C - STRING #729 @ $132478
+#W32($16438C)
+そうしたら、あなたは自分の控え室のキャラを1枚選び、手札に戻す。[END]
+// current address: $1324B8
+
+//POINTER #730 @ $164390 - STRING #730 @ $1324B8
+#W32($164390)
+このカードは次の能力を得る。『[Auto] このカードのバトル相手が[Card_down]した時、あなたは自分の控え室のキャラを1枚選び、手札に戻してよい。そうしたら、あなたは自分の手札を1枚選び、控え室に置く。』[END]
+// current address: $13256E
+
+//POINTER #731 @ $164394 - STRING #731 @ $132570
+#W32($164394)
+あなたは自分の控え室のキャラを1枚選び、手札に戻してよい。そうしたら、あなたは自分の手札を1枚選び、控え室に置く。[END]
+// current address: $1325E1
+
+//POINTER #732 @ $164398 - STRING #732 @ $1325E4
+#W32($164398)
+そうしたら、あなたは自分の控え室の「過去を求める音無」を1枚選び、手札に戻す）[END]
+// current address: $132632
+
+//POINTER #733 @ $16439C - STRING #733 @ $132634
+#W32($16439C)
+あなたは自分の《死》のキャラを1枚選び、そのターン中、パワーを＋1500。[END]
+// current address: $13267A
+
+//POINTER #734 @ $1643A0 - STRING #734 @ $13267C
+#W32($1643A0)
+あなたの『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を持つキャラすべてに、次の能力を与える。『[Auto] このカードが[Card_down]した時、このカードのバトル相手のレベルがこのカードのレベル以下なら、あなたはそのキャラを[Card_down]してよい。』[END]
+// current address: $132759
+
+//POINTER #735 @ $1643A4 - STRING #735 @ $13275C
+#W32($1643A4)
+あなたは自分のキャラを1枚選び、控え室に置いてよい。そうしたら、あなたは相手のレベル2以下のキャラを1枚選び、控え室に置く。[END]
+// current address: $1327D6
+
+//POINTER #736 @ $1643A8 - STRING #736 @ $1327D8
+#W32($1643A8)
+あなたは自分の山札の上から3枚をめくり、控え室に置く。あなたは自分の控え室のレベルＸ以下の《死》のキャラを1枚選び、手札に戻す。Ｘはそれらのカードの《死》のキャラの枚数に等しい。[END]
+// current address: $132889
+
+//POINTER #737 @ $1643AC - STRING #737 @ $13288C
+#W32($1643AC)
+あなたは相手の控え室のカードを1枚選び、思い出にする。このカードを思い出にする。[END]
+// current address: $1328DC
+
+//POINTER #738 @ $1643B0 - STRING #738 @ $1328DC
+#W32($1643B0)
+他のあなたの【スタンド】しているキャラすべてを、【レスト】する。[END]
+// current address: $13290B
+
+//POINTER #739 @ $1643B4 - STRING #739 @ $13290C
+#W32($1643B4)
+そうしたら、あなたのキャラすべてに、次の相手のターンの終わりまで、パワーを＋1000。[END]
+// current address: $13295F
+
+//POINTER #740 @ $1643B8 - STRING #740 @ $132960
+#W32($1643B8)
+そうしたら、このカードを思い出にする。[END]
+// current address: $132987
+
+//POINTER #741 @ $1643BC - STRING #741 @ $132988
+#W32($1643BC)
+そうしたら、あなたは自分の控え室の「『星屑』 氷室」を1枚選び、手札に戻す）[END]
+// current address: $1329D3
+
+//POINTER #742 @ $1643C0 - STRING #742 @ $1329D4
+#W32($1643C0)
+あなたは自分の《科学》のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $132A1C
+
+//POINTER #743 @ $1643C4 - STRING #743 @ $132A1C
+#W32($1643C4)
+そうしたら、あなたは自分の控え室の「ご隠居 あーちゃん先輩」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $132A7D
+
+//POINTER #744 @ $1643C8 - STRING #744 @ $132A80
+#W32($1643C8)
+次の相手のターンの終わりまで、このカードのパワーを＋1000。[END]
+// current address: $132ABB
+
+//POINTER #745 @ $1643CC - STRING #745 @ $132ABC
+#W32($1643CC)
+あなたは1枚引いてよい。[END]
+// current address: $132AD4
+
+//POINTER #746 @ $1643D0 - STRING #746 @ $132AD4
+#W32($1643D0)
+そうしたら、あなたは2枚まで引く。[END]
+// current address: $132AF6
+
+//POINTER #747 @ $1643D4 - STRING #747 @ $132AF8
+#W32($1643D4)
+そのターン中、このカードはサイドアタックしてもソウルが減少しない。[END]
+// current address: $132B3B
+
+//POINTER #748 @ $1643D8 - STRING #748 @ $132B3C
+#W32($1643D8)
+あなたは相手のコスト1以下のキャラを1枚選び、山札の下に置く。このカードを思い出にする。[END]
+// current address: $132B93
+
+//POINTER #749 @ $1643DC - STRING #749 @ $132B94
+#W32($1643DC)
+あなたの《科学》のキャラすべてに、パワーを＋1000。[END]
+// current address: $132BC7
+
+//POINTER #750 @ $1643E0 - STRING #750 @ $132BC8
+#W32($1643E0)
+あなたは自分の【スタンド】している《科学》のキャラを1枚選び【レスト】する。そうしたら、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。[END]
+// current address: $132C46
+
+//POINTER #751 @ $1643E4 - STRING #751 @ $132C48
+#W32($1643E4)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋3000。このカードを思い出にする。[END]
+// current address: $132CA0
+
+//POINTER #752 @ $1643E8 - STRING #752 @ $132CA0
+#W32($1643E8)
+あなたは自分のクロックの上から2枚までを、控え室に置く。[END]
+// current address: $132CD8
+
+//POINTER #753 @ $1643EC - STRING #753 @ $132CD8
+#W32($1643EC)
+あなたは自分の【スタンド】している《スポーツ》のキャラを1枚選び【レスト】する。そうしたら、あなたは相手の前列のレベル3以下のキャラを1枚選び、山札の下に置く。[END]
+// current address: $132D64
+
+//POINTER #754 @ $1643F0 - STRING #754 @ $132D64
+#W32($1643F0)
+あなたは自分の《怪盗》のキャラを1枚選び、そのターン中、パワーを＋1500。[END]
+// current address: $132DAC
+
+//POINTER #755 @ $1643F4 - STRING #755 @ $132DAC
+#W32($1643F4)
+あなたは1枚引き、あなたは自分のキャラを1枚選び、そのターン中、ソウルを＋3。[END]
+// current address: $132DF8
+
+//POINTER #756 @ $1643F8 - STRING #756 @ $132DF8
+#W32($1643F8)
+他のあなたのキャラすべてに、パワーを＋Ｘ。Ｘはそのキャラのレベル×500に等しい。[END]
+// current address: $132E48
+
+//POINTER #757 @ $1643FC - STRING #757 @ $132E48
+#W32($1643FC)
+あなたは自分の山札を見て《魔法》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $132EB4
+
+//POINTER #758 @ $164400 - STRING #758 @ $132EB4
+#W32($164400)
+あなたは自分のクロックを上から1枚選び、控え室に置く。[END]
+// current address: $132EEA
+
+//POINTER #759 @ $164404 - STRING #759 @ $132EEC
+#W32($164404)
+あなたは自分のクロック置場のレベル2以下のカード名に「なのは」を含むキャラを1枚選び、舞台の好きな枠に置く。[END]
+// current address: $132F57
+
+//POINTER #760 @ $164408 - STRING #760 @ $132F58
+#W32($164408)
+そうしたら、相手にＸダメージを与える。Ｘはあなたの控え室のクライマックスの枚数に等しい。（ダメージキャンセルは発生する）[END]
+// current address: $132FD1
+
+//POINTER #761 @ $16440C - STRING #761 @ $131454
+#W32($16440C)
+そうしたら、あなたは自分のクロックの上から1枚を、控え室に置く。[END]
+// current address: $131494
+
+//POINTER #762 @ $164410 - STRING #762 @ $132FD4
+#W32($164410)
+あなたは自分の舞台の「エリオ・モンディアル」を1枚選び、手札に戻す。[END]
+// current address: $133018
+
+//POINTER #763 @ $164414 - STRING #763 @ $133018
+#W32($164414)
+そうしたら、あなたは相手のレベル2以下のキャラを1枚選び、ストック置場に置く。[END]
+// current address: $133065
+
+//POINTER #764 @ $164418 - STRING #764 @ $133068
+#W32($164418)
+あなたは自分のクロック置場のカード名に「スバル」を含むキャラを１枚選び、手札に戻してよい。そうしたら、あなたは自分の手札を1枚選び、クロック置場に置く。[END]
+// current address: $133100
+
+//POINTER #765 @ $16441C - STRING #765 @ $133100
+#W32($16441C)
+あなたは自分の山札の上から1枚を、ストック置場に置き、自分のキャラすべてに、そのターン中、パワーを＋1000。[END]
+// current address: $13316A
+
+//POINTER #766 @ $164420 - STRING #766 @ $13316C
+#W32($164420)
+他のあなたの、「“エース・オブ・エース”なのは」と「“真ソニックフォーム”フェイト」すべてに、パワーを＋1000。[END]
+// current address: $1331DB
+
+//POINTER #767 @ $164424 - STRING #767 @ $1331DC
+#W32($164424)
+このカードを思い出にする。あなたは自分の手札の自分のレベル以下のレベルの《ユニゾン》のキャラを１枚選び、このカードがいた枠に置く。[END]
+// current address: $13325F
+
+//POINTER #768 @ $164428 - STRING #768 @ $133260
+#W32($164428)
+このカードの正面のキャラのソウルを－4し、あなたのキャラすべてに、『[Auto] アンコール ［(1)］』を与える。[END]
+// current address: $1332C4
+
+//POINTER #769 @ $16442C - STRING #769 @ $1332C4
+#W32($16442C)
+そうしたら、あなたは自分の山札を見て《竜》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13333A
+
+//POINTER #770 @ $164430 - STRING #770 @ $13333C
+#W32($164430)
+そうしたら、あなたは自分の控え室の「エリオ＆キャロ」を1枚選び、手札に戻す）[END]
+// current address: $133388
+
+//POINTER #771 @ $164434 - STRING #771 @ $133388
+#W32($164434)
+あなたは自分のカード名に「エリオ」を含むキャラを1枚選び、そのターン中、パワーを＋500。[END]
+// current address: $1333DF
+
+//POINTER #772 @ $164438 - STRING #772 @ $1333E0
+#W32($164438)
+あなたは自分の山札の上から4枚をめくり、控え室に置く。それらのカードのクライマックス1枚につき、そのターン中、このカードのパワーを＋1000し、ソウルを＋1。[END]
+// current address: $133478
+
+//POINTER #773 @ $16443C - STRING #773 @ $133478
+#W32($16443C)
+他のあなたのカード名に「フェイト」を含むキャラすべてに、パワーを＋500。[END]
+// current address: $1334C0
+
+//POINTER #774 @ $164440 - STRING #774 @ $1334C0
+#W32($164440)
+（あなたはフロントアタックされている自分のキャラを1枚選び、そのターン中、パワーを＋2000）[END]
+// current address: $13351A
+
+//POINTER #775 @ $164444 - STRING #775 @ $13351C
+#W32($164444)
+このカードの前のあなたの《魔法》のキャラすべてに、レベルを＋1し、パワーを＋500。[END]
+// current address: $13356D
+
+//POINTER #776 @ $164448 - STRING #776 @ $133570
+#W32($164448)
+あなたは自分の《魔法》のキャラを1枚選び、そのターン中、ソウルを＋1。[END]
+// current address: $1335B5
+
+//POINTER #777 @ $16444C - STRING #777 @ $1335B8
+#W32($16444C)
+あなたのキャラすべてに、次の能力を与える。『[Cont] このカードは相手の効果に選ばれない。』[END]
+// current address: $13360E
+
+//POINTER #778 @ $164450 - STRING #778 @ $133610
+#W32($164450)
+そうしたら、あなたは相手のキャラすべてを、ストック置場に置く。[END]
+// current address: $13364F
+
+//POINTER #779 @ $164454 - STRING #779 @ $133650
+#W32($164454)
+そうしたら、あなたは自分の控え室のレベル0以下のキャラを1枚選び、後列の好きな枠に置く。[END]
+// current address: $1336A7
+
+//POINTER #780 @ $164458 - STRING #780 @ $1336A8
+#W32($164458)
+あなたは自分の「なのは＆フェイト」を1枚選び、そのターン中、パワーを＋2500。[END]
+// current address: $1336F4
+
+//POINTER #781 @ $16445C - STRING #781 @ $1336F4
+#W32($16445C)
+あなたのレベル2以上のキャラすべてに、ソウルを＋1。[END]
+// current address: $133727
+
+//POINTER #782 @ $164460 - STRING #782 @ $133728
+#W32($164460)
+あなたは自分のキャラすべてに、そのターン中、ソウルを＋1。[END]
+// current address: $133762
+
+//POINTER #783 @ $164464 - STRING #783 @ $133764
+#W32($164464)
+あなたは自分の山札を上から3枚まで見て、カード名に「フェイト」か「エリオ」を含むキャラを1枚まで選んで相手に見せ、手札に加える。残りのカードを控え室に置く。[END]
+// current address: $1337FF
+
+//POINTER #784 @ $164468 - STRING #784 @ $133800
+#W32($164468)
+あなたは自分の《武器》のキャラを1枚選び、そのターン中、パワーを＋1000し、ソウルを＋1。あなたは自分の《竜》のキャラを1枚選び、そのターン中、パワーを＋1000し、ソウルを＋1。[END]
+// current address: $1338AB
+
+//POINTER #785 @ $16446C - STRING #785 @ $1338AC
+#W32($16446C)
+そうしたら、あなたは自分の山札を見て《メカ》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $133924
+
+//POINTER #786 @ $164470 - STRING #786 @ $133924
+#W32($164470)
+他のあなたの《メカ》のキャラすべてに、『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』という能力を与える。[END]
+// current address: $133992
+
+//POINTER #787 @ $164474 - STRING #787 @ $133994
+#W32($164474)
+あなたのキャラすべてに、パワーを＋500。[END]
+// current address: $1339BC
+
+//POINTER #788 @ $164478 - STRING #788 @ $1339BC
+#W32($164478)
+あなたは自分の山札の上から1枚を、クロック置場に置いてよい。[END]
+// current address: $1339F8
+
+//POINTER #789 @ $16447C - STRING #789 @ $1339F8
+#W32($16447C)
+あなたは自分のクロックを1枚選び、手札に戻す。あなたは自分の手札を1枚選び、クロック置場に置く。[END]
+// current address: $133A57
+
+//POINTER #790 @ $164480 - STRING #790 @ $133A58
+#W32($164480)
+そうしたら、あなたは自分の控え室の「ギンガ・ナカジマ」を1枚選び、手札に戻す）[END]
+// current address: $133AA6
+
+//POINTER #791 @ $164484 - STRING #791 @ $133AA8
+#W32($164484)
+あなたは自分の《メカ》のキャラを１枚選び、そのターン中、パワーを＋500。[END]
+// current address: $133AF0
+
+//POINTER #792 @ $164488 - STRING #792 @ $133AF0
+#W32($164488)
+あなたは自分の山札の上から4枚をめくり、控え室に置く。それらのカードのクライマックス1枚につき、あなたは相手の前列のキャラを1枚選び、そのターン中、パワーを－4000。[END]
+// current address: $133B92
+
+//POINTER #793 @ $16448C - STRING #793 @ $133B94
+#W32($16448C)
+あなたのキャラすべてに、そのターン中、パワーを＋1000。[END]
+// current address: $133BCB
+
+//POINTER #794 @ $164490 - STRING #794 @ $133BCC
+#W32($164490)
+あなたは自分の《メカ》のキャラを1枚選び、そのターン中、パワーを＋1500。[END]
+// current address: $133C14
+
+//POINTER #795 @ $164494 - STRING #795 @ $133C14
+#W32($164494)
+あなたは自分のキャラを2枚まで選び、そのターン中、パワーを＋3000。[END]
+// current address: $133C56
+
+//POINTER #796 @ $164498 - STRING #796 @ $133C58
+#W32($164498)
+あなたは自分のキャラすべてに、そのターン中、次の能力を与える。『[Auto] このカードとバトルしているキャラが[Card_down]した時、あなたは自分の山札の上から1枚を、ストック置場に置いてよい』[END]
+// current address: $133D03
+
+//POINTER #797 @ $16449C - STRING #797 @ $133D04
+#W32($16449C)
+あなたは自分の山札の上から1枚を、ストック置場に置いてよい[END]
+// current address: $133D3E
+
+//POINTER #798 @ $1644A0 - STRING #798 @ $133D40
+#W32($1644A0)
+あなたのキャラを1枚選び、そのターン中、パワーを＋2500。[END]
+// current address: $133D78
+
+//POINTER #799 @ $1644A4 - STRING #799 @ $133D78
+#W32($1644A4)
+あなたは自分の山札の上から4枚をめくり、控え室に置く。それらのカードのクライマックス1枚につき、あなたは自分の控え室のキャラを1枚まで選び、手札に戻す。[END]
+// current address: $133E0E
+
+//POINTER #800 @ $1644A8 - STRING #800 @ $133E10
+#W32($1644A8)
+他のあなたのカード名に「なのは」を含むキャラすべてに、パワーを＋500。[END]
+// current address: $133E56
+
+//POINTER #801 @ $1644AC - STRING #801 @ $133E58
+#W32($1644AC)
+このカードの前のあなたのキャラすべてに、次の能力を与える。『[Auto]［(1)］ このカードが[Card_down]した時、このカードとバトルしているキャラのレベルがこのカードのレベル以下なら、あなたはコストを払ってよい。そうしたら、あなたはそのキャラを[Card_down]する。』[END]
+// current address: $133F40
+
+//POINTER #802 @ $1644B0 - STRING #802 @ $133F40
+#W32($1644B0)
+あなたは自分の《メカ》のキャラを1枚選び、そのターン中、パワーを＋1000。ターンの終わりに、そのキャラを控え室に置く。[END]
+// current address: $133FB4
+
+//POINTER #803 @ $1644B4 - STRING #803 @ $133FB4
+#W32($1644B4)
+そうしたら、あなたはそのキャラを[Card_down]する。[END]
+// current address: $133FDD
+
+//POINTER #804 @ $1644B8 - STRING #804 @ $133FE0
+#W32($1644B8)
+他のあなたの《メカ》のキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $134023
+
+//POINTER #805 @ $1644BC - STRING #805 @ $134024
+#W32($1644BC)
+そうしたら、あなたは自分の控え室の「ゼスト・グランガイツ」を1枚選び、手札に戻す）[END]
+// current address: $134076
+
+//POINTER #806 @ $1644C0 - STRING #806 @ $134078
+#W32($1644C0)
+あなたは自分の《ユニゾン》のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $1340C4
+
+//POINTER #807 @ $1644C4 - STRING #807 @ $1340C4
+#W32($1644C4)
+そうしたら、あなたは自分の控え室の《メカ》のキャラを1枚選び、手札に戻す。[END]
+// current address: $13410E
+
+//POINTER #808 @ $1644C8 - STRING #808 @ $134110
+#W32($1644C8)
+そうしたら、そのキャラを手札に戻す。[END]
+// current address: $134135
+
+//POINTER #809 @ $1644CC - STRING #809 @ $134138
+#W32($1644CC)
+あなたは相手の控え室のカードを1枚選び、山札の上に置いてよい。[END]
+// current address: $134176
+
+//POINTER #810 @ $1644D0 - STRING #810 @ $134178
+#W32($1644D0)
+あなたは相手の前列のコスト0以下のキャラを1枚選び、控え室に置く。[END]
+// current address: $1341B9
+
+//POINTER #811 @ $1644D4 - STRING #811 @ $1341BC
+#W32($1644D4)
+あなたは相手の後列のレベル２以下のキャラを１枚選び、控え室に置く。[END]
+// current address: $1341FF
+
+//POINTER #812 @ $1644D8 - STRING #812 @ $134200
+#W32($1644D8)
+あなたのキャラすべてに、そのターン中、次の能力を与える。『[Auto] バトルしているこのカードが[Card_down]した時、あなたの手札が相手の手札以下なら、このカードを手札に戻してよい。』[END]
+// current address: $1342A4
+
+//POINTER #813 @ $1644DC - STRING #813 @ $1342A4
+#W32($1644DC)
+このカードを手札に戻してよい。[END]
+// current address: $1342C3
+
+//POINTER #814 @ $1644E0 - STRING #814 @ $1342C4
+#W32($1644E0)
+あなたは自分のレベル2以上のキャラを1枚選び、そのターン中、レベルを＋1し、 パワーを＋2000。[END]
+// current address: $13431F
+
+//POINTER #815 @ $1644E4 - STRING #815 @ $134320
+#W32($1644E4)
+あなたは自分の控え室のキャラを3枚まで選び、手札に戻し、自分の手札を2枚選び、控え室に置く。[END]
+// current address: $13437B
+
+//POINTER #816 @ $1644E8 - STRING #816 @ $13437C
+#W32($1644E8)
+他のあなたのカード名に「はやて」を含むキャラすべてに、パワーを＋500。[END]
+// current address: $1343C2
+
+//POINTER #817 @ $1644EC - STRING #817 @ $1343C4
+#W32($1644EC)
+他のあなたのカード名に「フェイト」か「なのは」か「はやて」を含むキャラすべてに、パワーを＋1500。[END]
+// current address: $134425
+
+//POINTER #818 @ $1644F0 - STRING #818 @ $134428
+#W32($1644F0)
+他のあなたの、《武器》か《メカ》のキャラすべてに、パワーを＋500。[END]
+// current address: $13446A
+
+//POINTER #819 @ $1644F4 - STRING #819 @ $13446C
+#W32($1644F4)
+そうしたら、あなたは自分の山札を見て《武器》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $1344E4
+
+//POINTER #820 @ $1644F8 - STRING #820 @ $1344E4
+#W32($1644F8)
+そうしたら、あなたは自分の控え室の「“最後の夜天の主”はやて」を1枚選び、手札に戻す）[END]
+// current address: $13453A
+
+//POINTER #821 @ $1644FC - STRING #821 @ $13453C
+#W32($1644FC)
+そうしたら、そのキャラをそのキャラがいた枠に【レスト】して置く。[END]
+// current address: $134575
+
+//POINTER #822 @ $164500 - STRING #822 @ $134578
+#W32($164500)
+あなたのキャラすべてに、次の能力を与える。『[Auto] このカードとバトルしているキャラが[Card_down]した時、あなたは1枚引き、自分の手札を1枚選び、控え室に置く。』[END]
+// current address: $13460A
+
+//POINTER #823 @ $164504 - STRING #823 @ $13460C
+#W32($164504)
+あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『[Auto] このカードが舞台から控え室に置かれた時、あなたは2枚引いてよい。』[END]
+// current address: $134692
+
+//POINTER #824 @ $164508 - STRING #824 @ $134694
+#W32($164508)
+あなたは2枚引いてよい。[END]
+// current address: $1346AC
+
+//POINTER #825 @ $16450C - STRING #825 @ $1346AC
+#W32($16450C)
+あなたは自分のクロックを3枚まで選び、控え室に置く。このカードを思い出にする。[END]
+// current address: $1346FA
+
+//POINTER #826 @ $164510 - STRING #826 @ $1346FC
+#W32($164510)
+あなたは1枚引き、自分のクロックを1枚選び、控え室に置く。このカードを思い出にする。[END]
+// current address: $13474F
+
+//POINTER #827 @ $164514 - STRING #827 @ $134750
+#W32($164514)
+このカードのバトル中、相手はイベントを手札からプレイできない。[END]
+// current address: $13478F
+
+//POINTER #828 @ $164518 - STRING #828 @ $134790
+#W32($164518)
+舞台のこのカードのレベルを－1し、パワーを＋1500。[END]
+// current address: $1347C2
+
+//POINTER #829 @ $16451C - STRING #829 @ $1347C4
+#W32($16451C)
+そうしたら、次の相手のターンの終わりまで、相手は舞台にいるキャラの[Act]を使えない。[END]
+// current address: $134815
+
+//POINTER #830 @ $164520 - STRING #830 @ $134818
+#W32($164520)
+あなたは自分の控え室のキャラを1枚選び、手札に戻してよい。[END]
+// current address: $134852
+
+//POINTER #831 @ $164524 - STRING #831 @ $134854
+#W32($164524)
+そのターン中、このカードのパワーを＋2000し、このカードは次の能力を得る。『[Auto] アンコールステップの始めに、あなたはこのカードを手札に戻してよい。』[END]
+// current address: $1348E6
+
+//POINTER #832 @ $164528 - STRING #832 @ $1348E8
+#W32($164528)
+あなたはこのカードを手札に戻してよい。[END]
+// current address: $13490F
+
+//POINTER #833 @ $16452C - STRING #833 @ $134910
+#W32($16452C)
+あなたは自分の山札の上から4枚をめくり、控え室に置く。それらのカードのクライマックス1枚につき、あなたは相手の前列のコスト0以下のキャラを1枚まで選び、控え室に置く。[END]
+// current address: $1349B3
+
+//POINTER #834 @ $164530 - STRING #834 @ $1349B4
+#W32($164530)
+あなたは自分の《魔法》のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $1349FC
+
+//POINTER #835 @ $164534 - STRING #835 @ $1349FC
+#W32($164534)
+このカードのレベルを＋3し、パワーを＋2500。[END]
+// current address: $134A28
+
+//POINTER #836 @ $164538 - STRING #836 @ $134A28
+#W32($164538)
+そうしたら、このカードを【レスト】し、このカードとバトル中のキャラを[Card_down]する。[END]
+// current address: $134A6D
+
+//POINTER #837 @ $16453C - STRING #837 @ $134A70
+#W32($16453C)
+あなたは他の自分のキャラを1枚選び、そのターン中、レベルを＋1し、パワーを＋1000。[END]
+// current address: $134AC1
+
+//POINTER #838 @ $164540 - STRING #838 @ $134AC4
+#W32($164540)
+このカードの前のあなたの《超能力》のキャラすべてに、レベルを＋1し、パワーを＋500。[END]
+// current address: $134B17
+
+//POINTER #839 @ $164544 - STRING #839 @ $134B18
+#W32($164544)
+あなたは自分の山札を見て《クローン》か《超能力》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $134B94
+
+//POINTER #840 @ $164548 - STRING #840 @ $134B94
+#W32($164548)
+そうしたら、あなたの、《クローン》か《超能力》のキャラすべてに、そのターン中、ソウルを＋1。[END]
+// current address: $134BF0
+
+//POINTER #841 @ $16454C - STRING #841 @ $134BF0
+#W32($16454C)
+そのターン中、このカードのパワーを＋2500。ターンの終わりに、このカードを思い出にする。[END]
+// current address: $134C47
+
+//POINTER #842 @ $164550 - STRING #842 @ $134C48
+#W32($164550)
+他のあなたのキャラすべてに、次の能力を与える。『[Cont] このカードはサイドアタックできない。』[END]
+// current address: $134CA2
+
+//POINTER #843 @ $164554 - STRING #843 @ $134CA4
+#W32($164554)
+そうしたら、あなたは自分の山札を見てレベル1以下の《超能力》のキャラを1枚まで選び、舞台の好きな枠に置く。その山札をシャッフルする。[END]
+// current address: $134D27
+
+//POINTER #844 @ $164558 - STRING #844 @ $134D28
+#W32($164558)
+他のあなたの《魔法》のキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $134D6B
+
+//POINTER #845 @ $16455C - STRING #845 @ $134D6C
+#W32($16455C)
+そうしたら、あなたは1枚引き、そのターン中、このカードのパワーを＋3000。[END]
+// current address: $134DB4
+
+//POINTER #846 @ $164560 - STRING #846 @ $134DB4
+#W32($164560)
+このカードのパワーを＋4000し、ソウルを＋1。[END]
+// current address: $134DE0
+
+//POINTER #847 @ $164564 - STRING #847 @ $134DE0
+#W32($164564)
+このカードのソウルを＋1。[END]
+// current address: $134DFA
+
+//POINTER #848 @ $164568 - STRING #848 @ $134DFC
+#W32($164568)
+他のあなたの《超能力》のキャラすべてに、パワーを＋1000。[END]
+// current address: $134E35
+
+//POINTER #849 @ $16456C - STRING #849 @ $134E38
+#W32($16456C)
+そうしたら、あなたは自分の控え室の「“幻想殺し”当麻」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $134E94
+
+//POINTER #850 @ $164570 - STRING #850 @ $134E94
+#W32($164570)
+舞台のこのカードのレベルを－2。[END]
+// current address: $134EB4
+
+//POINTER #851 @ $164574 - STRING #851 @ $134EB4
+#W32($164574)
+このカードの下のマーカー1枚につき、このカードのレベルを＋1し、パワーを＋1000。[END]
+// current address: $134F03
+
+//POINTER #852 @ $164578 - STRING #852 @ $134F04
+#W32($164578)
+あなたは自分の控え室の「妹達」を3枚まで選び、このカードの下にマーカーとして裏向きに置く。[END]
+// current address: $134F5E
+
+//POINTER #853 @ $16457C - STRING #853 @ $134F60
+#W32($16457C)
+あなたは他の自分のレベル0以下のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $134FAF
+
+//POINTER #854 @ $164580 - STRING #854 @ $134FB0
+#W32($164580)
+そうしたら、あなたは自分の山札を見て《超能力》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13502A
+
+//POINTER #855 @ $164584 - STRING #855 @ $13502C
+#W32($164584)
+このカードと同じカード名のカードは、デッキに好きな枚数入れることができる。[END]
+// current address: $135077
+
+//POINTER #856 @ $164588 - STRING #856 @ $135078
+#W32($164588)
+そうしたら、あなたは自分の控え室の「“幻想殺し”当麻」を1枚選び、手札に戻す）[END]
+// current address: $1350C6
+
+//POINTER #857 @ $16458C - STRING #857 @ $1350C8
+#W32($16458C)
+他のあなたのレベル0以下のキャラすべてに、パワーを＋1000。[END]
+// current address: $135102
+
+//POINTER #858 @ $164590 - STRING #858 @ $135104
+#W32($164590)
+あなたは自分のバトル中のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $13514C
+
+//POINTER #859 @ $164594 - STRING #859 @ $13514C
+#W32($164594)
+あなたは相手の前列のレベル3以下のキャラを1枚選び、ストック置場に置く。[END]
+// current address: $135193
+
+//POINTER #860 @ $164598 - STRING #860 @ $135194
+#W32($164598)
+あなたは自分のキャラを1枚選び、控え室に置いてよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、レベルを＋2し、パワーを＋2000。[END]
+// current address: $135220
+
+//POINTER #861 @ $16459C - STRING #861 @ $135220
+#W32($16459C)
+あなたは自分の山札を見て《超能力》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。このカードを思い出にする。[END]
+// current address: $1352A8
+
+//POINTER #862 @ $1645A0 - STRING #862 @ $1352A8
+#W32($1645A0)
+そうしたら、あなたは自分の山札を上から3枚まで見て、《風紀委員》かカード名に「佐天」を含むキャラを1枚まで選んで相手に見せ、手札に加える。残りのカードを控え室に置く。[END]
+// current address: $13534D
+
+//POINTER #863 @ $1645A4 - STRING #863 @ $135350
+#W32($1645A4)
+このカードは次の能力を得る。『[Auto] このカードとバトル中のレベル1以上のキャラが[Card_down]した時、あなたは自分の山札の上から1枚を、ストック置場に置いてよい。』[END]
+// current address: $1353E4
+
+//POINTER #864 @ $1645A8 - STRING #864 @ $1353E4
+#W32($1645A8)
+他のあなたの《超能力》のキャラすべてに、パワーを＋Ｘ。Ｘはそのキャラのレベル×500に等しい。[END]
+// current address: $135440
+
+//POINTER #865 @ $1645AC - STRING #865 @ $135440
+#W32($1645AC)
+あなたは自分の控え室の《超能力》のキャラを1枚選び、ストック置場に置いてよい。[END]
+// current address: $13548E
+
+//POINTER #866 @ $1645B0 - STRING #866 @ $135490
+#W32($1645B0)
+他のあなたの《風紀委員》のキャラすべてに、パワーを＋500。[END]
+// current address: $1354CA
+
+//POINTER #867 @ $1645B4 - STRING #867 @ $1354CC
+#W32($1645B4)
+そうしたら、あなたは自分の控え室の「“風紀委員”初春」を1枚選び、手札に戻す）[END]
+// current address: $13551A
+
+//POINTER #868 @ $1645B8 - STRING #868 @ $13551C
+#W32($1645B8)
+あなたは自分の山札の上から1枚を公開する。そのカードが《風紀委員》のキャラなら、あなたはこのカードを思い出にしてよい。（公開したカードは元に戻す）[END]
+// current address: $1355AE
+
+//POINTER #869 @ $1645BC - STRING #869 @ $1355B0
+#W32($1645BC)
+あなたは自分の『記憶』を持つキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $1355FC
+
+//POINTER #870 @ $1645C0 - STRING #870 @ $1355FC
+#W32($1645C0)
+そうしたら、あなたは自分の控え室の「水着の初春」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $135652
+
+//POINTER #871 @ $1645C4 - STRING #871 @ $135654
+#W32($1645C4)
+そうしたら、あなたは自分の山札を見て『記憶』を持つキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $1356D0
+
+//POINTER #872 @ $1645C8 - STRING #872 @ $1356D0
+#W32($1645C8)
+他のあなたの、レベルがあなたのレベルより高いキャラすべてに、パワーを＋500。[END]
+// current address: $13571C
+
+//POINTER #873 @ $1645CC - STRING #873 @ $13571C
+#W32($1645CC)
+あなたのキャラすべてに、そのターン中、レベルを＋1。[END]
+// current address: $135750
+
+//POINTER #874 @ $1645D0 - STRING #874 @ $135750
+#W32($1645D0)
+あなたは相手の前列のキャラを1枚選び、そのターン中、パワーを－1000し、《まゆげ》を与える。[END]
+// current address: $1357AA
+
+//POINTER #875 @ $1645D4 - STRING #875 @ $1357AC
+#W32($1645D4)
+あなたは他の自分のキャラを1枚選び、そのターン中、レベルを＋1し、パワーを＋4000。ターンの終わりに、そのキャラを思い出にする。[END]
+// current address: $135829
+
+//POINTER #876 @ $1645D8 - STRING #876 @ $13582C
+#W32($1645D8)
+あなたの《超能力》のキャラすべてに、次の能力を与える。『[Auto] このカードとバトル中のキャラが[Card_down]した時、あなたは相手の山札を上から1枚見て、山札の上か下に置く。』[END]
+// current address: $1358C9
+
+//POINTER #877 @ $1645DC - STRING #877 @ $1358CC
+#W32($1645DC)
+あなたは相手の山札を上から1枚見て、山札の上か下に置く。[END]
+// current address: $135904
+
+//POINTER #878 @ $1645E0 - STRING #878 @ $135904
+#W32($1645E0)
+あなたは他の自分のキャラを1枚選び、そのターン中、パワーを＋4000し、次の能力を与える。『[Auto] このカードとバトル中のキャラが[Card_down]した時、あなたは相手のキャラを1枚まで選び、そのターン中、パワーを－1500し、ターンの終わりに、このカードを思い出にする。』[END]
+// current address: $1359F8
+
+//POINTER #879 @ $1645E4 - STRING #879 @ $1359F8
+#W32($1645E4)
+あなたは相手のキャラを1枚まで選び、そのターン中、パワーを－1500し、ターンの終わりに、このカードを思い出にする。[END]
+// current address: $135A68
+
+//POINTER #880 @ $1645E8 - STRING #880 @ $135A68
+#W32($1645E8)
+あなたは自分の【スタンド】している特徴を持たないキャラを1枚選び【レスト】する。そうしたら、あなたは相手の山札を上から1枚見て、山札の上か下に置き、このカードをストック置場に置く。[END]
+// current address: $135B09
+
+//POINTER #881 @ $1645EC - STRING #881 @ $135B0C
+#W32($1645EC)
+あなたは相手の前列のレベル2以下のキャラを2枚まで選び、クロック置場に置く。[END]
+// current address: $135B57
+
+//POINTER #882 @ $1645F0 - STRING #882 @ $135B58
+#W32($1645F0)
+そうしたら、あなたは自分の控え室の「“超能力者”美琴」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $135BB4
+
+//POINTER #883 @ $1645F4 - STRING #883 @ $135BB4
+#W32($1645F4)
+このカードのレベルを＋3し、パワーを＋1500。[END]
+// current address: $135BE0
+
+//POINTER #884 @ $1645F8 - STRING #884 @ $135BE0
+#W32($1645F8)
+このカードは次の能力を得る。『[Auto] このカードが[Card_down]した時、このカードとバトル中のキャラのレベルが0以下なら、あなたはそのキャラを[Card_down]してよい。』[END]
+// current address: $135C6B
+
+//POINTER #885 @ $1645FC - STRING #885 @ $135C6C
+#W32($1645FC)
+そうしたら、あなたは自分の控え室の「“超能力者”美琴」を1枚選び、手札に戻す）[END]
+// current address: $135CBA
+
+//POINTER #886 @ $164600 - STRING #886 @ $135CBC
+#W32($164600)
+他のあなたの《カエル》のキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $135D01
+
+//POINTER #887 @ $164604 - STRING #887 @ $135D04
+#W32($164604)
+そうしたら、あなたは相手のレベル2以下のキャラを1枚選び、山札の上に置く。[END]
+// current address: $135D4D
+
+//POINTER #888 @ $164608 - STRING #888 @ $135D50
+#W32($164608)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋Ｘ。Ｘはそのキャラのレベル×500に等しい。[END]
+// current address: $135DB1
+
+//POINTER #889 @ $16460C - STRING #889 @ $135DB4
+#W32($16460C)
+あなたの控え室のクライマックス1枚につき、このカードのパワーを＋500。[END]
+// current address: $135DF9
+
+//POINTER #890 @ $164610 - STRING #890 @ $135DFC
+#W32($164610)
+あなたは自分の山札の上から1枚を公開する。そのカードが《超能力》のキャラでないなら、このカードを【レスト】する。（公開したカードは元に戻す）[END]
+// current address: $135E80
+
+//POINTER #891 @ $164614 - STRING #891 @ $135E80
+#W32($164614)
+あなたは自分の控え室の《超能力》のキャラを1枚選び、手札に戻す。[END]
+// current address: $135EC0
+
+//POINTER #892 @ $164618 - STRING #892 @ $135EC0
+#W32($164618)
+そうしたら、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋2500。[END]
+// current address: $135F0A
+
+//POINTER #893 @ $16461C - STRING #893 @ $135F0C
+#W32($16461C)
+あなたは自分の山札を見て《カエル》のキャラを１枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $135F7B
+
+//POINTER #894 @ $164620 - STRING #894 @ $135F7C
+#W32($164620)
+あなたは自分の【スタンド】しているキャラを2枚選び【レスト】する。2枚【レスト】したなら、あなたは自分の控え室のキャラを1枚選び、手札に戻す。[END]
+// current address: $135FEE
+
+//POINTER #895 @ $164624 - STRING #895 @ $135FF0
+#W32($164624)
+あなたは自分の【スタンド】している《カエル》のキャラを2枚選び【レスト】する。2枚【レスト】したなら、相手にＸダメージを与える。Ｘはあなたのキャラの中で、レベルが1番高いキャラのレベルに等しい。（ダメージキャンセルは発生する）[END]
+// current address: $1360B6
+
+//POINTER #896 @ $164628 - STRING #896 @ $13453C
+#W32($164628)
+そうしたら、そのキャラをそのキャラがいた枠に【レスト】して置く。[END]
+// current address: $134575
+
+//POINTER #897 @ $16462C - STRING #897 @ $134110
+#W32($16462C)
+そうしたら、そのキャラを手札に戻す。[END]
+// current address: $134135
+
+//POINTER #898 @ $164630 - STRING #898 @ $1360B8
+#W32($164630)
+他のあなたの【レスト】しているキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $1360FB
+
+//POINTER #899 @ $164634 - STRING #899 @ $1360FC
+#W32($164634)
+他のあなたの《超能力》のキャラすべてに、『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を与える。[END]
+// current address: $136162
+
+//POINTER #900 @ $164638 - STRING #900 @ $136164
+#W32($164638)
+そうしたら、あなたは自分の控え室の「“聖人”神裂」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $1361BC
+
+//POINTER #901 @ $16463C - STRING #901 @ $1361BC
+#W32($16463C)
+そうしたら、あなたはこのカードとバトル中のレベル1以上のキャラを１枚選び、山札の下に置く。[END]
+// current address: $136216
+
+//POINTER #902 @ $164640 - STRING #902 @ $136218
+#W32($164640)
+そうしたら、あなたは自分の控え室の「氷華＆インデックス」を1枚選び、手札に戻す）[END]
+// current address: $136268
+
+//POINTER #903 @ $164644 - STRING #903 @ $136268
+#W32($164644)
+そうしたら、あなたは自分の山札を見て《魔法》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $1362E0
+
+//POINTER #904 @ $164648 - STRING #904 @ $1362E0
+#W32($164648)
+そうしたら、あなたは自分の山札を見てレベル1以下の《魔法》のキャラを1枚まで選び、後列の好きな枠に置く。その山札をシャッフルする。[END]
+// current address: $136361
+
+//POINTER #905 @ $16464C - STRING #905 @ $136364
+#W32($16464C)
+このカードの前のレベル2以上のキャラすべてに、パワーを＋1000。[END]
+// current address: $1363A2
+
+//POINTER #906 @ $164650 - STRING #906 @ $1363A4
+#W32($164650)
+あなたはそのバトル中のキャラを山札の下に置いてよい。[END]
+// current address: $1363D9
+
+//POINTER #907 @ $164654 - STRING #907 @ $1363DC
+#W32($164654)
+あなたは自分の【スタンド】している《本》のキャラを1枚選び【レスト】する。そうしたら、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。[END]
+// current address: $136458
+
+//POINTER #908 @ $164658 - STRING #908 @ $136458
+#W32($164658)
+そうしたら、あなたは自分の控え室の「明るい親子 愛＆舞」を1枚選び、思い出にする。[END]
+// current address: $1364A9
+
+//POINTER #909 @ $16465C - STRING #909 @ $1364AC
+#W32($16465C)
+あなたは自分の山札の上から1枚を公開する。そのカードがクライマックスなら、このカードを控え室に置く。（公開したカードは元に戻す）[END]
+// current address: $13652C
+
+//POINTER #910 @ $164660 - STRING #910 @ $13652C
+#W32($164660)
+そうしたら、あなたは相手の控え室のカードを1枚選び、思い出にする。[END]
+// current address: $13656E
+
+//POINTER #911 @ $164664 - STRING #911 @ $136570
+#W32($164664)
+このカードの下のマーカー1枚につき、このカードのレベルを＋1し、パワーを＋1500。[END]
+// current address: $1365BF
+
+//POINTER #912 @ $164668 - STRING #912 @ $1365C0
+#W32($164668)
+あなたは自分の山札の上から1枚を、このカードの下にマーカーとして置いてよい。[END]
+// current address: $13660C
+
+//POINTER #913 @ $16466C - STRING #913 @ $13660C
+#W32($16466C)
+そのターン中、このカードは次の能力を得る。『[Auto] このカードとバトル中のキャラが[Card_down]した時、あなたは自分の山札の上から1枚を、ストック置場に置いてよい。』[END]
+// current address: $1366A1
+
+//POINTER #914 @ $164670 - STRING #914 @ $1366A4
+#W32($164670)
+他のあなたのカード名に「涼」を含むキャラすべてに、レベルを＋1。[END]
+// current address: $1366E4
+
+//POINTER #915 @ $164674 - STRING #915 @ $1366E4
+#W32($164674)
+そうしたら、あなたは自分の控え室のカード名に「愛」を含むキャラを1枚選び、手札に戻す。[END]
+// current address: $13673A
+
+//POINTER #916 @ $164678 - STRING #916 @ $13673C
+#W32($164678)
+そうしたら、あなたはこのカードを控え室に置き、自分の控え室の「アイドルとしての才能 愛」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $1367B9
+
+//POINTER #917 @ $16467C - STRING #917 @ $1367BC
+#W32($16467C)
+このカードのパワーを＋Ｘ。Ｘは他のあなたのカード名に「愛」を含むキャラの中でレベルが1番高いキャラのレベル×500に等しい。[END]
+// current address: $136835
+
+//POINTER #918 @ $164680 - STRING #918 @ $136838
+#W32($164680)
+あなたは自分の控え室の「アイドルとしての才能 愛」を1枚選び、舞台の好きな枠に置く。[END]
+// current address: $13688B
+
+//POINTER #919 @ $164684 - STRING #919 @ $13688C
+#W32($164684)
+このカードはフロントアタックできない。[END]
+// current address: $1368B3
+
+//POINTER #920 @ $164688 - STRING #920 @ $1368B4
+#W32($164688)
+他のあなたのカード名に「愛」か「舞」を含むキャラすべてに、パワーを＋500し、『[Auto] アンコール ［(2)］』を与える。[END]
+// current address: $136922
+
+//POINTER #921 @ $16468C - STRING #921 @ $136924
+#W32($16468C)
+そうしたら、あなたはこのカードを思い出にする。[END]
+// current address: $136953
+
+//POINTER #922 @ $164690 - STRING #922 @ $136954
+#W32($164690)
+そうしたら、あなたは自分の控え室の「“とつげき豆タンク”愛」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $1369B6
+
+//POINTER #923 @ $164694 - STRING #923 @ $1369B8
+#W32($164694)
+他のあなたのレベル0以下のキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $1369FE
+
+//POINTER #924 @ $164698 - STRING #924 @ $136A00
+#W32($164698)
+他のあなたのカード名に「愛」を含むキャラすべてに、『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を与え、このカードは『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を得る。[END]
+// current address: $136AB5
+
+//POINTER #925 @ $16469C - STRING #925 @ $136AB8
+#W32($16469C)
+そのターン中、このカードは次の能力を得る。『[Auto] このカードとバトル中のキャラが[Card_down]した時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。』[END]
+// current address: $136B4B
+
+//POINTER #926 @ $1646A0 - STRING #926 @ $136B4C
+#W32($1646A0)
+あなたは相手の控え室のカードを1枚選び、山札の上に置く。[END]
+// current address: $136B84
+
+//POINTER #927 @ $1646A4 - STRING #927 @ $136B84
+#W32($1646A4)
+他のあなたのカード名に「涼」を含むキャラすべてに、パワーを＋500。[END]
+// current address: $136BC6
+
+//POINTER #928 @ $1646A8 - STRING #928 @ $136BC8
+#W32($1646A8)
+あなたは自分の山札の上から1枚を公開する。そのカードがクライマックスなら手札に加え、自分の手札を1枚選び、控え室に置く。（そうでないなら元に戻す）[END]
+// current address: $136C59
+
+//POINTER #929 @ $1646AC - STRING #929 @ $136C5C
+#W32($1646AC)
+あなたは自分の山札の上から1枚を公開する。そのカードがクライマックスなら、あなたは他の自分のキャラを1枚選び、控え室に置く。（公開したカードは元に戻す）[END]
+// current address: $136CF3
+
+//POINTER #930 @ $1646B0 - STRING #930 @ $136CF4
+#W32($1646B0)
+そうしたら、あなたは自分の山札を見て「受け継いだ夢 絵理」を1枚まで選び、このカードがいた枠に置く。その山札をシャッフルする。[END]
+// current address: $136D71
+
+//POINTER #931 @ $1646B4 - STRING #931 @ $136D74
+#W32($1646B4)
+あなたのキャラすべてが《音楽》なら、このカードのパワーを＋1000。[END]
+// current address: $136DB5
+
+//POINTER #932 @ $1646B8 - STRING #932 @ $136DB8
+#W32($1646B8)
+あなたは自分のカード名に「愛」を含むキャラを1枚選び、そのターン中、ソウルを＋1し、このカードのパワーを＋1000。[END]
+// current address: $136E27
+
+//POINTER #933 @ $1646BC - STRING #933 @ $136E28
+#W32($1646BC)
+そうしたら、あなたは自分の控え室の「マルチアーティスト絵理」を1枚選び、手札に戻す）[END]
+// current address: $136E7C
+
+//POINTER #934 @ $1646C0 - STRING #934 @ $136E7C
+#W32($1646C0)
+他のあなたの《音楽》のキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $136EBF
+
+//POINTER #935 @ $1646C4 - STRING #935 @ $136EC0
+#W32($1646C4)
+そうしたら、あなたは相手の前列のレベル1以下のキャラを1枚選び、控え室に置く。[END]
+// current address: $136F0D
+
+//POINTER #936 @ $1646C8 - STRING #936 @ $136F10
+#W32($1646C8)
+そうしたら、あなたは自分の控え室の「トラブルガール ハルヒ」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $136F71
+
+//POINTER #937 @ $1646CC - STRING #937 @ $136F74
+#W32($1646CC)
+あなたは自分の山札の上から3枚をめくり、控え室に置く。あなたは自分の控え室のレベルＸ以下の《団長》のキャラを1枚選び、舞台の好きな枠に置く。Ｘはそれらのカードの《団長》のキャラの枚数に等しい。[END]
+// current address: $137033
+
+//POINTER #938 @ $1646D0 - STRING #938 @ $137034
+#W32($1646D0)
+あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）[END]
+// current address: $13707A
+
+//POINTER #939 @ $1646D4 - STRING #939 @ $13707C
+#W32($1646D4)
+そうしたら、あなたは自分の控え室の「水着のハルヒ＆長門」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $1370DA
+
+//POINTER #940 @ $1646D8 - STRING #940 @ $1370DC
+#W32($1646D8)
+あなたは他の自分のキャラを1枚選び、そのターン中、次の能力を与える。『[Auto] このカードが舞台から控え室に置かれた時、あなたはこのカードをこのカードがいた枠に【レスト】して置いてよい。』[END]
+// current address: $137189
+
+//POINTER #941 @ $1646DC - STRING #941 @ $13718C
+#W32($1646DC)
+あなたはこのカードをこのカードがいた枠に【レスト】して置いてよい。[END]
+// current address: $1371C7
+
+//POINTER #942 @ $1646E0 - STRING #942 @ $1371C8
+#W32($1646E0)
+あなたは相手のクライマックス置場のクライマックスを1枚選び、控え室に置く。[END]
+// current address: $137212
+
+//POINTER #943 @ $1646E4 - STRING #943 @ $137214
+#W32($1646E4)
+あなたは自分のクロックフェイズに、手札をクロックに置いてカードを引くことができない。[END]
+// current address: $137269
+
+//POINTER #944 @ $1646E8 - STRING #944 @ $13726C
+#W32($1646E8)
+そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの《宇宙人》のキャラの枚数×500に等しい。[END]
+// current address: $1372C8
+
+//POINTER #945 @ $1646EC - STRING #945 @ $1372C8
+#W32($1646EC)
+そうしたら、あなたは自分の山札を見てレベル2以下の《SOS団》のキャラを1枚まで選び、舞台の好きな枠に置く。その山札をシャッフルする。[END]
+// current address: $13734A
+
+//POINTER #946 @ $1646F0 - STRING #946 @ $13734C
+#W32($1646F0)
+あなたはこのカードを思い出にしてよい。そうしたら、次のあなたのドローフェイズの始めに、あなたは自分の思い出置場の「“いつも”のハルヒ」を1枚選び、舞台の好きな枠に置く。[END]
+// current address: $1373F4
+
+//POINTER #947 @ $1646F4 - STRING #947 @ $1373F4
+#W32($1646F4)
+そうしたら、あなたは自分の山札を見て「“いつも”のハルヒ」を1枚まで選び、舞台の好きな枠に置く。その山札をシャッフルする。[END]
+// current address: $13746E
+
+//POINTER #948 @ $1646F8 - STRING #948 @ $137470
+#W32($1646F8)
+そうしたら、あなたは自分の山札を見て《SOS団》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $1374E9
+
+//POINTER #949 @ $1646FC - STRING #949 @ $1374EC
+#W32($1646FC)
+次の相手のターンの終わりまで、相手はイベントを手札からプレイできない。[END]
+// current address: $137533
+
+//POINTER #950 @ $164700 - STRING #950 @ $137534
+#W32($164700)
+あなたのキャラすべてに、そのターン中、パワーを＋1500。[END]
+// current address: $13756B
+
+//POINTER #951 @ $164704 - STRING #951 @ $13756C
+#W32($164704)
+そうしたら、あなたは自分の控え室の「異時間同位体 みくる＆みくる（大）」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $1375D9
+
+//POINTER #952 @ $164708 - STRING #952 @ $1375DC
+#W32($164708)
+他のあなたの《宇宙人》のキャラすべてに、パワーを＋500。[END]
+// current address: $137614
+
+//POINTER #953 @ $16470C - STRING #953 @ $137614
+#W32($16470C)
+あなたは自分の山札を見て《宇宙人》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $137682
+
+//POINTER #954 @ $164710 - STRING #954 @ $137684
+#W32($164710)
+そうしたら、そのターン中、このカードは次の能力を得る。『[Auto] このカードとバトル中のキャラが[Card_down]した時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。』[END]
+// current address: $137723
+
+//POINTER #955 @ $164714 - STRING #955 @ $137724
+#W32($164714)
+あなたは相手のキャラすべてを、思い出にしてよい。そうしたら、あなたはそれらのキャラを舞台の別々の枠に置く。[END]
+// current address: $13778F
+
+//POINTER #956 @ $164718 - STRING #956 @ $137790
+#W32($164718)
+そうしたら、あなたは自分の控え室の「“いつも”のキョン」を1枚選び、手札に戻す）[END]
+// current address: $1377E0
+
+//POINTER #957 @ $16471C - STRING #957 @ $1377E0
+#W32($16471C)
+あなたは自分の山札の上から4枚をめくり、控え室に置く。それらのカードのクライマックス1枚につき、あなたは自分のカード名に「キョン」を含むキャラを1枚選び、そのターン中、ソウルを＋1。[END]
+// current address: $137893
+
+//POINTER #958 @ $164720 - STRING #958 @ $137894
+#W32($164720)
+そうしたら、あなたは自分の山札を見て《時間》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13790C
+
+//POINTER #959 @ $164724 - STRING #959 @ $13790C
+#W32($164724)
+そうしたら、あなたは自分の控え室の「浴衣のキョン」を1枚選び、手札に戻す）[END]
+// current address: $137956
+
+//POINTER #960 @ $164728 - STRING #960 @ $137958
+#W32($164728)
+あなたは自分の《和服》のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $1379A0
+
+//POINTER #961 @ $16472C - STRING #961 @ $1379A0
+#W32($16472C)
+あなたの《宇宙人》のキャラすべてに、そのターン中、次の能力を与える。『[Auto]［(1)］ このカードとバトル中のキャラが[Card_down]した時、あなたはコストを払ってよい。そうしたら、あなたは1枚引く。』[END]
+// current address: $137A53
+
+//POINTER #962 @ $164730 - STRING #962 @ $137A54
+#W32($164730)
+そうしたら、あなたは1枚引く。[END]
+// current address: $137A72
+
+//POINTER #963 @ $164734 - STRING #963 @ $137A74
+#W32($164734)
+他のあなたの《宇宙人》のキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $137AB9
+
+//POINTER #964 @ $164738 - STRING #964 @ $137ABC
+#W32($164738)
+そうしたら、このカードを【スタンド】する。[END]
+// current address: $137ADD
+
+//POINTER #965 @ $16473C - STRING #965 @ $137AE0
+#W32($16473C)
+あなたはこのカードを思い出にしてよい。そうしたら、次のあなたのドローフェイズの始めに、あなたは自分の思い出置場の「見えざる信頼関係 ハルヒ＆キョン」を1枚選び、舞台の好きな枠に置き、そのターン中、そのキャラのパワーを＋3000。[END]
+// current address: $137BBF
+
+//POINTER #966 @ $164740 - STRING #966 @ $137BC0
+#W32($164740)
+あなたは自分の山札を見て《SOS団》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $137C2D
+
+//POINTER #967 @ $164744 - STRING #967 @ $137C30
+#W32($164744)
+他のあなたの《メイド》のキャラすべてに、パワーを＋500。[END]
+// current address: $137C68
+
+//POINTER #968 @ $164748 - STRING #968 @ $137C68
+#W32($164748)
+あなたは自分の《メイド》のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $137CB2
+
+//POINTER #969 @ $16474C - STRING #969 @ $137CB4
+#W32($16474C)
+そうしたら、あなたは自分の控え室の「“いつも”のキョン」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $137D12
+
+//POINTER #970 @ $164750 - STRING #970 @ $137D14
+#W32($164750)
+他のあなたの《SOS団》のキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $137D58
+
+//POINTER #971 @ $164754 - STRING #971 @ $137D58
+#W32($164754)
+そうしたら、あなたは相手の控え室のカードを2枚まで選び、山札に戻す。その山札をシャッフルする。[END]
+// current address: $137DB6
+
+//POINTER #972 @ $164758 - STRING #972 @ $137DB8
+#W32($164758)
+あなたの特徴を持たないキャラすべてに、次の能力を与える。『[Auto]［(1)］ このカードとバトル中のキャラが[Card_down]した時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を見て特徴を持たないキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。』[END]
+// current address: $137EBD
+
+//POINTER #973 @ $16475C - STRING #973 @ $137EC0
+#W32($16475C)
+そうしたら、あなたは自分の山札を見て特徴を持たないキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $137F3C
+
+//POINTER #974 @ $164760 - STRING #974 @ $137F3C
+#W32($164760)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋2000。[END]
+// current address: $137F7A
+
+//POINTER #975 @ $164764 - STRING #975 @ $137F7C
+#W32($164764)
+あなたは自分の山札の上から1枚を公開する。そのカードが《SOS団》のキャラなら、あなたは1枚引いてよい。（そうでないなら元に戻す）[END]
+// current address: $137FFA
+
+//POINTER #976 @ $164768 - STRING #976 @ $137FFC
+#W32($164768)
+あなたの《SOS団》のキャラすべてに、そのターン中、ソウルを＋1。[END]
+// current address: $13803B
+
+//POINTER #977 @ $16476C - STRING #977 @ $13803C
+#W32($16476C)
+あなたのキャラすべてに、そのターン中、パワーを＋2500。[END]
+// current address: $138073
+
+//POINTER #978 @ $164770 - STRING #978 @ $138074
+#W32($164770)
+（[Burn]：このカードがトリガーした時、そのバトル中、あなたのキャラが次に与えたダメージがキャンセルされた時、相手に1ダメージを与える。）[END]
+// current address: $1380F8
+
+//POINTER #979 @ $164774 - STRING #979 @ $1380F8
+#W32($164774)
+このカードの前のあなたのキャラすべてに、パワーを＋1500。[END]
+// current address: $138131
+
+//POINTER #980 @ $164778 - STRING #980 @ $138134
+#W32($164778)
+そうしたら、あなたは自分のキャラを1枚と、このカードを選び、思い出にする。次のあなたのドローフェイズの始めに、あなたは自分の思い出置場のそれらのキャラを、舞台の別々の枠に置き、そのターン中、それらのキャラのパワーを＋1000。[END]
+// current address: $138212
+
+//POINTER #981 @ $16477C - STRING #981 @ $138214
+#W32($16477C)
+あなたは自分の山札の上から4枚をめくり、控え室に置く。それらのカードのクライマックス1枚につき、あなたは相手のキャラを1枚選び、そのターン中、パワーを－2000。[END]
+// current address: $1382B0
+
+//POINTER #982 @ $164780 - STRING #982 @ $1382B0
+#W32($164780)
+他のあなたの《SOS団》のキャラすべてに、レベルを＋1し、パワーを＋500。[END]
+// current address: $1382F6
+
+//POINTER #983 @ $164784 - STRING #983 @ $1382F8
+#W32($164784)
+そうしたら、あなたは相手のキャラを1枚選び、そのターン中、パワーを－2000。[END]
+// current address: $138342
+
+//POINTER #984 @ $164788 - STRING #984 @ $138344
+#W32($164788)
+そうしたら、あなたは相手のキャラを1枚選び、そのターン中、パワーを－1000。[END]
+// current address: $13838E
+
+//POINTER #985 @ $16478C - STRING #985 @ $138390
+#W32($16478C)
+そうしたら、あなたは自分の控え室の「ネコミミ みくる」を1枚選び、手札に戻す）[END]
+// current address: $1383DD
+
+//POINTER #986 @ $164790 - STRING #986 @ $1383E0
+#W32($164790)
+他のあなたの《時間》のキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $138423
+
+//POINTER #987 @ $164794 - STRING #987 @ $138424
+#W32($164794)
+あなたは相手のキャラを1枚選び、そのターン中、パワーを－Ｘ。Ｘはあなたの《時間》のキャラの枚数×1000に等しい。[END]
+// current address: $138492
+
+//POINTER #988 @ $164798 - STRING #988 @ $138494
+#W32($164798)
+そうしたら、次の相手のターンの終わりまで、相手はクライマックスを手札からプレイできない。[END]
+// current address: $1384ED
+
+//POINTER #989 @ $16479C - STRING #989 @ $1384F0
+#W32($16479C)
+あなたは自分の山札を見て《時間》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13855C
+
+//POINTER #990 @ $1647A0 - STRING #990 @ $13855C
+#W32($1647A0)
+そのターン中、そのキャラのパワーを＋1000し、《お茶》を与える。[END]
+// current address: $13859B
+
+//POINTER #991 @ $1647A4 - STRING #991 @ $13859C
+#W32($1647A4)
+そうしたら、あなたは自分の控え室の「未来から来たみくる」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $1385FA
+
+//POINTER #992 @ $1647A8 - STRING #992 @ $1385FC
+#W32($1647A8)
+そうしたら、あなたは自分の控え室の「ウェイトレスみくる」を1枚選び、このカードがいた枠に【レスト】して置く。[END]
+// current address: $138660
+
+//POINTER #993 @ $1647AC - STRING #993 @ $138660
+#W32($1647AC)
+あなたは自分のクロック置場のキャラを1枚選び、手札に戻す。[END]
+// current address: $13869A
+
+//POINTER #994 @ $1647B0 - STRING #994 @ $13869C
+#W32($1647B0)
+あなたは相手のキャラを1枚選び、そのターン中、パワーを－1000。[END]
+// current address: $1386DA
+
+//POINTER #995 @ $1647B4 - STRING #995 @ $1386DC
+#W32($1647B4)
+このカードをクロック置場に置く。[END]
+// current address: $1386FD
+
+//POINTER #996 @ $1647B8 - STRING #996 @ $138700
+#W32($1647B8)
+あなたは自分のクロック置場のレベル2以下の《SOS団》のキャラを1枚選び、舞台の好きな枠に置く。このカードをクロック置場に置く。[END]
+// current address: $13877C
+
+//POINTER #997 @ $1647BC - STRING #997 @ $13877C
+#W32($1647BC)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋Ｘ。Ｘはあなたのストックの枚数×500に等しい。[END]
+// current address: $1387E1
+
+//POINTER #998 @ $1647C0 - STRING #998 @ $1387E4
+#W32($1647C0)
+他のあなたの《団長》のキャラすべてに、パワーを＋1000。[END]
+// current address: $13881B
+
+//POINTER #999 @ $1647C4 - STRING #999 @ $13881C
+#W32($1647C4)
+あなたは自分の《SOS団》のキャラを1枚選び、そのターン中、パワーを＋1500。[END]
+// current address: $138865
+
+//POINTER #1000 @ $1647C8 - STRING #1000 @ $138868
+#W32($1647C8)
+あなたのキャラすべての持つ異なる特徴１つにつき、このカードのパワーを＋500。[END]
+// current address: $1388B4
+
+//POINTER #1001 @ $1647CC - STRING #1001 @ $1388B4
+#W32($1647CC)
+あなたは他の自分のキャラを1枚選び、【レスト】し、後列のキャラのいない枠に動かす。[END]
+// current address: $1388FE
+
+//POINTER #1002 @ $1647D0 - STRING #1002 @ $138900
+#W32($1647D0)
+そうしたら、あなたは自分の控え室の、《宇宙人》のキャラと《時間》のキャラと《超能力》のキャラを1枚ずつ選び、手札に戻す。[END]
+// current address: $138978
+
+//POINTER #1003 @ $1647D4 - STRING #1003 @ $138978
+#W32($1647D4)
+あなたは他の自分のキャラを1枚選び、そのターン中、次の能力を与える。『[Auto] このカードとバトル中のキャラが[Card_down]した時、あなたは自分の控え室のキャラを1枚選び、手札に戻してよい。』[END]
+// current address: $138A24
+
+//POINTER #1004 @ $1647D8 - STRING #1004 @ $138A24
+#W32($1647D8)
+あなたは自分の山札の上から5枚を裏向きのまま思い出にする。相手はそれらのカードを見て2枚と3枚に分ける。あなたは裏向きのまま一方を選び、手札に加える。残りのカードを山札に戻す。その山札をシャッフルする。[END]
+// current address: $138AEC
+
+//POINTER #1005 @ $1647DC - STRING #1005 @ $138AEC
+#W32($1647DC)
+あなたは自分のレベル1以上のキャラを1枚選び、控え室に置いてよい。そうしたら、あなたは自分の控え室のレベル0以下の《団長》のキャラを1枚まで選び、舞台の好きな枠に置き、あなたは自分の控え室のキャラを2枚まで選び、手札に戻す。[END]
+// current address: $138BC8
+
+//POINTER #1006 @ $1647E0 - STRING #1006 @ $138BC8
+#W32($1647E0)
+あなたは自分の山札を見て《SOS団》のキャラを2枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。あなたは自分の手札を1枚選び、控え室に置く。[END]
+// current address: $138C60
+
+//POINTER #1007 @ $1647E4 - STRING #1007 @ $138C60
+#W32($1647E4)
+そのターン中、このカードのパワーを＋1500し、このカードは次の能力を得る。『[Auto] このカードとバトル中のキャラが[Card_down]した時、あなたはそのキャラを山札の下に置いてよい。』[END]
+// current address: $138D02
+
+//POINTER #1008 @ $1647E8 - STRING #1008 @ $138D04
+#W32($1647E8)
+あなたはそのキャラを山札の下に置いてよい。[END]
+// current address: $138D2F
+
+//POINTER #1009 @ $1647EC - STRING #1009 @ $138D30
+#W32($1647EC)
+そうしたら、あなたは自分の控え室の「チャイナドレスの長門」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $138D90
+
+//POINTER #1010 @ $1647F0 - STRING #1010 @ $138D90
+#W32($1647F0)
+あなたは自分の山札の上から4枚をめくり、控え室に置く。それらのカードの《宇宙人》のキャラ1枚につき、あなたは自分の控え室のレベル0以下のキャラを1枚まで選び、舞台の別々の枠に置く。[END]
+// current address: $138E41
+
+//POINTER #1011 @ $1647F4 - STRING #1011 @ $138E44
+#W32($1647F4)
+他のあなたの、「“スリーカード”トゥエンティ」と「“スリーカード”ストーンリバー」と「“スリーカード”ラット」すべてに、パワーを＋1000。[END]
+// current address: $138ECD
+
+//POINTER #1012 @ $1647F8 - STRING #1012 @ $138ED0
+#W32($1647F8)
+他のあなたの《本》のキャラすべてに、パワーを＋500。[END]
+// current address: $138F04
+
+//POINTER #1013 @ $1647FC - STRING #1013 @ $138F04
+#W32($1647FC)
+あなたの、《宇宙人》か《生徒会》のキャラすべてに、パワーを＋1000。[END]
+// current address: $138F47
+
+//POINTER #1014 @ $164800 - STRING #1014 @ $138F48
+#W32($164800)
+そうしたら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『[Auto] このカードとバトル中のキャラが[Card_down]した時、あなたは1枚引いてよい。』[END]
+// current address: $138FDA
+
+//POINTER #1015 @ $164804 - STRING #1015 @ $138FDC
+#W32($164804)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋2000し、次の能力を与える。『[Auto] このカードとバトル中のキャラが[Card_down]した時、あなたはそのキャラを山札の下に置いてよい。』[END]
+// current address: $139087
+
+//POINTER #1016 @ $164808 - STRING #1016 @ $139088
+#W32($164808)
+あなたは自分の山札の上から1枚を、クロック置場に置く。[END]
+// current address: $1390BE
+
+//POINTER #1017 @ $16480C - STRING #1017 @ $1390C0
+#W32($16480C)
+そうしたら、あなたは自分の控え室の「母を想うフェイト」を1枚選び、手札に戻す）[END]
+// current address: $13910E
+
+//POINTER #1018 @ $164810 - STRING #1018 @ $139110
+#W32($164810)
+そうしたら、あなたは自分の控え室の「狼形態アルフ」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $139168
+
+//POINTER #1019 @ $164814 - STRING #1019 @ $139168
+#W32($164814)
+そうしたら、あなたは自分の控え室の「母を想うフェイト」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $1391C4
+
+//POINTER #1020 @ $164818 - STRING #1020 @ $1391C4
+#W32($164818)
+他のあなたの《魔法》のキャラすべてに、パワーを＋1500。[END]
+// current address: $1391FB
+
+//POINTER #1021 @ $16481C - STRING #1021 @ $1391FC
+#W32($16481C)
+あなたは自分の山札の上から1枚を、クロック置場に置いてよい。そうしないなら、このカードを思い出にする。[END]
+// current address: $139262
+
+//POINTER #1022 @ $164820 - STRING #1022 @ $139264
+#W32($164820)
+このカードの下のマーカー1枚につき、このカードのパワーを＋1000。[END]
+// current address: $1392A4
+
+//POINTER #1023 @ $164824 - STRING #1023 @ $1392A4
+#W32($164824)
+そうしたら、このカードを【レスト】する。[END]
+// current address: $1392C5
+
+//POINTER #1024 @ $164828 - STRING #1024 @ $1392C8
+#W32($164828)
+そうしたら、あなたは自分の山札を見て「もうひとりの魔法少女フェイト」を1枚まで選び、後列の好きな枠に置く。その山札をシャッフルする。[END]
+// current address: $13934C
+
+//POINTER #1025 @ $16482C - STRING #1025 @ $13934C
+#W32($16482C)
+他のあなたのカード名に「フェイト」を含むキャラすべてに、パワーを＋1000。[END]
+// current address: $139395
+
+//POINTER #1026 @ $164830 - STRING #1026 @ $139398
+#W32($164830)
+そうしたら、あなたの「母を想うフェイト」1枚につき、次の行動を行う。『相手に1ダメージを与える。』（ダメージキャンセルは発生する）[END]
+// current address: $139419
+
+//POINTER #1027 @ $164834 - STRING #1027 @ $13941C
+#W32($164834)
+他のあなたのカード名に「なのは」を含むキャラすべてに、『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を与える。[END]
+// current address: $139490
+
+//POINTER #1028 @ $164838 - STRING #1028 @ $139490
+#W32($164838)
+あなたは自分のカード名に「なのは」を含むキャラを1枚選び、そのターン中、レベルを＋1。[END]
+// current address: $1394E5
+
+//POINTER #1029 @ $16483C - STRING #1029 @ $1394E8
+#W32($16483C)
+あなたの《魔法》のキャラすべてに、次の能力を与える。『[Act]［(1)］ そのターン中、このカードのパワーを＋2000。』[END]
+// current address: $139554
+
+//POINTER #1030 @ $164840 - STRING #1030 @ $139554
+#W32($164840)
+そうしたら、あなたは自分の山札を見て《動物》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $1395CC
+
+//POINTER #1031 @ $164844 - STRING #1031 @ $1395CC
+#W32($164844)
+このカードは次の能力を得る。『[Auto] このカードとバトル中のキャラが[Card_down]した時、あなたは自分の山札の上から1枚を、ストック置場に置いてよい。』[END]
+// current address: $139653
+
+//POINTER #1032 @ $164848 - STRING #1032 @ $139654
+#W32($164848)
+あなたは自分のカード名に「フェイト」を含むキャラを1枚選び、そのターン中、パワーを＋2000し、このカードのパワーを＋2000。[END]
+// current address: $1396CC
+
+//POINTER #1033 @ $16484C - STRING #1033 @ $1396CC
+#W32($16484C)
+そうしたら、あなたは自分の控え室の「紅茶好き コーデリア」を1枚選び、手札に戻す）[END]
+// current address: $13971D
+
+//POINTER #1034 @ $164850 - STRING #1034 @ $139720
+#W32($164850)
+他のあなたの「分け合う気持ち なのは＆フェイト」すべてに、パワーを＋1000。[END]
+// current address: $13976A
+
+//POINTER #1035 @ $164854 - STRING #1035 @ $13976C
+#W32($164854)
+あなたは自分の控え室の《魔法》のキャラを1枚選び、手札に戻してよい。[END]
+// current address: $1397B0
+
+//POINTER #1036 @ $164858 - STRING #1036 @ $1397B0
+#W32($164858)
+あなたは自分のカード名に「なのは」を含むキャラを1枚選び、そのターン中、次の能力を与える。『[Auto] このカードとバトル中のキャラが[Card_down]した時、あなたは自分の控え室のキャラを1枚選び、手札に戻してよい。』[END]
+// current address: $139872
+
+//POINTER #1037 @ $16485C - STRING #1037 @ $139874
+#W32($16485C)
+そうしたら、あなたは自分の控え室の「信じた思い なのは」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $1398D1
+
+//POINTER #1038 @ $164860 - STRING #1038 @ $1398D4
+#W32($164860)
+そうしたら、あなたは自分の控え室のコスト1以下のカード名に「凛」を含むキャラを1枚選び、このカードがいた枠に置く。[END]
+// current address: $139945
+
+//POINTER #1039 @ $164864 - STRING #1039 @ $139948
+#W32($164864)
+あなたは自分の山札の上から4枚をめくり、控え室に置く。あなたは自分の山札を見てカード名に「凛」を含むキャラをＸ枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。あなたは自分の手札をＸ枚選び、控え室に置く。Ｘはそれらのカードのクライマックスの枚数に等しい。[END]
+// current address: $139A54
+
+//POINTER #1040 @ $164868 - STRING #1040 @ $139A54
+#W32($164868)
+そうしたら、そのターン中、このカードは次の能力を得る。『[Cont] このカードがアタックする時、あなたはかわりに相手の後列のキャラを1枚選び、このカードはそのキャラを防御キャラとしてフロントアタックしてよい。』[END]
+// current address: $139B1D
+
+//POINTER #1041 @ $16486C - STRING #1041 @ $139B20
+#W32($16486C)
+あなたはそのキャラをストック置場に置く。[END]
+// current address: $139B49
+
+//POINTER #1042 @ $164870 - STRING #1042 @ $139B4C
+#W32($164870)
+あなたはかわりに相手の後列のキャラを1枚選び、このカードはそのキャラを防御キャラとしてフロントアタックしてよい。[END]
+// current address: $139BBC
+
+//POINTER #1043 @ $164874 - STRING #1043 @ $139BBC
+#W32($164874)
+そうしたら、あなたは自分の山札を見て自分のレベル以下のレベルの《サーヴァント》のキャラを1枚まで選び、このカードがいた枠に置く。その山札をシャッフルする。[END]
+// current address: $139C56
+
+//POINTER #1044 @ $164878 - STRING #1044 @ $139C58
+#W32($164878)
+そうしたら、相手に同じダメージを与える。（ダメージキャンセルは発生する）[END]
+// current address: $139CA1
+
+//POINTER #1045 @ $16487C - STRING #1045 @ $139CA4
+#W32($16487C)
+このカードは《マスター》を得て、このカードのカード名は「衛宮 士郎」としても扱う。[END]
+// current address: $139CF6
+
+//POINTER #1046 @ $164880 - STRING #1046 @ $139CF8
+#W32($164880)
+他のあなたの《マスター》のキャラすべてに、『[Auto] アンコール ［あなたの山札の上から1枚をクロック置場に置く］』を与える。[END]
+// current address: $139D6E
+
+//POINTER #1047 @ $164884 - STRING #1047 @ $139D70
+#W32($164884)
+このカードの前のあなたのキャラすべてに、レベルを＋1。[END]
+// current address: $139DA6
+
+//POINTER #1048 @ $164888 - STRING #1048 @ $139DA8
+#W32($164888)
+そうしたら、あなたは自分の控え室の「水辺の王様セイバー」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $139E06
+
+//POINTER #1049 @ $16488C - STRING #1049 @ $139E08
+#W32($16488C)
+そのターン中、あなたは2枚までアタックできる。[END]
+// current address: $139E36
+
+//POINTER #1050 @ $164890 - STRING #1050 @ $139E38
+#W32($164890)
+あなたに2ダメージを与える。（ダメージキャンセルは発生する）[END]
+// current address: $139E74
+
+//POINTER #1051 @ $164894 - STRING #1051 @ $139E74
+#W32($164894)
+他のあなたのカード名に「ライダー」を含むキャラすべてに、パワーを＋1000。[END]
+// current address: $139EBD
+
+//POINTER #1052 @ $164898 - STRING #1052 @ $139EC0
+#W32($164898)
+他のあなたのカード名に「ライダー」を含むキャラすべてに、次の能力を与える。『[Cont] このカードは相手のキャラの[Auto]の効果によって[Card_down]されない。このカードはサイドアタックできない。』[END]
+// current address: $139F6C
+
+//POINTER #1053 @ $16489C - STRING #1053 @ $139F6C
+#W32($16489C)
+このカードは相手のキャラの[Auto]の効果によって[Card_down]されない。このカードはサイドアタックできない。[END]
+// current address: $139FC7
+
+//POINTER #1054 @ $1648A0 - STRING #1054 @ $133B94
+#W32($1648A0)
+あなたのキャラすべてに、そのターン中、パワーを＋1000。[END]
+// current address: $133BCB
+
+//POINTER #1055 @ $1648A4 - STRING #1055 @ $139FC8
+#W32($1648A4)
+そうしたら、相手は自分の控え室のカードすべてを、山札に戻す。その山札をシャッフルする。[END]
+// current address: $13A01F
+
+//POINTER #1056 @ $1648A8 - STRING #1056 @ $13A020
+#W32($1648A8)
+そのターン中、このカードのパワーを＋1500し、このカードは次の能力を得る。『[Auto] このカードとバトル中のキャラが[Card_down]した時、あなたは自分の山札の上からＸ枚までを、ストック置場に置く。Ｘはそのキャラのレベルに等しい。』[END]
+// current address: $13A0F2
+
+//POINTER #1057 @ $1648AC - STRING #1057 @ $13A0F4
+#W32($1648AC)
+あなたは自分の山札の上からＸ枚までを、ストック置場に置く。Ｘはそのキャラのレベルに等しい。[END]
+// current address: $13A14F
+
+//POINTER #1058 @ $1648B0 - STRING #1058 @ $13A150
+#W32($1648B0)
+あなたは他の自分のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $13A192
+
+//POINTER #1059 @ $1648B4 - STRING #1059 @ $13A194
+#W32($1648B4)
+そうしたら、あなたは自分の山札を見て「水着の凛」を1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13A208
+
+//POINTER #1060 @ $1648B8 - STRING #1060 @ $13A208
+#W32($1648B8)
+そうしたら、あなたは自分の控え室の「水着のライダー」を1枚選び、手札に戻す）[END]
+// current address: $13A254
+
+//POINTER #1061 @ $1648BC - STRING #1061 @ $13A254
+#W32($1648BC)
+あなたは自分の《マスター》のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $13A2A0
+
+//POINTER #1062 @ $1648C0 - STRING #1062 @ $13A2A0
+#W32($1648C0)
+（あなたは自分のフロントアタックされているキャラを1枚選び、そのターン中、パワーを＋1000）[END]
+// current address: $13A2FA
+
+//POINTER #1063 @ $1648C4 - STRING #1063 @ $13A2FC
+#W32($1648C4)
+あなたは他の自分のキャラを1枚選び、そのターン中、パワーを＋1500し、このカードのパワーを＋1500。[END]
+// current address: $13A35C
+
+//POINTER #1064 @ $1648C8 - STRING #1064 @ $13A35C
+#W32($1648C8)
+そうしたら、あなたはこのカードの正面のキャラを1枚選び、控え室に置く。[END]
+// current address: $13A3A2
+
+//POINTER #1065 @ $1648CC - STRING #1065 @ $13A3A4
+#W32($1648CC)
+そうしたら、あなたは自分の控え室のカード名に「セイバー」を含むキャラを2枚まで選び、手札に戻す。[END]
+// current address: $13A404
+
+//POINTER #1066 @ $1648D0 - STRING #1066 @ $13A404
+#W32($1648D0)
+あなたは自分のストックの上から1枚を、このカードの下にマーカーとして置く。[END]
+// current address: $13A44E
+
+//POINTER #1067 @ $1648D4 - STRING #1067 @ $13A450
+#W32($1648D4)
+相手に1ダメージを与える。（ダメージキャンセルは発生する）[END]
+// current address: $13A48A
+
+//POINTER #1068 @ $1648D8 - STRING #1068 @ $13A48C
+#W32($1648D8)
+あなたの控え室の「月下の紅 凛＆アーチャー」1枚につき、このカードのパワーを＋500。[END]
+// current address: $13A4DE
+
+//POINTER #1069 @ $1648DC - STRING #1069 @ $13A4E0
+#W32($1648DC)
+そうしたら、あなたは自分の手札のレベル2以下の《サーヴァント》のキャラを1枚まで選び、舞台の好きな枠に置く。[END]
+// current address: $13A54B
+
+//POINTER #1070 @ $1648E0 - STRING #1070 @ $13A54C
+#W32($1648E0)
+そうしたら、あなたは相手の前列のコスト1以下のキャラを1枚選び、山札の下に置き、相手の前列のそのキャラと同じカード名のキャラを1枚まで選び、山札の下に置く。[END]
+// current address: $13A5E6
+
+//POINTER #1071 @ $1648E4 - STRING #1071 @ $13A5E8
+#W32($1648E4)
+他のあなたの『[Auto] アンコール ［あなたの山札の上から1枚をクロック置場に置く］』を持つキャラすべてに、パワーを＋500。[END]
+// current address: $13A65B
+
+//POINTER #1072 @ $1648E8 - STRING #1072 @ $13A65C
+#W32($1648E8)
+そうしたら、あなたは自分の控え室の「破城槌 イリヤ＆バーサーカー」を1枚選び、手札に戻す）[END]
+// current address: $13A6B5
+
+//POINTER #1073 @ $1648EC - STRING #1073 @ $13A6B8
+#W32($1648EC)
+そうしたら、あなたは相手のレベル3以下のキャラを1枚選ぶ。そのキャラは次の相手のスタンドフェイズに【スタンド】しない。[END]
+// current address: $13A723
+
+//POINTER #1074 @ $1648F0 - STRING #1074 @ $13A724
+#W32($1648F0)
+このカードのパワーを＋Ｘ。Ｘはそのキャラのレベル×1500に等しい。[END]
+// current address: $13A765
+
+//POINTER #1075 @ $1648F4 - STRING #1075 @ $13A768
+#W32($1648F4)
+そうしたら、あなたは自分のクロックの上から1枚までを、控え室に置き、他の自分のキャラを1枚選び、そのターン中、次の能力を与える。『[Cont] このカードはサイドアタックしてもソウルが減少しない。』[END]
+// current address: $13A822
+
+//POINTER #1076 @ $1648F8 - STRING #1076 @ $13A824
+#W32($1648F8)
+このカードはサイドアタックしてもソウルが減少しない。[END]
+// current address: $13A859
+
+//POINTER #1077 @ $1648FC - STRING #1077 @ $13A85C
+#W32($1648FC)
+そのターン中、このカードのパワーを＋2500。[END]
+// current address: $13A887
+
+//POINTER #1078 @ $164900 - STRING #1078 @ $13A888
+#W32($164900)
+あなたは自分の山札を見て《探偵》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13A8F4
+
+//POINTER #1079 @ $164904 - STRING #1079 @ $13A8F4
+#W32($164904)
+そのターン中、このカードのパワーを＋Ｘし、バトル中のキャラすべてに、次の能力を与える。『[Auto] このカードとバトル中のキャラが[Card_down]した時、あなたは自分の控え室のキャラを1枚選び、手札に戻してよい。』Ｘはあなたの控え室のクライマックスの枚数×1000に等しい。[END]
+// current address: $13A9EB
+
+//POINTER #1080 @ $164908 - STRING #1080 @ $13A9EC
+#W32($164908)
+他のあなたの《マスター》のキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $13AA33
+
+//POINTER #1081 @ $16490C - STRING #1081 @ $13AA34
+#W32($16490C)
+あなたは自分のクロック置場の「臨戦態勢ライダー」を1枚選び、舞台の好きな枠に置く。あなたは自分の手札を1枚選び、クロック置場に置く。[END]
+// current address: $13AAB7
+
+//POINTER #1082 @ $164910 - STRING #1082 @ $13AAB8
+#W32($164910)
+あなたは自分の山札を見てクライマックスを1枚まで選び、控え室に置く。その山札をシャッフルする。1枚控え室に置いたなら、あなたは相手の前列のレベル2以下のキャラを1枚選び、ストック置場に置く。[END]
+// current address: $13AB73
+
+//POINTER #1083 @ $164914 - STRING #1083 @ $13AB74
+#W32($164914)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋3000。[END]
+// current address: $13ABB2
+
+//POINTER #1084 @ $164918 - STRING #1084 @ $13ABB4
+#W32($164918)
+あなたは自分のカード名に「桜」を含むキャラを1枚選び、控え室に置く。[END]
+// current address: $13ABF8
+
+//POINTER #1085 @ $16491C - STRING #1085 @ $13ABF8
+#W32($16491C)
+あなたは自分の控え室のレベル2以下の《武器》のキャラを1枚選び、舞台の好きな枠に置く。[END]
+// current address: $13AC4D
+
+//POINTER #1086 @ $164920 - STRING #1086 @ $13AC50
+#W32($164920)
+あなたは自分のカード名に「アーチャー」を含むキャラを1枚選び、そのターン中、次の能力を与える。『[Auto] このカードが[Card_down]した時、このカードとバトルしているキャラのレベルがこのカードのレベル以下なら、あなたはそのキャラを[Card_down]してよい。』[END]
+// current address: $13AD31
+
+//POINTER #1087 @ $164924 - STRING #1087 @ $13AD34
+#W32($164924)
+このカードの前のあなたのキャラすべてに、『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を与える。[END]
+// current address: $13AD9A
+
+//POINTER #1088 @ $164928 - STRING #1088 @ $13AD9C
+#W32($164928)
+そうしたら、あなたは自分の控え室の「騎士王セイバー」を1枚選び、手札に戻す）[END]
+// current address: $13ADE8
+
+//POINTER #1089 @ $16492C - STRING #1089 @ $13ADE8
+#W32($16492C)
+あなたは自分の《武器》のキャラを1枚選び、そのターン中、パワーを＋500。[END]
+// current address: $13AE2F
+
+//POINTER #1090 @ $164930 - STRING #1090 @ $13AE30
+#W32($164930)
+あなたは自分の山札の上から1枚を公開する。そのカードがカード名に「凛」を含むキャラなら、あなたは1枚引き、自分の手札を1枚選び、控え室に置く。（そうでないなら元に戻す）[END]
+// current address: $13AED6
+
+//POINTER #1091 @ $164934 - STRING #1091 @ $13AED8
+#W32($164934)
+他のあなたのカード名に「桜」を含むキャラすべてに、パワーを＋500。[END]
+// current address: $13AF1A
+
+//POINTER #1092 @ $164938 - STRING #1092 @ $13AF1C
+#W32($164938)
+あなたは自分のカード名に「士郎」を含むキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $13AF72
+
+//POINTER #1093 @ $16493C - STRING #1093 @ $13AF74
+#W32($16493C)
+このカードの前のあなたのレベル2以上のキャラすべてに、ソウルを＋1。[END]
+// current address: $13AFB7
+
+//POINTER #1094 @ $164940 - STRING #1094 @ $13AFB8
+#W32($164940)
+あなたは自分の山札の上から4枚をめくり、控え室に置く。それらのカードのクライマックス1枚につき、あなたは相手の前列のレベル1以下のキャラを1枚選び、手札に戻す。[END]
+// current address: $13B055
+
+//POINTER #1095 @ $164944 - STRING #1095 @ $13B058
+#W32($164944)
+そうしたら、あなたは相手の前列のレベル2以下のキャラすべてを、ストック置場に置く。[END]
+// current address: $13B0AA
+
+//POINTER #1096 @ $164948 - STRING #1096 @ $13B0AC
+#W32($164948)
+あなたは自分の山札を見て《武器》のキャラを2枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13B118
+
+//POINTER #1097 @ $16494C - STRING #1097 @ $13B118
+#W32($16494C)
+あなたは自分の手札の自分のレベル＋1以下のレベルのカード名に「セイバー」を含むキャラを1枚まで選び、舞台の好きな枠に置く。[END]
+// current address: $13B191
+
+//POINTER #1098 @ $164950 - STRING #1098 @ $13B194
+#W32($164950)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋5000し、ソウルを＋1。[END]
+// current address: $13B1E1
+
+//POINTER #1099 @ $164954 - STRING #1099 @ $13B1E4
+#W32($164954)
+あなたは自分のキャラを1枚選び、山札の上に置く。そうしたら、あなたは相手の前列のレベル2以下のキャラを1枚選び、手札に戻す。[END]
+// current address: $13B25E
+
+//POINTER #1100 @ $164958 - STRING #1100 @ $13B260
+#W32($164958)
+他のあなたの《動物》のキャラすべてに、パワーを＋500。[END]
+// current address: $13B296
+
+//POINTER #1101 @ $16495C - STRING #1101 @ $13B298
+#W32($16495C)
+あなたは自分の山札の上から3枚をめくり、控え室に置く。それらのカードに「ゴルゴンの末女ライダー」があるなら、あなたは自分の控え室の「ゴルゴンの末女ライダー」を1枚選び、舞台の好きな枠に置く。[END]
+// current address: $13B355
+
+//POINTER #1102 @ $164960 - STRING #1102 @ $13B358
+#W32($164960)
+あなたは自分のカード名に「士郎」を含むキャラを1枚選び、そのターン中、パワーを＋500。[END]
+// current address: $13B3AD
+
+//POINTER #1103 @ $164964 - STRING #1103 @ $13B3B0
+#W32($164964)
+あなたは自分のカード名に「凛」を含むキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $13B404
+
+//POINTER #1104 @ $164968 - STRING #1104 @ $13B404
+#W32($164968)
+そうしたら、あなたは自分のクロック置場のレベル2以下のキャラを1枚選び、舞台の好きな枠に置く。[END]
+// current address: $13B461
+
+//POINTER #1105 @ $16496C - STRING #1105 @ $13B464
+#W32($16496C)
+あなたは相手のキャラを1枚選び、そのターン中、パワーを－500。[END]
+// current address: $13B4A1
+
+//POINTER #1106 @ $164970 - STRING #1106 @ $13B4A4
+#W32($164970)
+あなたのレベル2以上のキャラすべてに、パワーを＋1000。[END]
+// current address: $13B4DA
+
+//POINTER #1107 @ $164974 - STRING #1107 @ $13B4DC
+#W32($164974)
+あなたは自分のクロック置場のレベル3以下のキャラを1枚選び、舞台の好きな枠に置く。次の相手のターンの終わりに、そのキャラをクロック置場に置く。[END]
+// current address: $13B569
+
+//POINTER #1108 @ $164978 - STRING #1108 @ $13B56C
+#W32($164978)
+あなたは相手の山札を上から3枚まで見てカードを1枚まで選び、山札の下に置く。残りのカードを山札の上に好きな順番で置く。[END]
+// current address: $13B5E1
+
+//POINTER #1109 @ $16497C - STRING #1109 @ $13B5E4
+#W32($16497C)
+あなたは自分の山札の上から1枚を、ストック置場に置く。あなたは自分の山札の上から3枚をめくり、控え室に置く。それらのカードにクライマックスがあるなら、このカードをストック置場に置く。[END]
+// current address: $13B699
+
+//POINTER #1110 @ $164980 - STRING #1110 @ $13B69C
+#W32($164980)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋4000。[END]
+// current address: $13B6DA
+
+//POINTER #1111 @ $164984 - STRING #1111 @ $13B6DC
+#W32($164984)
+あなたは自分のカード名に「セイバー」を含むキャラを1枚選び、クロック置場に置く。[END]
+// current address: $13B72C
+
+//POINTER #1112 @ $164988 - STRING #1112 @ $13B72C
+#W32($164988)
+他のあなたの《探偵》のキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $13B76F
+
+//POINTER #1113 @ $16498C - STRING #1113 @ $13B770
+#W32($16498C)
+このカードを控え室に置く。[END]
+// current address: $13B78B
+
+//POINTER #1114 @ $164990 - STRING #1114 @ $13B78C
+#W32($164990)
+そうしたら、あなたは自分の控え室のレベル2以下の《武器》のキャラを2枚まで選び、前列の別々の枠に置く。アンコールステップの始めに、それらのキャラが舞台にいるなら、それらのキャラを山札に戻す。その山札をシャッフルする。[END]
+// current address: $13B863
+
+//POINTER #1115 @ $164994 - STRING #1115 @ $13B864
+#W32($164994)
+そうしたら、あなたは自分の控え室の「黒き聖杯 桜」を1枚選び、手札に戻す。[END]
+// current address: $13B8AD
+
+//POINTER #1116 @ $164998 - STRING #1116 @ $13B8B0
+#W32($164998)
+あなたは自分の控え室の《武器》のキャラを1枚選び、手札に戻す。[END]
+// current address: $13B8EE
+
+//POINTER #1117 @ $16499C - STRING #1117 @ $13B8F0
+#W32($16499C)
+そうしたら、あなたは自分の控え室の《武器》のキャラを1枚選び、手札に戻す。[END]
+// current address: $13B93A
+
+//POINTER #1118 @ $1649A0 - STRING #1118 @ $13B93C
+#W32($1649A0)
+そのターン中、このカードのパワーを＋1000し、このカードは次の能力を得る。『[Auto] このカードとバトルしているキャラが[Card_down]した時、あなたはそのキャラを山札の上に置いてよい。』[END]
+// current address: $13B9E2
+
+//POINTER #1119 @ $1649A4 - STRING #1119 @ $13B9E4
+#W32($1649A4)
+そうしたら、あなたは自分の控え室の《マスター》のキャラを1枚選び、手札に戻す。[END]
+// current address: $13BA32
+
+//POINTER #1120 @ $1649A8 - STRING #1120 @ $13BA34
+#W32($1649A8)
+そうしたら、あなたは自分の控え室の「錬鉄の英霊アーチャー」を1枚選び、手札に戻す）[END]
+// current address: $13BA86
+
+//POINTER #1121 @ $1649AC - STRING #1121 @ $13BA88
+#W32($1649AC)
+あなたは自分の控え室のキャラを1枚選び、手札に戻す。あなたは自分のキャラを1枚選び、そのターン中、パワーを＋2000。[END]
+// current address: $13BAF9
+
+//POINTER #1122 @ $1649B0 - STRING #1122 @ $13BAFC
+#W32($1649B0)
+あなたは自分の控え室の「凛＆アーチャー」を1枚選び、舞台の好きな枠に置く。あなたは自分の手札を1枚選び、控え室に置く。[END]
+// current address: $13BB71
+
+//POINTER #1123 @ $1649B4 - STRING #1123 @ $13BB74
+#W32($1649B4)
+相手に6ダメージを与える。（ダメージキャンセルは発生する）[END]
+// current address: $13BBAE
+
+//POINTER #1124 @ $1649B8 - STRING #1124 @ $13BBB0
+#W32($1649B8)
+あなたは自分のキャラを1枚選び、控え室に置く。そうしたら、あなたは相手の前列のレベル2以下のキャラを1枚選び、控え室に置く。[END]
+// current address: $13BC2A
+
+//POINTER #1125 @ $1649BC - STRING #1125 @ $13BC2C
+#W32($1649BC)
+他のあなたの《武器》のキャラすべてに、パワーを＋500。[END]
+// current address: $13BC62
+
+//POINTER #1126 @ $1649C0 - STRING #1126 @ $13BC64
+#W32($1649C0)
+あなたは自分の手札のレベル2以下のキャラを1枚まで選び、舞台の好きな枠に置く。[END]
+// current address: $13BCB1
+
+//POINTER #1127 @ $1649C4 - STRING #1127 @ $13BCB4
+#W32($1649C4)
+そうしたら、あなたは自分の山札を見てカード名に「バーサーカー」を含むキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13BD42
+
+//POINTER #1128 @ $1649C8 - STRING #1128 @ $13BD44
+#W32($1649C8)
+あなたは相手のキャラを1枚選ぶ。そのキャラは次の相手のスタンドフェイズに【スタンド】しない。[END]
+// current address: $13BD96
+
+//POINTER #1129 @ $1649CC - STRING #1129 @ $13BD98
+#W32($1649CC)
+他のあなたの《先生》のキャラすべてに、パワーを＋1000。[END]
+// current address: $13BDCF
+
+//POINTER #1130 @ $1649D0 - STRING #1130 @ $13BDD0
+#W32($1649D0)
+そうしたら、あなたは自分の山札を見てカード名に「小次郎」を含むキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13BE58
+
+//POINTER #1131 @ $1649D4 - STRING #1131 @ $13BE58
+#W32($1649D4)
+あなたはこのカードか自分の「佐々木 小次郎」を1枚選び、控え室に置く。[END]
+// current address: $13BE9D
+
+//POINTER #1132 @ $1649D8 - STRING #1132 @ $13BEA0
+#W32($1649D8)
+あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。[END]
+// current address: $13BED9
+
+//POINTER #1133 @ $1649DC - STRING #1133 @ $13BEDC
+#W32($1649DC)
+あなたのレベル2以上のキャラすべてに、『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を与える。[END]
+// current address: $13BF3F
+
+//POINTER #1134 @ $1649E0 - STRING #1134 @ $13BF40
+#W32($1649E0)
+あなたは自分の山札の上から2枚をめくり、控え室に置く。それらのカードのクライマックス1枚につき、あなたは1枚引く。[END]
+// current address: $13BFB0
+
+//POINTER #1135 @ $1649E4 - STRING #1135 @ $13BFB0
+#W32($1649E4)
+そうしたら、あなたは自分の控え室の「葛木 宗一郎」を1枚選び、手札に戻す）[END]
+// current address: $13BFF9
+
+//POINTER #1136 @ $1649E8 - STRING #1136 @ $13BFFC
+#W32($1649E8)
+あなたは相手の前列のレベル2以下のキャラを1枚選び、山札の下に置く。あなたは自分の山札を見てそのキャラと同じカード名のキャラを1枚まで選び、舞台の好きな枠に置く。その山札をシャッフルする。[END]
+// current address: $13C0B6
+
+//POINTER #1137 @ $1649EC - STRING #1137 @ $13C0B8
+#W32($1649EC)
+そうしたら、あなたは自分の手札の「宗一郎＆キャスター」を1枚まで選び、後列の好きな枠に置く。[END]
+// current address: $13C114
+
+//POINTER #1138 @ $1649F0 - STRING #1138 @ $13C114
+#W32($1649F0)
+あなたは1枚引き、自分の手札を1枚選び、控え室に置く。あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『[Auto] このカードが舞台から控え室に置かれた時、あなたはこのカードをこのカードがいた枠に【レスト】して置いてよい。』[END]
+// current address: $13C1F1
+
+//POINTER #1139 @ $1649F4 - STRING #1139 @ $13C1F4
+#W32($1649F4)
+あなたは3枚まで引き、自分の手札を2枚選び、控え室に置く。[END]
+// current address: $13C22D
+
+//POINTER #1140 @ $1649F8 - STRING #1140 @ $13C230
+#W32($1649F8)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋2500。このカードを思い出にする。[END]
+// current address: $13C288
+
+//POINTER #1141 @ $1649FC - STRING #1141 @ $13C288
+#W32($1649FC)
+あなたは相手の後列のレベル0以下のキャラを1枚選び、手札に戻す。[END]
+// current address: $13C2C7
+
+//POINTER #1142 @ $164A00 - STRING #1142 @ $13C2C8
+#W32($164A00)
+あなたは自分のクロック置場の自分のレベル以下のレベルのキャラを1枚選び、舞台の好きな枠に置く。[END]
+// current address: $13C326
+
+//POINTER #1143 @ $164A04 - STRING #1143 @ $13C328
+#W32($164A04)
+あなたは自分の山札の上から1枚を公開する。そのカードがカード名に「凛」を含むキャラなら、あなたは1枚引き、自分の手札を1枚選び、控え室に置く。[END]
+// current address: $13C3B4
+
+//POINTER #1144 @ $164A08 - STRING #1144 @ $13C3B4
+#W32($164A08)
+あなたは相手の前列のレベル0以下のキャラを1枚選び、控え室に置く。[END]
+// current address: $13C3F5
+
+//POINTER #1145 @ $164A0C - STRING #1145 @ $13C3F8
+#W32($164A0C)
+あなたは自分のクロックの上から2枚を、控え室に置く。このカードを思い出にする。[END]
+// current address: $13C446
+
+//POINTER #1146 @ $164A10 - STRING #1146 @ $13C448
+#W32($164A10)
+あなたは他の自分のキャラを2枚まで選び、思い出にする。次のあなたのドローフェイズの始めに、あなたは自分の思い出置場のそれらのキャラを、舞台の別々の枠に置き、そのターン中、それらのキャラのパワーを＋1500。[END]
+// current address: $13C512
+
+//POINTER #1147 @ $164A14 - STRING #1147 @ $13C514
+#W32($164A14)
+そうしたら、あなたは自分の控え室の《SOS団》のキャラを1枚選び、手札に戻す。[END]
+// current address: $13C55F
+
+//POINTER #1148 @ $164A18 - STRING #1148 @ $13C560
+#W32($164A18)
+あなたはそのキャラをストック置場に置いてよい。そうしたら、あなたは相手のストックの下から1枚を、控え室に置く。[END]
+// current address: $13C5CE
+
+//POINTER #1149 @ $164A1C - STRING #1149 @ $13C5D0
+#W32($164A1C)
+あなたは自分の《時間》のキャラを1枚選び、そのターン中、パワーを＋4000。[END]
+// current address: $13C618
+
+//POINTER #1150 @ $164A20 - STRING #1150 @ $13C618
+#W32($164A20)
+他のあなたの《SOS団》のキャラすべてに、『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を与える。[END]
+// current address: $13C67D
+
+//POINTER #1151 @ $164A24 - STRING #1151 @ $13C680
+#W32($164A24)
+あなたはこのカードを手札に戻し、自分の《時間》のキャラを1枚選び、そのターン中、パワーを＋3000。[END]
+// current address: $13C6E0
+
+//POINTER #1152 @ $164A28 - STRING #1152 @ $13C6E0
+#W32($164A28)
+他のあなたの、《時間》か《オデコ》のキャラすべてに、パワーを＋500。[END]
+// current address: $13C724
+
+//POINTER #1153 @ $164A2C - STRING #1153 @ $13C724
+#W32($164A2C)
+あなたは自分の、《時間》か《SOS団》のキャラを1枚選び、そのターン中、パワーを＋1500。[END]
+// current address: $13C779
+
+//POINTER #1154 @ $164A30 - STRING #1154 @ $13C77C
+#W32($164A30)
+あなたは自分の《SOS団》のキャラを1枚選び、そのターン中、パワーを＋500。[END]
+// current address: $13C7C4
+
+//POINTER #1155 @ $164A34 - STRING #1155 @ $13C7C4
+#W32($164A34)
+そうしたら、あなたは自分の控え室の「お花見 ハルヒ」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $13C81D
+
+//POINTER #1156 @ $164A38 - STRING #1156 @ $13C820
+#W32($164A38)
+このカードと同じカード名のカードは、デッキに8枚まで入れることができる。[END]
+// current address: $13C868
+
+//POINTER #1157 @ $164A3C - STRING #1157 @ $13C868
+#W32($164A3C)
+あなたは自分の《SOS団》のキャラを1枚選び、そのターン中、パワーを＋Ｘ。Ｘはあなたの思い出置場の「エンドレスエイト」の枚数×1000に等しい。[END]
+// current address: $13C8F1
+
+//POINTER #1158 @ $164A40 - STRING #1158 @ $13C8F4
+#W32($164A40)
+あなたは自分のクロックの上から1枚までを、控え室に置き、そのターン中、このカードのパワーを＋3000。[END]
+// current address: $13C956
+
+//POINTER #1159 @ $164A44 - STRING #1159 @ $13C958
+#W32($164A44)
+あなたは自分の山札の上から4枚をめくり、控え室に置く。それらのカードのクライマックス1枚につき、あなたは自分の《宇宙人》のキャラを1枚選び、そのターン中、パワーを＋2000。[END]
+// current address: $13CA00
+
+//POINTER #1160 @ $164A48 - STRING #1160 @ $13CA00
+#W32($164A48)
+そうしたら、あなたは自分の控え室の《探偵》のキャラを1枚選び、手札に戻す。[END]
+// current address: $13CA4A
+
+//POINTER #1161 @ $164A4C - STRING #1161 @ $13CA4C
+#W32($164A4C)
+そうしたら、あなたは自分の控え室の「けなげでひたむき シャロ」を1枚選び、手札に戻す）[END]
+// current address: $13CAA1
+
+//POINTER #1162 @ $164A50 - STRING #1162 @ $13CAA4
+#W32($164A50)
+そうしたら、あなたは相手と勝負が付くまでじゃんけんし、勝ったプレイヤーは1枚引く。[END]
+// current address: $13CAF6
+
+//POINTER #1163 @ $164A54 - STRING #1163 @ $13CAF8
+#W32($164A54)
+あなたは自分の山札の上から1枚を公開する。そのカードが《探偵》のキャラでないならクロック置場に置く。（そうでないなら元に戻す）[END]
+// current address: $13CB76
+
+//POINTER #1164 @ $164A58 - STRING #1164 @ $13CB78
+#W32($164A58)
+そうしたら、あなたは自分の控え室のキャラを1枚まで選び、手札に戻し、あなたの《探偵》のキャラすべてに、そのターン中、パワーを＋2000。[END]
+// current address: $13CBFC
+
+//POINTER #1165 @ $164A5C - STRING #1165 @ $13CBFC
+#W32($164A5C)
+あなたは自分の《探偵》のキャラを1枚選び、そのターン中、レベルを＋1。[END]
+// current address: $13CC41
+
+//POINTER #1166 @ $164A60 - STRING #1166 @ $13CC44
+#W32($164A60)
+あなたは自分の山札を見て《探偵》のキャラを2枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13CCB0
+
+//POINTER #1167 @ $164A64 - STRING #1167 @ $13CCB0
+#W32($164A64)
+あなたのキャラすべてが《探偵》なら、このカードのパワーを＋1000。[END]
+// current address: $13CCF1
+
+//POINTER #1168 @ $164A68 - STRING #1168 @ $13CCF4
+#W32($164A68)
+あなたは相手の控え室のカードを1枚まで選び、山札の上に置き、そのターン中、このカードのパワーを＋3000。[END]
+// current address: $13CD5A
+
+//POINTER #1169 @ $164A6C - STRING #1169 @ $13CD5C
+#W32($164A6C)
+あなたは自分の《探偵》のキャラを1枚選び、そのターン中、パワーを＋2000。[END]
+// current address: $13CDA4
+
+//POINTER #1170 @ $164A70 - STRING #1170 @ $13CDA4
+#W32($164A70)
+そうしたら、あなたは他の自分のキャラを2枚まで選び、手札に戻す。[END]
+// current address: $13CDE4
+
+//POINTER #1171 @ $164A74 - STRING #1171 @ $13CDE4
+#W32($164A74)
+このカードのパワーを＋500し、このカードは次の能力を得る。『 このカードのバトル相手が[Card_down]した時、あなたはそのキャラをストック置場に置いてよい。』[END]
+// current address: $13CE73
+
+//POINTER #1172 @ $164A78 - STRING #1172 @ $13CE74
+#W32($164A78)
+あなたはそのキャラをストック置場に置いてよい。[END]
+// current address: $13CEA3
+
+//POINTER #1173 @ $164A7C - STRING #1173 @ $13CEA4
+#W32($164A7C)
+そうしたら、あなたは自分の控え室の「ハロウィンナイト エリー」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $13CF07
+
+//POINTER #1174 @ $164A80 - STRING #1174 @ $13CF08
+#W32($164A80)
+あなたは自分の山札の上から1枚を、ストック置場に置く。[END]
+// current address: $13CF3E
+
+//POINTER #1175 @ $164A84 - STRING #1175 @ $13CF40
+#W32($164A84)
+あなたは自分の山札の上から1枚を公開する。そのカードが《警察》のキャラなら手札に加え、あなたは自分の手札を1枚選び、控え室に置く。（そうでないなら元に戻す）[END]
+// current address: $13CFDB
+
+//POINTER #1176 @ $164A88 - STRING #1176 @ $13CFDC
+#W32($164A88)
+このカードの前のあなたの《探偵》のキャラすべてに、パワーを＋Ｘ。Ｘはそのキャラのレベル×500に等しい。[END]
+// current address: $13D042
+
+//POINTER #1177 @ $164A8C - STRING #1177 @ $13D044
+#W32($164A8C)
+そうしたら、あなたは自分の控え室の「ドジっ子探偵 シャロ」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $13D0A3
+
+//POINTER #1178 @ $164A90 - STRING #1178 @ $13D0A4
+#W32($164A90)
+あなたは自分の控え室の《警察》のキャラを1枚選び、手札に戻す。[END]
+// current address: $13D0E2
+
+//POINTER #1179 @ $164A94 - STRING #1179 @ $13D0E4
+#W32($164A94)
+そうしたら、あなたは自分の控え室の「怪盗 アルセーヌ」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $13D13F
+
+//POINTER #1180 @ $164A98 - STRING #1180 @ $13D140
+#W32($164A98)
+このカードの前のあなたのキャラすべてに、ソウルを＋1。[END]
+// current address: $13D176
+
+//POINTER #1181 @ $164A9C - STRING #1181 @ $13D178
+#W32($164A9C)
+あなたは自分の山札の上から1枚を公開する。そのカードが《探偵》のキャラなら手札に加え、あなたは自分の手札を1枚選び、控え室に置く。（そうでないなら元に戻す）[END]
+// current address: $13D213
+
+//POINTER #1182 @ $164AA0 - STRING #1182 @ $13D214
+#W32($164AA0)
+そのターン中、このカードのパワーを＋4000し、ソウルを＋1。[END]
+// current address: $13D24E
+
+//POINTER #1183 @ $164AA4 - STRING #1183 @ $13D250
+#W32($164AA4)
+あなたは自分の《探偵》のキャラを2枚まで選び、そのターン中、ソウルを＋1。[END]
+// current address: $13D299
+
+//POINTER #1184 @ $164AA8 - STRING #1184 @ $13D29C
+#W32($164AA8)
+そうしたら、あなたは自分のキャラを1枚選び、そのターン中、ソウルを＋1。[END]
+// current address: $13D2E3
+
+//POINTER #1185 @ $164AAC - STRING #1185 @ $13D2E4
+#W32($164AAC)
+そのターン中、このカードのパワーを＋1500し、ソウルを＋1。[END]
+// current address: $13D31E
+
+//POINTER #1186 @ $164AB0 - STRING #1186 @ $13D320
+#W32($164AB0)
+あなたは自分の山札の上から3枚を、控え室に置く。[END]
+// current address: $13D350
+
+//POINTER #1187 @ $164AB4 - STRING #1187 @ $13D350
+#W32($164AB4)
+そうしたら、あなたは自分の控え室の「ネコミミ ネロ」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $13D3A9
+
+//POINTER #1188 @ $164AB8 - STRING #1188 @ $13D3AC
+#W32($164AB8)
+そうしたら、あなたは自分の控え室の「ネコミミ ネロ」を1枚選び、手札に戻す）[END]
+// current address: $13D3F7
+
+//POINTER #1189 @ $164ABC - STRING #1189 @ $13D3F8
+#W32($164ABC)
+あなたは自分の《探偵》のキャラを1枚選び、そのターン中、パワーを＋2500し、ソウルを＋1。[END]
+// current address: $13D44F
+
+//POINTER #1190 @ $164AC0 - STRING #1190 @ $13D450
+#W32($164AC0)
+あなたは相手の控え室のカードを6枚まで選び、山札に戻す。相手はその山札をシャッフルする。[END]
+// current address: $13D4A8
+
+//POINTER #1191 @ $164AC4 - STRING #1191 @ $13D4A8
+#W32($164AC4)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋5000。[END]
+// current address: $13D4E6
+
+//POINTER #1192 @ $164AC8 - STRING #1192 @ $13D4E8
+#W32($164AC8)
+そのターン中、相手は『 アンコール』を使えない。（ルールによる『 アンコール ［(3)］』も使えない）[END]
+// current address: $13D548
+
+//POINTER #1193 @ $164ACC - STRING #1193 @ $13D548
+#W32($164ACC)
+あなたは自分の《探偵》のキャラを1枚選び、そのターン中、パワーを＋1500。[END]
+// current address: $13D590
+
+//POINTER #1194 @ $164AD0 - STRING #1194 @ $13D590
+#W32($164AD0)
+あなたは相手の前列のキャラを1枚選び、そのターン中、パワーを－2000。[END]
+// current address: $13D5D4
+
+//POINTER #1195 @ $164AD4 - STRING #1195 @ $13D5D4
+#W32($164AD4)
+そうしたら、あなたは相手の山札を上から1枚見て、山札の上か下に置く。[END]
+// current address: $13D618
+
+//POINTER #1196 @ $164AD8 - STRING #1196 @ $13D618
+#W32($164AD8)
+そうしたら、あなたは自分の控え室の「恥ずかしがり屋 エリー」を1枚選び、手札に戻す）[END]
+// current address: $13D66B
+
+//POINTER #1197 @ $164ADC - STRING #1197 @ $13D66C
+#W32($164ADC)
+あなたは自分の控え室の《探偵》のキャラを1枚まで選び、ストック置場に置き、そのターン中、このカードのパワーを＋3000。[END]
+// current address: $13D6E0
+
+//POINTER #1198 @ $164AE0 - STRING #1198 @ $13D6E0
+#W32($164AE0)
+他のあなたの《警察》のキャラすべてに、パワーを＋500。[END]
+// current address: $13D716
+
+//POINTER #1199 @ $164AE4 - STRING #1199 @ $13D718
+#W32($164AE4)
+そうしたら、あなたは自分のクロック置場のキャラを1枚選び、手札に戻し、自分の山札の上から1枚を、クロック置場に置く。[END]
+// current address: $13D78B
+
+//POINTER #1200 @ $164AE8 - STRING #1200 @ $13D78C
+#W32($164AE8)
+あなたは自分の山札を見て《警察》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。あなたは自分のキャラを1枚選び、そのターン中、パワーを＋2000。このカードをクロック置場に置く。[END]
+// current address: $13D855
+
+//POINTER #1201 @ $164AEC - STRING #1201 @ $13D858
+#W32($164AEC)
+あなたは相手の山札を上から1枚見て、山札の上か下に置く。このカードをストック置場に置く。[END]
+// current address: $13D8B0
+
+//POINTER #1202 @ $164AF0 - STRING #1202 @ $13D8B0
+#W32($164AF0)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋Ｘ。Ｘはあなたの《探偵》のキャラの枚数×500に等しい。[END]
+// current address: $13D91D
+
+//POINTER #1203 @ $164AF4 - STRING #1203 @ $13D920
+#W32($164AF4)
+そのターン中、このカードのパワーを＋1500[END]
+// current address: $13D949
+
+//POINTER #1204 @ $164AF8 - STRING #1204 @ $13D94C
+#W32($164AF8)
+他のあなたの《警察》のキャラすべてに、パワーを＋1000。[END]
+// current address: $13D983
+
+//POINTER #1205 @ $164AFC - STRING #1205 @ $13D984
+#W32($164AFC)
+そうしたら、あなたは自分の控え室のキャラを1枚選び、手札に戻し、あなたの《探偵》のキャラすべてに、そのターン中、パワーを＋2000。[END]
+// current address: $13DA04
+
+//POINTER #1206 @ $164B00 - STRING #1206 @ $13DA04
+#W32($164B00)
+あなたは自分の【スタンド】しているカード名に「シャロ」を含むキャラを1枚選び【レスト】する。そうしたら、あなたは相手の控え室のカードを1枚選び、思い出にし、このカードを思い出にする。[END]
+// current address: $13DAA7
+
+//POINTER #1207 @ $164B04 - STRING #1207 @ $13DAA8
+#W32($164B04)
+あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『[Auto] このカードが[Card_down]した時、このカードとバトル中のキャラのレベルがこのカードのレベル以下なら、あなたはそのキャラを[Card_down]してよい。』[END]
+// current address: $13DB67
+
+//POINTER #1208 @ $164B08 - STRING #1208 @ $13DB68
+#W32($164B08)
+あなたは自分の【スタンド】しているキャラを2枚選び【レスト】する。2枚【レスト】したなら、あなたは自分の控え室の《探偵》のキャラを1枚選び、手札に戻す。[END]
+// current address: $13DBE4
+
+//POINTER #1209 @ $164B0C - STRING #1209 @ $13DBE4
+#W32($164B0C)
+そうしたら、あなたは自分の控え室の「頼れるお姉さん コーデリア」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $13DC49
+
+//POINTER #1210 @ $164B10 - STRING #1210 @ $13DC4C
+#W32($164B10)
+他のあなたの《探偵》のキャラすべてに、パワーを＋500。[END]
+// current address: $13DC82
+
+//POINTER #1211 @ $164B14 - STRING #1211 @ $13DC84
+#W32($164B14)
+そうしたら、あなたは自分のレベル置場のカードと控え室のカードを1枚ずつ選び、入れ替える。[END]
+// current address: $13DCDC
+
+//POINTER #1212 @ $164B18 - STRING #1212 @ $13DCDC
+#W32($164B18)
+そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの《探偵》のキャラの枚数×500に等しい。[END]
+// current address: $13DD36
+
+//POINTER #1213 @ $164B1C - STRING #1213 @ $13DD38
+#W32($164B1C)
+そうしたら、あなたは自分の山札を見てレベル1以上の、《音楽》か《バジュラ》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13DDCD
+
+//POINTER #1214 @ $164B20 - STRING #1214 @ $13DDD0
+#W32($164B20)
+このカードの前のあなたの《音楽》のキャラすべてに、レベルを＋1し、パワーを＋500。[END]
+// current address: $13DE21
+
+//POINTER #1215 @ $164B24 - STRING #1215 @ $13DE24
+#W32($164B24)
+あなたは1枚引き、自分のキャラすべてに、そのターン中、パワーを＋1000。[END]
+// current address: $13DE6A
+
+//POINTER #1216 @ $164B28 - STRING #1216 @ $13DE6C
+#W32($164B28)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋500。[END]
+// current address: $13DEA9
+
+//POINTER #1217 @ $164B2C - STRING #1217 @ $13DEAC
+#W32($164B2C)
+そうしたら、あなたは自分の山札を見て《怪盗》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13DF24
+
+//POINTER #1218 @ $164B30 - STRING #1218 @ $13DF24
+#W32($164B30)
+あなたは相手の前列のコスト1以下のキャラを1枚選び、手札に戻してよい。[END]
+// current address: $13DF69
+
+//POINTER #1219 @ $164B34 - STRING #1219 @ $13DF6C
+#W32($164B34)
+そうしたら、あなたは自分の控え室の「“歌は祈命”シェリル」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $13DFCC
+
+//POINTER #1220 @ $164B38 - STRING #1220 @ $13DFCC
+#W32($164B38)
+あなたは自分のカード名に「シェリル」を含むキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $13E026
+
+//POINTER #1221 @ $164B3C - STRING #1221 @ $13E028
+#W32($164B3C)
+次の相手のターンの終わりまで、このカードのパワーを＋4500し、このカードは次の能力を得る。『[Cont] このカードは相手の効果に選ばれない。』[END]
+// current address: $13E0AC
+
+//POINTER #1222 @ $164B40 - STRING #1222 @ $13E0AC
+#W32($164B40)
+このカードは次の能力を得る。『[Cont] 応援 このカードの前のあなたのキャラすべてに、パワーを＋500。』[END]
+// current address: $13E10C
+
+//POINTER #1223 @ $164B44 - STRING #1223 @ $13E10C
+#W32($164B44)
+そうしたら、あなたは自分の山札を見て《音楽》か《パイロット》のキャラを1枚まで選んで相手に見せ、手札に加える。その後、その山札をシャッフルし、このカードを【レスト】する。[END]
+// current address: $13E1AE
+
+//POINTER #1224 @ $164B48 - STRING #1224 @ $13E1B0
+#W32($164B48)
+そうしたら、あなたは他の自分の《音楽》のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $13E208
+
+//POINTER #1225 @ $164B4C - STRING #1225 @ $13E208
+#W32($164B4C)
+そうしたら、あなたは自分の控え室の「銀河の妖精 シェリル・ノーム」を1枚選び、手札に戻す）[END]
+// current address: $13E261
+
+//POINTER #1226 @ $164B50 - STRING #1226 @ $13E264
+#W32($164B50)
+そのターン中、このカードのレベルを＋1し、パワーを＋1000。[END]
+// current address: $13E29E
+
+//POINTER #1227 @ $164B54 - STRING #1227 @ $13E2A0
+#W32($164B54)
+このカードは次の能力を得る。『[Act]［あなたのキャラを1枚【レスト】する］ そのターン中、このカードのパワーを＋1000。』[END]
+// current address: $13E30B
+
+//POINTER #1228 @ $164B58 - STRING #1228 @ $13E30C
+#W32($164B58)
+あなたは相手の前列のレベル0以下のキャラを1枚選び、手札に戻す。[END]
+// current address: $13E34B
+
+//POINTER #1229 @ $164B5C - STRING #1229 @ $13E34C
+#W32($164B5C)
+そうしたら、あなたは自分のバトル中のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $13E3A0
+
+//POINTER #1230 @ $164B60 - STRING #1230 @ $13E3A0
+#W32($164B60)
+あなたは自分のキャラを1枚選び、そのターン中、パワーを＋3000。ターンの終わりに、そのキャラをストック置場に置く。[END]
+// current address: $13E410
+
+//POINTER #1231 @ $164B64 - STRING #1231 @ $13E410
+#W32($164B64)
+あなたは相手のレベル1以下のキャラを1枚選び、手札に戻す。[END]
+// current address: $13E449
+
+//POINTER #1232 @ $164B68 - STRING #1232 @ $13E44C
+#W32($164B68)
+そうしたら、あなたは自分の山札を見て《愛》のキャラを1枚まで選び、舞台の好きな枠に置く。その山札をシャッフルする。[END]
+// current address: $13E4BE
+
+//POINTER #1233 @ $164B6C - STRING #1233 @ $13E4C0
+#W32($164B6C)
+あなたは自分の山札の上から1枚を公開する。そのカードが《音楽》のキャラでないなら、そのターン中、このカードは次の能力を得る。『[Cont] このカードはアタックできない。』（公開したカードは元に戻す）[END]
+// current address: $13E57D
+
+//POINTER #1234 @ $164B70 - STRING #1234 @ $13E580
+#W32($164B70)
+そうしたら、あなたのキャラすべてに、そのターン中、パワーを＋2000。[END]
+// current address: $13E5C3
+
+//POINTER #1235 @ $164B74 - STRING #1235 @ $13E5C4
+#W32($164B74)
+そのキャラのバトル中、相手は『Backup 』を手札からプレイできない。[END]
+// current address: $13E605
+
+//POINTER #1236 @ $164B78 - STRING #1236 @ $13E608
+#W32($164B78)
+他のあなたの、「はじめてのＣＭソング ランカ」と「開拓重機 ランカ」すべてに、パワーを＋500し、『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を与える。[END]
+// current address: $13E6A3
+
+//POINTER #1237 @ $164B7C - STRING #1237 @ $13E6A4
+#W32($164B7C)
+そうしたら、あなたは自分の山札を見て「バジュラ（大）」を1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13E71E
+
+//POINTER #1238 @ $164B80 - STRING #1238 @ $13E720
+#W32($164B80)
+そうしたら、あなたは自分の控え室の「開拓重機 ランカ」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $13E77B
+
+//POINTER #1239 @ $164B84 - STRING #1239 @ $13E77C
+#W32($164B84)
+他のあなたの《バジュラ》のキャラすべてに、パワーを＋1000。[END]
+// current address: $13E7B7
+
+//POINTER #1240 @ $164B88 - STRING #1240 @ $13E7B8
+#W32($164B88)
+あなたのキャラすべてに、そのターン中、パワーを＋6000。[END]
+// current address: $13E7EF
+
+//POINTER #1241 @ $164B8C - STRING #1241 @ $13E7F0
+#W32($164B8C)
+そうしたら、あなたは自分の控え室の「“歌は魔法”ランカ」を1枚選び、このカードがいた枠に置く。（アンコールステップの始めにこのカードがいないなら発動しない）[END]
+// current address: $13E88C
+
+//POINTER #1242 @ $164B90 - STRING #1242 @ $13E88C
+#W32($164B90)
+あなたは自分の《音楽》のキャラを1枚選び、そのターン中、レベルを＋1。[END]
+// current address: $13E8D1
+
+//POINTER #1243 @ $164B94 - STRING #1243 @ $13E8D4
+#W32($164B94)
+そうしたら、あなたは自分の控え室の「超時空シンデレラ ランカ・リー」を1枚選び、手札に戻す）[END]
+// current address: $13E92F
+
+//POINTER #1244 @ $164B98 - STRING #1244 @ $13E930
+#W32($164B98)
+あなたは自分の《バジュラ》のキャラを1枚選び、そのターン中、パワーを＋1500。[END]
+// current address: $13E97C
+
+//POINTER #1245 @ $164B9C - STRING #1245 @ $13E97C
+#W32($164B9C)
+あなたは自分の【スタンド】しているキャラを2枚選び【レスト】する。2枚【レスト】したなら、あなたは自分の山札を見て《音楽》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13EA26
+
+//POINTER #1246 @ $164BA0 - STRING #1246 @ $13EA28
+#W32($164BA0)
+そうしたら、あなたは他の自分のキャラを2枚まで選び、そのターン中、次の能力を与える。『[Auto] このカードのバトル相手が[Card_down]した時、あなたは自分の控え室のキャラを1枚選び、手札に戻してよい。』[END]
+// current address: $13EADE
+
+//POINTER #1247 @ $164BA4 - STRING #1247 @ $13EAE0
+#W32($164BA4)
+他のあなたのカード名に「シェリル」か「ランカ」を含むキャラすべてに、パワーを＋500。[END]
+// current address: $13EB34
+
+//POINTER #1248 @ $164BA8 - STRING #1248 @ $13EB34
+#W32($164BA8)
+あなたは自分のカード名に「シェリル」か「ランカ」を含むキャラを1枚選び、そのターン中、パワーを＋500。[END]
+// current address: $13EB99
+
+//POINTER #1249 @ $164BAC - STRING #1249 @ $13EB9C
+#W32($164BAC)
+他のあなたの「バジュラから逃げるアルト＆シェリル」1枚につき、このカードのパワーを＋1000。[END]
+// current address: $13EBF6
+
+//POINTER #1250 @ $164BB0 - STRING #1250 @ $13EBF8
+#W32($164BB0)
+他のあなたの「至近距離 アルト＆ランカ」1枚につき、このカードのパワーを＋1000。[END]
+// current address: $13EC47
+
+//POINTER #1251 @ $164BB4 - STRING #1251 @ $13EC48
+#W32($164BB4)
+そうしたら、相手にＸダメージを与える。Ｘはそのキャラのコストに等しい。（ダメージキャンセルは発生する）[END]
+// current address: $13ECAF
+
+//POINTER #1252 @ $164BB8 - STRING #1252 @ $13ECB0
+#W32($164BB8)
+そうしたら、あなたは自分の前列の【スタンド】しているキャラすべてを、手札に戻す。1枚以上手札に戻したなら、あなたは自分の手札の「三角関係 アルト」を1枚まで選び、キャラのいない枠に置く。[END]
+// current address: $13ED5E
+
+//POINTER #1253 @ $164BBC - STRING #1253 @ $13ED60
+#W32($164BBC)
+他のあなたの《パイロット》のキャラすべてに、パワーを＋500。[END]
+// current address: $13ED9C
+
+//POINTER #1254 @ $164BC0 - STRING #1254 @ $13ED9C
+#W32($164BC0)
+他のあなたの「VB-6ケーニッヒモンスター（カナリア機）」すべてに、パワーを＋1000。[END]
+// current address: $13EDED
+
+//POINTER #1255 @ $164BC4 - STRING #1255 @ $13EDF0
+#W32($164BC4)
+そうしたら、あなたは相手の前列のレベル1以下のキャラすべてを、控え室に置く。[END]
+// current address: $13EE3C
+
+//POINTER #1256 @ $164BC8 - STRING #1256 @ $13EE3C
+#W32($164BC8)
+そうしたら、あなたは自分の控え室の「三角関係 アルト」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $13EE97
+
+//POINTER #1257 @ $164BCC - STRING #1257 @ $13EE98
+#W32($164BCC)
+そのターン中、このカードのレベルを＋1し、パワーを＋1500。[END]
+// current address: $13EED2
+
+//POINTER #1258 @ $164BD0 - STRING #1258 @ $13EED4
+#W32($164BD0)
+そうしたら、あなたは自分の控え室のキャラを1枚選び、手札に戻し、自分の手札を1枚選び、控え室に置く。[END]
+// current address: $13EF37
+
+//POINTER #1259 @ $164BD4 - STRING #1259 @ $13EF38
+#W32($164BD4)
+あなたは他の自分の《パイロット》のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $13EF8A
+
+//POINTER #1260 @ $164BD8 - STRING #1260 @ $13EF8C
+#W32($164BD8)
+あなたは他の自分の《メカ》のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $13EFD8
+
+//POINTER #1261 @ $164BDC - STRING #1261 @ $13EFD8
+#W32($164BDC)
+あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『[Auto] このカードが[Card_down]した時、このカードのバトル相手のレベルがこのカードのレベル以下なら、あなたはそのキャラを[Card_down]してよい。』[END]
+// current address: $13F091
+
+//POINTER #1262 @ $164BE0 - STRING #1262 @ $13F094
+#W32($164BE0)
+他のあなたの《パイロット》のキャラすべてに、『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を与える。[END]
+// current address: $13F0FE
+
+//POINTER #1263 @ $164BE4 - STRING #1263 @ $13F100
+#W32($164BE4)
+あなたは自分の《パイロット》のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $13F14E
+
+//POINTER #1264 @ $164BE8 - STRING #1264 @ $13F150
+#W32($164BE8)
+あなたは自分の山札を上から1枚見て、山札の上か下に置く。[END]
+// current address: $13F188
+
+//POINTER #1265 @ $164BEC - STRING #1265 @ $13F188
+#W32($164BEC)
+あなたは1枚引き、自分の手札を1枚選び、控え室に置き、そのターン中、このカードのパワーを＋1000。[END]
+// current address: $13F1E7
+
+//POINTER #1266 @ $164BF0 - STRING #1266 @ $13F1E8
+#W32($164BF0)
+そうしたら、あなたは自分の控え室の「いつもの笑顔 クラン」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $13F247
+
+//POINTER #1267 @ $164BF4 - STRING #1267 @ $13F248
+#W32($164BF4)
+他のあなたの《パイロット》のキャラ1枚につき、このカードのパワーを＋500。[END]
+// current address: $13F291
+
+//POINTER #1268 @ $164BF8 - STRING #1268 @ $13F294
+#W32($164BF8)
+他のあなたの「悲しみに暮れるクラン」すべてに、パワーを＋1000。[END]
+// current address: $13F2D3
+
+//POINTER #1269 @ $164BFC - STRING #1269 @ $13F2D4
+#W32($164BFC)
+そうしたら、あなたは自分の控え室の「悲しみに暮れるクラン」を1枚選び、手札に戻す）[END]
+// current address: $13F326
+
+//POINTER #1270 @ $164C00 - STRING #1270 @ $13F328
+#W32($164C00)
+他のあなたの【レスト】しているキャラ1枚につき、このカードのパワーを＋1000。[END]
+// current address: $13F36C
+
+//POINTER #1271 @ $164C04 - STRING #1271 @ $13F36C
+#W32($164C04)
+そのターン中、このカードのパワーを＋500。[END]
+// current address: $13F396
+
+//POINTER #1272 @ $164C08 - STRING #1272 @ $13F398
+#W32($164C08)
+他のあなたの《パイロット》のキャラすべてに、パワーを＋1000。[END]
+// current address: $13F3D5
+
+//POINTER #1273 @ $164C0C - STRING #1273 @ $13F3D8
+#W32($164C0C)
+そうしたら、あなたはそのキャラを舞台の好きな枠に置く。（そうしないなら元に戻す）[END]
+// current address: $13F429
+
+//POINTER #1274 @ $164C10 - STRING #1274 @ $13F42C
+#W32($164C10)
+他のあなたのカード名に「オズマ」を含むキャラすべてに、『[Auto] アンコール ［(2)］』を与える。[END]
+// current address: $13F485
+
+//POINTER #1275 @ $164C14 - STRING #1275 @ $13F488
+#W32($164C14)
+他のあなたのキャラすべてに、そのターン中、パワーを＋1000。[END]
+// current address: $13F4C3
+
+//POINTER #1276 @ $164C18 - STRING #1276 @ $13F4C4
+#W32($164C18)
+そうしたら、あなたは自分の山札を見て『経験』を持つキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13F540
+
+//POINTER #1277 @ $164C1C - STRING #1277 @ $13F540
+#W32($164C1C)
+そうしたら、あなたは相手の前列のレベル1以下のキャラを1枚選び、山札の下に置く。[END]
+// current address: $13F58F
+
+//POINTER #1278 @ $164C20 - STRING #1278 @ $13F590
+#W32($164C20)
+あなたは自分の《パイロット》のキャラを1枚選び、そのターン中、パワーを＋3500。[END]
+// current address: $13F5DE
+
+//POINTER #1279 @ $164C24 - STRING #1279 @ $13F5E0
+#W32($164C24)
+あなたは相手の山札を上から3枚まで見てカードを3枚まで選び、控え室に置く。残りのカードを山札に戻す。相手はその山札をシャッフルする。[END]
+// current address: $13F663
+
+//POINTER #1280 @ $164C28 - STRING #1280 @ $13F664
+#W32($164C28)
+他のあなたのキャラすべてに、パワーを＋X。Xはそのキャラのレベル×500に等しい。[END]
+// current address: $13F6B2
+
+//POINTER #1281 @ $164C2C - STRING #1281 @ $13F6B4
+#W32($164C2C)
+そうしたら、あなたは自分の控え室の「YF-29デュランダル（アルト機）」を1枚選び、手札に戻す）[END]
+// current address: $13F70F
+
+//POINTER #1282 @ $164C30 - STRING #1282 @ $13F710
+#W32($164C30)
+あなたは自分のキャラを1枚選び、そのターン中、ソウルを＋1。[END]
+// current address: $13F74B
+
+//POINTER #1283 @ $164C34 - STRING #1283 @ $13F74C
+#W32($164C34)
+このカードは次の能力を得る。『[Cont] このカードはフロントアタックできない。』（サイドアタックはできる）[END]
+// current address: $13F7B0
+
+//POINTER #1284 @ $164C38 - STRING #1284 @ $13F7B0
+#W32($164C38)
+このカードはフロントアタックできない。（サイドアタックはできる）[END]
+// current address: $13F7F1
+
+//POINTER #1285 @ $164C3C - STRING #1285 @ $13F7F4
+#W32($164C3C)
+あなたは相手の前列のレベル1以下のキャラを1枚選び、控え室に置く。[END]
+// current address: $13F835
+
+//POINTER #1286 @ $164C40 - STRING #1286 @ $13F838
+#W32($164C40)
+あなたは自分のキャラを1枚選び、そのターン中、レベルを＋1。[END]
+// current address: $13F873
+
+//POINTER #1287 @ $164C44 - STRING #1287 @ $13F874
+#W32($164C44)
+そうしたら、あなたは自分の山札を見てカード名に「セイバー」を含むキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13F8FE
+
+//POINTER #1288 @ $164C48 - STRING #1288 @ $13F900
+#W32($164C48)
+そうしたら、あなたは自分の控え室の《メイド》のキャラを1枚選び、手札に戻す。[END]
+// current address: $13F94C
+
+//POINTER #1289 @ $164C4C - STRING #1289 @ $13F94C
+#W32($164C4C)
+あなたは自分の控え室の《音楽》のキャラを1枚選び、手札に戻す。[END]
+// current address: $13F98A
+
+//POINTER #1290 @ $164C50 - STRING #1290 @ $13F98C
+#W32($164C50)
+あなたは自分のキャラを1枚選び、そのターン中、《元気》を与える。[END]
+// current address: $13F9CC
+
+//POINTER #1291 @ $164C54 - STRING #1291 @ $13F9CC
+#W32($164C54)
+あなたは自分の《王族》のキャラを1枚選び、そのターン中、ソウルを＋1。[END]
+// current address: $13FA11
+
+//POINTER #1292 @ $164C58 - STRING #1292 @ $13FA14
+#W32($164C58)
+他のあなたの《譜術》のキャラすべてに、『[Auto] アンコール ［手札のキャラを1枚控え室に置く］』を与える。[END]
+// current address: $13FA78
+
+//POINTER #1293 @ $164C5C - STRING #1293 @ $12D400
+#W32($164C5C)
+そのターン中、このカードのパワーを＋3000し、相手は『[Auto] アンコール』を使えない。（ルールによる『[Auto] アンコール ［(3)］』も使えない）[END]
+// current address: $12D482
+
+//POINTER #1294 @ $164C60 - STRING #1294 @ $13FA78
+#W32($164C60)
+そうしたら、あなたは相手のレベル2以下のキャラを１枚選び、ストック置場に置く。[END]
+// current address: $13FAC6
+
+//POINTER #1295 @ $164C64 - STRING #1295 @ $13FAC8
+#W32($164C64)
+あなたは自分の《譜術》のキャラを1枚選び、そのターン中、パワーを＋2500し、ソウルを＋1。[END]
+// current address: $13FB1F
+
+//POINTER #1296 @ $164C68 - STRING #1296 @ $13FB20
+#W32($164C68)
+あなたは自分の山札を見て《フォミクリー》のキャラを1枚まで選んで相手に見せ、手札に加える。その山札をシャッフルする。[END]
+// current address: $13FB94
+
+//POINTER #1297 @ $164C6C - STRING #1297 @ $13FB94
+#W32($164C6C)
+あなたのキャラすべてに、ソウルをランダムに＋1～＋3。[END]
+// current address: $13FBC9
+
+//POINTER #1298 @ $164C70 - STRING #1298 @ $13FBCC
+#W32($164C70)
+そうしたら、あなたは自分の控え室の「雨宮 リンドウ」を1枚選び、手札に戻す）[END]
+// current address: $13FC17
+
+//POINTER #1299 @ $164C74 - STRING #1299 @ $13FC18
+#W32($164C74)
+あなたは自分の《神機》のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $13FC60
+
+//POINTER #1300 @ $164C78 - STRING #1300 @ $13FC60
+#W32($164C78)
+あなたは相手のキャラをランダムに1枚選び、そのターン中、パワーを－2000。[END]
+// current address: $13FCA8
+
+//POINTER #1301 @ $164C7C - STRING #1301 @ $13FCA8
+#W32($164C7C)
+そうしたら、あなたは自分の控え室の「ワンダーモモ」を1枚選び、このカードがいた枠に置く。[END]
+// current address: $13FD00
+
+//POINTER #1302 @ $164C80 - STRING #1302 @ $13FD00
+#W32($164C80)
+あなたは自分の《宇宙人》のキャラを1枚選び、そのターン中、パワーを＋1000。[END]
+// current address: $13FD4A
+
+//POINTER #1303 @ $164C84 - STRING #1303 @ $13FD4C
+#W32($164C84)
+相手に1ダメージを与える。あなたは自分のキャラをランダムに1枚選び、そのターン中、パワーを＋4000。（ダメージキャンセルは発生する）[END]
+// current address: $13FDCD
+
+//POINTER #1304 @ $164C88 - STRING #1304 @ $13FDD0
+#W32($164C88)
+そうしたら、あなたは自分の控え室のカード名に「ギル」を含むキャラを1枚選び、このカードがいた枠に置く。[END]
+// current address: $13FE36
+
+//POINTER #1305 @ $164C8C - STRING #1305 @ $13FE38
+#W32($164C8C)
+そのターン中、このカードのパワーをランダムに＋500～＋3000。[END]
+// current address: $13FE74
+
+//POINTER #1306 @ $164C90 - STRING #1306 @ $13FE74
+#W32($164C90)
+あなたは自分の【スタンド】している《魔法》のキャラを1枚選び【レスト】する。そうしたら、あなたは相手の前列のレベル3以下のキャラを1枚選び、山札の下に置く。[END]
+// current address: $13FEFC

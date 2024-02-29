@@ -1,0 +1,1 @@
+perl abcde.pl -m text2bin -cm abcde::Atlas "EBOOT.bin" "Cardsetname_dump.txt"

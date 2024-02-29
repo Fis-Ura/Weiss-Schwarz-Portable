@@ -1,0 +1,20 @@
+#GAME NAME:			Weiss - (PSP)
+
+#BLOCK NAME:			test1_Block
+#TYPE:					NORMAL
+#METHOD:				POINTER_RELATIVE
+#POINTER ENDIAN:		LITTLE
+#POINTER TABLE START:		$14AEE0
+#POINTER TABLE STOP:		$14b2bb
+#SORT OUTPUT BY STRING ADDRESS:        Yes
+#POINTER SIZE:			$04
+#POINTER SPACE:			$08
+#ATLAS PTRS:			Yes
+#BASE POINTER:			$C0		//add $C0 to each pointer to get
+#TABLE:				sjis.tbl	//the string address
+#COMMENTS:			Both
+#END BLOCK
+
+//Pointer seems to be in group of 3 duplicate this 
+//is only for the first group, will need testing to see
+//if it break the game

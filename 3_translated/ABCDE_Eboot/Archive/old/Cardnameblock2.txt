@@ -1,0 +1,31 @@
+#GAME NAME:			Weiss - (PSP)
+
+#BLOCK NAME:			Cardtrait2_Block8
+#TYPE:					NORMAL
+#METHOD:				POINTER_RELATIVE
+#POINTER ENDIAN:		LITTLE
+#POINTER TABLE START:		$14C1E4
+#POINTER TABLE STOP:		$15E26B
+#SORT OUTPUT BY STRING ADDRESS:        Yes
+#POINTER SIZE:			$04
+#POINTER SPACE:			$38
+#ATLAS PTRS:			Yes
+#BASE POINTER:			$C0		//add $C0 to each pointer to get
+#TABLE:				sjis.tbl	//the string address
+#COMMENTS:			Both
+#END BLOCK
+
+#BLOCK NAME:			Cardfluff_Block9
+#TYPE:					NORMAL
+#METHOD:				POINTER_RELATIVE
+#POINTER ENDIAN:		LITTLE
+#POINTER TABLE START:		$14C1E8
+#POINTER TABLE STOP:		$15E26f
+#SORT OUTPUT BY STRING ADDRESS:        Yes
+#POINTER SIZE:			$04
+#POINTER SPACE:			$38
+#ATLAS PTRS:			Yes
+#BASE POINTER:			$C0		//add $C0 to each pointer to get
+#TABLE:				sjis.tbl	//the string address
+#COMMENTS:			Both
+#END BLOCK

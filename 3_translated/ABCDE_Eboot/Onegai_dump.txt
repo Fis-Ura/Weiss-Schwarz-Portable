@@ -1,0 +1,289 @@
+//GAME NAME:		Weiss - (PSP)
+
+// Define required TABLE variables and load the corresponding tables
+#VAR(Table_0, TABLE)
+#ADDTBL("C:\Users\Nick\Desktop\Weiss\ABCDEWEISS\sjis.tbl", Table_0)
+
+//BLOCK #000 NAME:		Onegai_Block
+#ACTIVETBL(Table_0) // Activate this block's starting TABLE
+
+#JMP($10CA78, $10D048) // Jump to insertion point
+#HDR($C0) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $14AEE0 - STRING #0 @ $10CA78
+#W32($14AEE0)
+#W32($14AEF8)
+#W32($14AF10)
+#W32($14AF28)
+#W32($14AF40)
+//手札交換をしない[END]
+Don't exchange cards[END]
+// current address: $10CA89
+
+//POINTER #1 @ $14AEEC - STRING #1 @ $10CA8C
+#W32($14AEEC)
+#W32($14AF04)
+//１枚以上手札交換する[END]
+Exchange one or more cards[END]
+// current address: $10CAA1
+
+
+//POINTER #5 @ $14AF1C - STRING #5 @ $10CAB4
+#W32($14AF1C)
+#W32($14AF34)
+#W32($14AF4C)
+//手札を全部交換する[END]
+Exchange all your cards[END]
+// current address: $10CAC7
+
+//POINTER #10 @ $14AF58 - STRING #10 @ $10CAC8
+#W32($14AF58)
+#W32($14AF70)
+#W32($14AF88)
+#W32($14AFA0)
+#W32($14AFB8)
+//このクロックフェイズでカードを置く[END]
+Put a card in the clock phase[END]
+// current address: $10CAEB
+
+//POINTER #11 @ $14AF64 - STRING #11 @ $10CAEC
+#W32($14AF64)
+#W32($14AF7C)
+#W32($14AF94)
+#W32($14AFAC)
+#W32($14AFC4)
+//このクロックフェイズでカードを置かない[END]
+Don't put a card in the clock phase[END]
+// current address: $10CB13
+
+//POINTER #20 @ $14AFD0 - STRING #20 @ $10CB14
+#W32($14AFD0)
+#W32($14AFE8)
+//このメインフェイズ中はキャラを置かない[END]
+Don't play a Character in the main phase[END]
+// current address: $10CB3B
+
+//POINTER #21 @ $14AFDC - STRING #21 @ $10CB3C
+#W32($14AFDC)
+#W32($14AFF4)
+#W32($14B018)
+#W32($14B030)
+//このメインフェイズ中に何かキャラを置く[END]
+Play any Character in the main phase[END]
+// current address: $10CB63
+
+//POINTER #24 @ $14B000 - STRING #24 @ $10CB64
+#W32($14B000)
+#W32($14B024)
+#W32($14B03C)
+//このメインフェイズ中にイベントカードをプレイ[END]
+Play an Event during the Main Phase[END]
+// current address: $10CB91
+
+//POINTER #25 @ $14B00C - STRING #25 @ $10CB94
+#W32($14B00C)
+//このメインフェイズ中にイベントカードはプレイしない[END]
+Don't play an Event in the main phase[END]
+// current address: $10CBC7
+
+//POINTER #30 @ $14B048 - STRING #30 @ $10CBC8
+#W32($14B048)
+//このメインフェイズ中に２つ以上キャラを置く[END]
+Play 2 or more Characters in the main phase[END]
+// current address: $10CBF3
+
+//POINTER #31 @ $14B054 - STRING #31 @ $10CBF4
+#W32($14B054)
+#W32($14B090)
+//前列中央にキャラを置いてフェイズ終了[END]
+Play a Chara in the center front row and end the phase[END]
+// current address: $10CC19
+
+//POINTER #32 @ $14B060 - STRING #32 @ $10CC1C
+#W32($14B060)
+#W32($14B09C)
+//前列左にキャラを置いてフェイズ終了[END]
+Play a Chara in the left front row and end the phase[END]
+// current address: $10CC3F
+
+//POINTER #33 @ $14B06C - STRING #33 @ $10CC40
+#W32($14B06C)
+#W32($14B0A8)
+//前列右にキャラを置いてフェイズ終了[END]
+Play a Chara in the right front row and end the phase[END]
+// current address: $10CC63
+
+//POINTER #34 @ $14B078 - STRING #34 @ $10CC64
+#W32($14B078)
+#W32($14B0B4)
+//なにか起動効果を使う[END]
+Use any [Act] effect[END]
+// current address: $10CC79
+
+//POINTER #35 @ $14B084 - STRING #35 @ $10CC7C
+#W32($14B084)
+#W32($14B0C0)
+//起動効果を使わない[END]
+Don't use an [Act] effect[END]
+// current address: $10CC8F
+
+//POINTER #39 @ $14B0B4 - STRING #39 @ $10CC90
+//#W32($14B0B4)
+//なにか起動能力を使う[END]
+//Use any [Act] effect[END]
+// current address: $10CCA5
+
+//POINTER #40 @ $14B0C0 - STRING #40 @ $10CCA8
+//#W32($14B0C0)
+//起動能力を使わない[END]
+//Don't Use [Act] effect[END]
+// current address: $10CCBB
+
+//POINTER #41 @ $14B0CC - STRING #41 @ $10CCBC
+#W32($14B0CC)
+#W32($14B0D8)
+//前列どこかにキャラを置いてフェイズ終了[END]
+Play a Chara in the front row and end the phase[END]
+// current address: $10CCE3
+
+//POINTER #43 @ $14B0E4 - STRING #43 @ $10CD0C
+#W32($14B0E4)
+#W32($14B0FC)
+#W32($14B114)
+#W32($14B12C)
+#W32($14B144)
+//クライマックスカードを置かない[END]
+Don't play a Climax[END]
+// current address: $10CD2B
+
+//POINTER #44 @ $14B0F0 - STRING #44 @ $10CD2C
+#W32($14B0F0)
+#W32($14B108)
+#W32($14B120)
+#W32($14B138)
+#W32($14B150)
+//クライマックスカードを置く[END]
+Play a Climax[END]
+// current address: $10CD47
+
+//POINTER #49 @ $14B12C - STRING #49 @ $10CD48
+//#W32($14B12C)
+//#W32($14B144)
+//クライマックスカードは置かない[END]
+//Don't play a Climax[END]
+// current address: $10CD67
+
+//POINTER #53 @ $14B15C - STRING #53 @ $10CD68
+#W32($14B15C)
+//このアタックフェイズでは全部アタックする[END]
+Attack with every Character[END]
+// current address: $10CD91
+
+//POINTER #54 @ $14B168 - STRING #54 @ $10CD94
+#W32($14B168)
+//このアタックフェイズで１ダメージ以上与える[END]
+Deal at least 1 damage or more[END]
+// current address: $10CDBF
+
+//POINTER #55 @ $14B174 - STRING #55 @ $10CDC0
+#W32($14B174)
+//このアタックフェイズに１回以上サイドアタックする[END]
+Side attack with 1 or more Character[END]
+// current address: $10CDF1
+
+//POINTER #56 @ $14B180 - STRING #56 @ $10CDF4
+#W32($14B180)
+//このアタックフェイズに１回以上フロントアタックする[END]
+Front attack with 1 or more Character[END]
+// current address: $10CE27
+
+//POINTER #57 @ $14B18C - STRING #57 @ $10CE28
+#W32($14B18C)
+#W32($14B1E0)
+#W32($14B204)
+//このアタックフェイズではフロントアタックしない[END]
+Don't Front attack in this phase[END]
+// current address: $10CE57
+
+//POINTER #58 @ $14B198 - STRING #58 @ $10CE58
+#W32($14B198)
+#W32($14B1C8)
+#W32($14B1EC)
+//このアタックフェイズで相手キャラをリバースさせる[END]
+Reverse an Opponent's Character in this phase[END]
+// current address: $10CE89
+
+//POINTER #59 @ $14B1A4 - STRING #59 @ $10CE8C
+#W32($14B1A4)
+//このアタックフェイズではサイドアタックしない[END]
+Don't Side attack[END]
+// current address: $10CEB9
+
+//POINTER #60 @ $14B1B0 - STRING #60 @ $10CEBC
+#W32($14B1B0)
+//このアタックフェイズではフロントアタックのみする[END]
+Only Front attack[END]
+// current address: $10CEED
+
+//POINTER #61 @ $14B1BC - STRING #61 @ $10CEF0
+#W32($14B1BC)
+//このアタックフェイズで計３ダメージ以上与える[END]
+Deal 3 or more damages in this phase[END]
+// current address: $10CF1D
+
+//POINTER #63 @ $14B1D4 - STRING #63 @ $10CF20
+#W32($14B1D4)
+#W32($14B21C)
+//このアタックフェイズでダメージキャンセルされない[END]
+Don't let your attack get canceled[END]
+// current address: $10CF51
+
+//POINTER #66 @ $14B1F8 - STRING #66 @ $10CF54
+#W32($14B1F8)
+//このアタックフェイズで相手をレベルアップさせない[END]
+Don't let your opponent level up in this phase[END]
+// current address: $10CF85
+
+//POINTER #68 @ $14B210 - STRING #68 @ $10CF88
+#W32($14B210)
+//このアタックフェイズで計４ダメージ以上与える[END]
+Deal 4 or more damages in this phase[END]
+// current address: $10CFB5
+
+//POINTER #70 @ $14B228 - STRING #70 @ $10CFB8
+#W32($14B228)
+//このアタックフェイズでトリガー効果を発生させる[END]
+Trigger an effect in this phase[END]
+// current address: $10CFE7
+
+//POINTER #71 @ $14B234 - STRING #71 @ $10CFE8
+#W32($14B234)
+#W32($14B24C)
+#W32($14B264)
+//カウンターor助太刀を使う[END]
+Use a counter or Backup[END]
+// current address: $10D001
+
+//POINTER #72 @ $14B240 - STRING #72 @ $10D004
+#W32($14B240)
+#W32($14B258)
+#W32($14B270)
+//カウンターor助太刀を使わない[END]
+Don't use a counter or Backup[END]
+// current address: $10D021
+
+//POINTER #77 @ $14B27C - STRING #77 @ $10D024
+#W32($14B27C)
+#W32($14B294)
+#W32($14B2AC)
+//アンコールしないで[END]
+Don't Encore[END]
+// current address: $10D037
+
+//POINTER #78 @ $14B288 - STRING #78 @ $10D038
+#W32($14B288)
+#W32($14B2A0)
+#W32($14B2B8)
+//アンコールしよう[END]
+Use Encore[END]
+// current address: $10D049

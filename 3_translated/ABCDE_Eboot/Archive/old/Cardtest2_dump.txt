@@ -1,0 +1,56 @@
+//GAME NAME:		Weiss - (PSP)
+
+// Define required TABLE variables and load the corresponding tables
+#VAR(Table_0, TABLE)
+#ADDTBL("C:\Users\Nick\Desktop\Weiss\ABCDEWEISS\sjis.tbl", Table_0)
+
+//BLOCK #000 NAME:		Card2_Block
+#ACTIVETBL(Table_0) // Activate this block's starting TABLE
+
+#JMP($10D298, $10D800) // Jump to insertion point
+#HDR($C0) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $14C510 - STRING #0 @ $10D7A0
+#W32($14C510)
+NA_W12_007[END]
+// current address: $10D7AB
+
+//POINTER #1 @ $14C514 - STRING #1 @ $10D7AC
+#W32($14C514)
+NA/W12-007[END]
+// current address: $10D7B7
+
+//POINTER #2 @ $14C518 - STRING #2 @ $10D7B8
+#W32($14C518)
+フェイト with バルディッシュ・アサルト[END]
+// current address: $10D7DF
+
+//POINTER #3 @ $14C51C - STRING #3 @ $10D6B4
+#W32($14C51C)
+R[END]
+// current address: $10D6B6
+
+//POINTER #4 @ $14C520 - STRING #4 @ $10D298
+#W32($14C520)
+CH[END]
+// current address: $10D29B
+
+//POINTER #5 @ $14C524 - STRING #5 @ $10D29C
+#W32($14C524)
+YELLOW[END]
+// current address: $10D2A3
+
+//POINTER #6 @ $14C528 - STRING #6 @ $10D2A4
+#W32($14C528)
+魔法[END]
+// current address: $10D2A9
+
+//POINTER #7 @ $14C52C - STRING #7 @ $10D2AC
+#W32($14C52C)
+クローン[END]
+// current address: $10D2B5
+
+//POINTER #8 @ $14C530 - STRING #8 @ $10D7E0
+#W32($14C530)
+BD「Assault form cartridge set」[END]
+// current address: $10D801

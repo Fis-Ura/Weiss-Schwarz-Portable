@@ -1,0 +1,336 @@
+//GAME NAME:		Weiss - (PSP)
+
+// Define required TABLE variables and load the corresponding tables
+#VAR(Table_0, TABLE)
+#ADDTBL("C:\Users\Nick\Desktop\Weiss\ABCDEWEISS\sjis.tbl", Table_0)
+
+//BLOCK #000 NAME:		Card2_Block
+#ACTIVETBL(Table_0) // Activate this block's starting TABLE
+
+#JMP($10D050, $10D254) // Jump to insertion point
+#HDR($C0) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $14B300 - STRING #0 @ $10D050
+#W32($14B300)
+ST_A[END]
+// current address: $10D055
+
+//POINTER #1 @ $14B304 - STRING #1 @ $10D058
+#W32($14B304)
+ST_B[END]
+// current address: $10D05D
+
+//POINTER #2 @ $14B308 - STRING #2 @ $10D060
+#W32($14B308)
+ST_C[END]
+// current address: $10D065
+
+//POINTER #3 @ $14B30C - STRING #3 @ $10D068
+#W32($14B30C)
+ST_D[END]
+// current address: $10D06D
+
+//POINTER #4 @ $14B310 - STRING #4 @ $10D070
+#W32($14B310)
+ST_E[END]
+// current address: $10D075
+
+//POINTER #5 @ $14B314 - STRING #5 @ $10D078
+#W32($14B314)
+ST_F[END]
+// current address: $10D07D
+
+//POINTER #6 @ $14B318 - STRING #6 @ $10D080
+#W32($14B318)
+ST_G[END]
+// current address: $10D085
+
+//POINTER #7 @ $14B31C - STRING #7 @ $10D088
+#W32($14B31C)
+ST_H[END]
+// current address: $10D08D
+
+//POINTER #8 @ $14B320 - STRING #8 @ $10D090
+#W32($14B320)
+NA_A[END]
+// current address: $10D095
+
+//POINTER #9 @ $14B324 - STRING #9 @ $10D098
+#W32($14B324)
+NA_B[END]
+// current address: $10D09D
+
+//POINTER #10 @ $14B328 - STRING #10 @ $10D0A0
+#W32($14B328)
+NA_C[END]
+// current address: $10D0A5
+
+//POINTER #11 @ $14B32C - STRING #11 @ $10D0A8
+#W32($14B32C)
+NA_D[END]
+// current address: $10D0AD
+
+//POINTER #12 @ $14B330 - STRING #12 @ $10D0B0
+#W32($14B330)
+NA_E[END]
+// current address: $10D0B5
+
+//POINTER #13 @ $14B334 - STRING #13 @ $10D0B8
+#W32($14B334)
+NA_F[END]
+// current address: $10D0BD
+
+//POINTER #14 @ $14B338 - STRING #14 @ $10D0C0
+#W32($14B338)
+NA_G[END]
+// current address: $10D0C5
+
+//POINTER #15 @ $14B33C - STRING #15 @ $10D0C8
+#W32($14B33C)
+NA_H[END]
+// current address: $10D0CD
+
+//POINTER #16 @ $14B340 - STRING #16 @ $10D0D0
+#W32($14B340)
+SY_A[END]
+// current address: $10D0D5
+
+//POINTER #17 @ $14B344 - STRING #17 @ $10D0D8
+#W32($14B344)
+SY_B[END]
+// current address: $10D0DD
+
+//POINTER #18 @ $14B348 - STRING #18 @ $10D0E0
+#W32($14B348)
+SY_C[END]
+// current address: $10D0E5
+
+//POINTER #19 @ $14B34C - STRING #19 @ $10D0E8
+#W32($14B34C)
+SY_D[END]
+// current address: $10D0ED
+
+//POINTER #20 @ $14B350 - STRING #20 @ $10D0F0
+#W32($14B350)
+SY_E[END]
+// current address: $10D0F5
+
+//POINTER #21 @ $14B354 - STRING #21 @ $10D0F8
+#W32($14B354)
+ID_A[END]
+// current address: $10D0FD
+
+//POINTER #22 @ $14B358 - STRING #22 @ $10D100
+#W32($14B358)
+ID_B[END]
+// current address: $10D105
+
+//POINTER #23 @ $14B35C - STRING #23 @ $10D108
+#W32($14B35C)
+ID_C[END]
+// current address: $10D10D
+
+//POINTER #24 @ $14B360 - STRING #24 @ $10D110
+#W32($14B360)
+RG_A[END]
+// current address: $10D115
+
+//POINTER #25 @ $14B364 - STRING #25 @ $10D118
+#W32($14B364)
+RG_B[END]
+// current address: $10D11D
+
+//POINTER #26 @ $14B368 - STRING #26 @ $10D120
+#W32($14B368)
+RG_C[END]
+// current address: $10D125
+
+//POINTER #27 @ $14B36C - STRING #27 @ $10D128
+#W32($14B36C)
+RG_D[END]
+// current address: $10D12D
+
+//POINTER #28 @ $14B370 - STRING #28 @ $10D130
+#W32($14B370)
+KW_A[END]
+// current address: $10D135
+
+//POINTER #29 @ $14B374 - STRING #29 @ $10D138
+#W32($14B374)
+KW_B[END]
+// current address: $10D13D
+
+//POINTER #30 @ $14B378 - STRING #30 @ $10D140
+#W32($14B378)
+KW_C[END]
+// current address: $10D145
+
+//POINTER #31 @ $14B37C - STRING #31 @ $10D148
+#W32($14B37C)
+AB_A[END]
+// current address: $10D14D
+
+//POINTER #32 @ $14B380 - STRING #32 @ $10D150
+#W32($14B380)
+AB_B[END]
+// current address: $10D155
+
+//POINTER #33 @ $14B384 - STRING #33 @ $10D158
+#W32($14B384)
+AB_C[END]
+// current address: $10D15D
+
+//POINTER #34 @ $14B388 - STRING #34 @ $10D160
+#W32($14B388)
+AB_D[END]
+// current address: $10D165
+
+//POINTER #35 @ $14B38C - STRING #35 @ $10D168
+#W32($14B38C)
+IM_A[END]
+// current address: $10D16D
+
+//POINTER #36 @ $14B390 - STRING #36 @ $10D170
+#W32($14B390)
+IM_B[END]
+// current address: $10D175
+
+//POINTER #37 @ $14B394 - STRING #37 @ $10D178
+#W32($14B394)
+IM_C[END]
+// current address: $10D17D
+
+//POINTER #38 @ $14B398 - STRING #38 @ $10D180
+#W32($14B398)
+IM_D[END]
+// current address: $10D185
+
+//POINTER #39 @ $14B39C - STRING #39 @ $10D188
+#W32($14B39C)
+IM_E[END]
+// current address: $10D18D
+
+//POINTER #40 @ $14B3A0 - STRING #40 @ $10D190
+#W32($14B3A0)
+IM_F[END]
+// current address: $10D195
+
+//POINTER #41 @ $14B3A4 - STRING #41 @ $10D198
+#W32($14B3A4)
+IM_G[END]
+// current address: $10D19D
+
+//POINTER #42 @ $14B3A8 - STRING #42 @ $10D1A0
+#W32($14B3A8)
+IM_H[END]
+// current address: $10D1A5
+
+//POINTER #43 @ $14B3AC - STRING #43 @ $10D1A8
+#W32($14B3AC)
+IM_I[END]
+// current address: $10D1AD
+
+//POINTER #44 @ $14B3B0 - STRING #44 @ $10D1B0
+#W32($14B3B0)
+IM_J[END]
+// current address: $10D1B5
+
+//POINTER #45 @ $14B3B4 - STRING #45 @ $10D1B8
+#W32($14B3B4)
+IM_K[END]
+// current address: $10D1BD
+
+//POINTER #46 @ $14B3B8 - STRING #46 @ $10D1C0
+#W32($14B3B8)
+IM_L[END]
+// current address: $10D1C5
+
+//POINTER #47 @ $14B3BC - STRING #47 @ $10D1C8
+#W32($14B3BC)
+IM_M[END]
+// current address: $10D1CD
+
+//POINTER #48 @ $14B3C0 - STRING #48 @ $10D1D0
+#W32($14B3C0)
+IM_N[END]
+// current address: $10D1D5
+
+//POINTER #49 @ $14B3C4 - STRING #49 @ $10D1D8
+#W32($14B3C4)
+IM_O[END]
+// current address: $10D1DD
+
+//POINTER #50 @ $14B3C8 - STRING #50 @ $10D1E0
+#W32($14B3C8)
+MF_A[END]
+// current address: $10D1E5
+
+//POINTER #51 @ $14B3CC - STRING #51 @ $10D1E8
+#W32($14B3CC)
+MF_B[END]
+// current address: $10D1ED
+
+//POINTER #52 @ $14B3D0 - STRING #52 @ $10D1F0
+#W32($14B3D0)
+MF_C[END]
+// current address: $10D1F5
+
+//POINTER #53 @ $14B3D4 - STRING #53 @ $10D1F8
+#W32($14B3D4)
+MF_D[END]
+// current address: $10D1FD
+
+//POINTER #54 @ $14B3D8 - STRING #54 @ $10D200
+#W32($14B3D8)
+MF_E[END]
+// current address: $10D205
+
+//POINTER #55 @ $14B3DC - STRING #55 @ $10D208
+#W32($14B3DC)
+FS_A[END]
+// current address: $10D20D
+
+//POINTER #56 @ $14B3E0 - STRING #56 @ $10D210
+#W32($14B3E0)
+FS_B[END]
+// current address: $10D215
+
+//POINTER #57 @ $14B3E4 - STRING #57 @ $10D218
+#W32($14B3E4)
+FS_C[END]
+// current address: $10D21D
+
+//POINTER #58 @ $14B3E8 - STRING #58 @ $10D220
+#W32($14B3E8)
+FS_D[END]
+// current address: $10D225
+
+//POINTER #59 @ $14B3EC - STRING #59 @ $10D228
+#W32($14B3EC)
+FS_E[END]
+// current address: $10D22D
+
+//POINTER #60 @ $14B3F0 - STRING #60 @ $10D230
+#W32($14B3F0)
+MK_A[END]
+// current address: $10D235
+
+//POINTER #61 @ $14B3F4 - STRING #61 @ $10D238
+#W32($14B3F4)
+MK_B[END]
+// current address: $10D23D
+
+//POINTER #62 @ $14B3F8 - STRING #62 @ $10D240
+#W32($14B3F8)
+MK_C[END]
+// current address: $10D245
+
+//POINTER #63 @ $14B3FC - STRING #63 @ $10D248
+#W32($14B3FC)
+MK_D[END]
+// current address: $10D24D
+
+//POINTER #64 @ $14B400 - STRING #64 @ $10D250
+#W32($14B400)
+MK_E[END]
+// current address: $10D255

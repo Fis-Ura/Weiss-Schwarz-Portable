@@ -1,0 +1,1 @@
+perl abcde.pl -m bin2text -cm abcde::Cartographer "EBOOT.bin" "Onegai.txt" Onegai_dump -s

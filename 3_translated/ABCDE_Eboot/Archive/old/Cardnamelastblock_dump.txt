@@ -1,0 +1,56 @@
+//GAME NAME:		Weiss - (PSP)
+
+// Define required TABLE variables and load the corresponding tables
+#VAR(Table_0, TABLE)
+#ADDTBL("C:\Users\Nick\Desktop\Weiss\ABCDEWEISS\sjis.tbl", Table_0)
+
+//BLOCK #000 NAME:		Cardnamelastblock_Block
+#ACTIVETBL(Table_0) // Activate this block's starting TABLE
+
+#JMP($10D298, $126DB0) // Jump to insertion point
+#HDR($C0) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $15E24C - STRING #0 @ $126D74
+#W32($15E24C)
+BN_WSP_055[END]
+// current address: $126D7F
+
+//POINTER #1 @ $15E250 - STRING #1 @ $126D80
+#W32($15E250)
+BN/WSP-055[END]
+// current address: $126D8B
+
+//POINTER #2 @ $15E254 - STRING #2 @ $126D8C
+#W32($15E254)
+マッピー　柴 美波[END]
+// current address: $126D9E
+
+//POINTER #3 @ $15E258 - STRING #3 @ $10D65C
+#W32($15E258)
+SR[END]
+// current address: $10D65F
+
+//POINTER #4 @ $15E25C - STRING #4 @ $10D298
+#W32($15E25C)
+CH[END]
+// current address: $10D29B
+
+//POINTER #5 @ $15E260 - STRING #5 @ $10D320
+#W32($15E260)
+BLUE[END]
+// current address: $10D325
+
+//POINTER #6 @ $15E264 - STRING #6 @ $123688
+#W32($15E264)
+警察[END]
+// current address: $12368D
+
+//POINTER #7 @ $15E268 - STRING #7 @ $1187D4
+#W32($15E268)
+巫女[END]
+// current address: $1187D9
+
+//POINTER #8 @ $15E26C - STRING #8 @ $126DA0
+#W32($15E26C)
+追って追われて…[END]
+// current address: $126DB1

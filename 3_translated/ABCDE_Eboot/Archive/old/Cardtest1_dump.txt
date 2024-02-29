@@ -1,0 +1,151 @@
+//GAME NAME:		Weiss - (PSP)
+
+// Define required TABLE variables and load the corresponding tables
+#VAR(Table_0, TABLE)
+#ADDTBL("C:\Users\Nick\Desktop\Weiss\ABCDEWEISS\sjis.tbl", Table_0)
+
+//BLOCK #000 NAME:		test1_Block
+#ACTIVETBL(Table_0) // Activate this block's starting TABLE
+
+#JMP($10CA8C, $10D048) // Jump to insertion point
+#HDR($C0) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $14AEEC - STRING #0 @ $10CA8C
+#W32($14AEEC)
+１枚以上手札交換する[END]
+// current address: $10CAA1
+
+//POINTER #1 @ $14AF10 - STRING #1 @ $10CAA4
+#W32($14AF10)
+手札交換しない[END]
+// current address: $10CAB3
+
+//POINTER #2 @ $14AF34 - STRING #2 @ $10CAB4
+#W32($14AF34)
+手札を全部交換する[END]
+// current address: $10CAC7
+
+//POINTER #3 @ $14AF58 - STRING #3 @ $10CAC8
+#W32($14AF58)
+このクロックフェイズでカードを置く[END]
+// current address: $10CAEB
+
+//POINTER #4 @ $14AF7C - STRING #4 @ $10CAEC
+#W32($14AF7C)
+このクロックフェイズでカードを置かない[END]
+// current address: $10CB13
+
+//POINTER #5 @ $14AFA0 - STRING #5 @ $10CAC8
+#W32($14AFA0)
+このクロックフェイズでカードを置く[END]
+// current address: $10CAEB
+
+//POINTER #6 @ $14AFC4 - STRING #6 @ $10CAEC
+#W32($14AFC4)
+このクロックフェイズでカードを置かない[END]
+// current address: $10CB13
+
+//POINTER #7 @ $14AFE8 - STRING #7 @ $10CB14
+#W32($14AFE8)
+このメインフェイズ中はキャラを置かない[END]
+// current address: $10CB3B
+
+//POINTER #8 @ $14B00C - STRING #8 @ $10CB94
+#W32($14B00C)
+このメインフェイズ中にイベントカードはプレイしない[END]
+// current address: $10CBC7
+
+//POINTER #9 @ $14B030 - STRING #9 @ $10CB3C
+#W32($14B030)
+このメインフェイズ中に何かキャラを置く[END]
+// current address: $10CB63
+
+//POINTER #10 @ $14B054 - STRING #10 @ $10CBF4
+#W32($14B054)
+前列中央にキャラを置いてフェイズ終了[END]
+// current address: $10CC19
+
+//POINTER #11 @ $14B078 - STRING #11 @ $10CC64
+#W32($14B078)
+なにか起動効果を使う[END]
+// current address: $10CC79
+
+//POINTER #12 @ $14B09C - STRING #12 @ $10CC1C
+#W32($14B09C)
+前列左にキャラを置いてフェイズ終了[END]
+// current address: $10CC3F
+
+//POINTER #13 @ $14B0C0 - STRING #13 @ $10CCA8
+#W32($14B0C0)
+起動能力を使わない[END]
+// current address: $10CCBB
+
+//POINTER #14 @ $14B0E4 - STRING #14 @ $10CD0C
+#W32($14B0E4)
+クライマックスカードを置かない[END]
+// current address: $10CD2B
+
+//POINTER #15 @ $14B108 - STRING #15 @ $10CD2C
+#W32($14B108)
+クライマックスカードを置く[END]
+// current address: $10CD47
+
+//POINTER #16 @ $14B12C - STRING #16 @ $10CD48
+#W32($14B12C)
+クライマックスカードは置かない[END]
+// current address: $10CD67
+
+//POINTER #17 @ $14B150 - STRING #17 @ $10CD2C
+#W32($14B150)
+クライマックスカードを置く[END]
+// current address: $10CD47
+
+//POINTER #18 @ $14B174 - STRING #18 @ $10CDC0
+#W32($14B174)
+このアタックフェイズに１回以上サイドアタックする[END]
+// current address: $10CDF1
+
+//POINTER #19 @ $14B198 - STRING #19 @ $10CE58
+#W32($14B198)
+このアタックフェイズで相手キャラをリバースさせる[END]
+// current address: $10CE89
+
+//POINTER #20 @ $14B1BC - STRING #20 @ $10CEF0
+#W32($14B1BC)
+このアタックフェイズで計３ダメージ以上与える[END]
+// current address: $10CF1D
+
+//POINTER #21 @ $14B1E0 - STRING #21 @ $10CE28
+#W32($14B1E0)
+このアタックフェイズではフロントアタックしない[END]
+// current address: $10CE57
+
+//POINTER #22 @ $14B204 - STRING #22 @ $10CE28
+#W32($14B204)
+このアタックフェイズではフロントアタックしない[END]
+// current address: $10CE57
+
+//POINTER #23 @ $14B228 - STRING #23 @ $10CFB8
+#W32($14B228)
+このアタックフェイズでトリガー効果を発生させる[END]
+// current address: $10CFE7
+
+//POINTER #24 @ $14B24C - STRING #24 @ $10CFE8
+#W32($14B24C)
+カウンターor助太刀を使う[END]
+// current address: $10D001
+
+//POINTER #25 @ $14B270 - STRING #25 @ $10D004
+#W32($14B270)
+カウンターor助太刀を使わない[END]
+// current address: $10D021
+
+//POINTER #26 @ $14B294 - STRING #26 @ $10D024
+#W32($14B294)
+アンコールしないで[END]
+// current address: $10D037
+
+//POINTER #27 @ $14B2B8 - STRING #27 @ $10D038
+#W32($14B2B8)
+アンコールしよう[END]
+// current address: $10D049

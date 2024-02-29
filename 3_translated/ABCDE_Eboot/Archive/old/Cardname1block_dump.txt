@@ -1,0 +1,56 @@
+//GAME NAME:		Weiss - (PSP)
+
+// Define required TABLE variables and load the corresponding tables
+#VAR(Table_0, TABLE)
+#ADDTBL("C:\Users\Nick\Desktop\Weiss\ABCDEWEISS\sjis.tbl", Table_0)
+
+//BLOCK #000 NAME:		Card2_Block
+#ACTIVETBL(Table_0) // Activate this block's starting TABLE
+
+#JMP($10D270, $10D2F2) // Jump to insertion point
+#HDR($C0) // Difference between ROM and RAM addresses for pointer value calculations
+
+//POINTER #0 @ $14C1C8 - STRING #0 @ $10D270
+#W32($14C1C8)
+NA_W12_101[END]
+// current address: $10D27B
+
+//POINTER #1 @ $14C1CC - STRING #1 @ $10D27C
+#W32($14C1CC)
+NA/W12-101[END]
+// current address: $10D287
+
+//POINTER #2 @ $14C1D0 - STRING #2 @ $10D288
+#W32($14C1D0)
+戦場の兄妹[END]
+// current address: $10D293
+
+//POINTER #3 @ $14C1D4 - STRING #3 @ $10D294
+#W32($14C1D4)
+TD[END]
+// current address: $10D297
+
+//POINTER #4 @ $14C1D8 - STRING #4 @ $10D298
+#W32($14C1D8)
+CH[END]
+// current address: $10D29B
+
+//POINTER #5 @ $14C1DC - STRING #5 @ $10D29C
+#W32($14C1DC)
+YELLOW[END]
+// current address: $10D2A3
+
+//POINTER #6 @ $14C1E0 - STRING #6 @ $10D2A4
+#W32($14C1E0)
+魔法[END]
+// current address: $10D2A9
+
+//POINTER #7 @ $14C1E4 - STRING #7 @ $10D2AC
+#W32($14C1E4)
+クローン[END]
+// current address: $10D2B5
+
+//POINTER #8 @ $14C1E8 - STRING #8 @ $10D2B8
+#W32($14C1E8)
+フェイト「時空管理局嘱託魔導師……フェイト・テスタロッサ」[END]
+// current address: $10D2F3
