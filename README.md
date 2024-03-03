@@ -12,11 +12,48 @@ struct Header
 {
     u32 count;
     u32; // same as count
-    u32 unk1[count]; // unknown, each value is always bigger than the last
-    u32 offsets[count]; // offset into BRP file
-    u32 sizes[count]; // unknown if actually size
-    u32 unk2[count]; // possibly a hash/crc
+    u32 hash[count]; // name hash (used as sorting key)
+    u32 offset[count]; // offset into BRP file (LBA-aligned)
+    u32 size[count]; // size of data
+    u32 hash2[count]; // content hash (including padding to next LBA-aligned offset)
 };
+
+// CRC algorithm
+// Table initialization:
+/*
+var table = new uint[256];
+
+for (uint i = 0; i < table.Length; i++)
+{
+    uint temp = i << 24;
+    
+    for (int j = 0; j < 8; j++)
+    {
+        if ((temp & 0x80000000) == 0)
+            temp <<= 1;
+        else
+        {
+            temp <<= 1;
+            temp ^= 0x4C11DB7;
+        }
+    }
+
+    table[i] = temp;
+}
+*/
+
+// Hash computation:
+/*
+uint ComputeCrc(ReadOnlySpan<byte> buffer)
+{
+    uint hash = 0;
+
+    foreach (byte b in buffer)
+        hash = (hash << 8) ^ table[((hash >> 24) & 0xFF) ^ b];
+
+    return ~hash;
+}
+*/
 
 Header header @ 0;
 ```
