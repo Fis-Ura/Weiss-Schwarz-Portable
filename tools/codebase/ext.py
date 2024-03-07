@@ -9,6 +9,7 @@ CRC_TABLE_SIZE = 256
 LBA_SIZE = 0x800
 NAME_HASH: dict[int, str] = dict()
 crc_table: list[int] = []
+SCRIPT_DIR: Path = Path(__file__).resolve().parent
 
 
 @dataclass
@@ -25,12 +26,15 @@ class Namespace(argparse.Namespace):
     create: bool
     overlay: bool
     paths_file: Path
-    folder_path: Path
-    header_path: Path
-    body_path: Path
+    input_folder: Path
+    output_folder: Path
+    in_header: Path
+    in_body: Path
+    out_header: Path
+    out_body: Path
 
 
-def main():
+def main() -> None:
     args = parse_args()
 
     init_crc_table()
@@ -42,8 +46,8 @@ def main():
         update_hashes(args.update_hashes)
 
     if args.extract:
-        print(f"Extracting {args.body_path.name} to {args.folder_path.as_posix()}...")
-        extract(args.header_path, args.body_path, args.folder_path)
+        print(f"Extracting {args.in_body.name} to {args.output_folder.as_posix()}...")
+        extract(args.output_folder, args.in_header, args.in_body)
 
     if args.create:
         print("Not implemented yet")
@@ -51,15 +55,15 @@ def main():
         # create(args.header_path, args.body_path, args.folder_path)
 
     if args.overlay:
-        print(f"Updating {args.body_path.name} with {args.folder_path.as_posix()}...")
-        overlay(args.header_path, args.body_path, args.folder_path)
+        print(f"Updating {args.in_body.name} with {args.input_folder.as_posix()}...")
+        overlay(args.input_folder, args.in_header, args.in_body, args.out_header, args.out_body)
 
 
 def init_hashes() -> None:
     global NAME_HASH
 
     try:
-        with open("hashes.json", "r", encoding="utf8") as file:
+        with open(SCRIPT_DIR / "hashes.json", "r", encoding="utf8") as file:
             NAME_HASH = json.load(
                 file,
                 object_pairs_hook=lambda pairs: {
@@ -77,13 +81,14 @@ def update_hashes(paths: Path) -> None:
         lines = f.read().split("\n")
 
     for line in lines:
-        NAME_HASH[calc_crc(line)] = line
+        if line:
+            NAME_HASH[calc_crc(line)] = line
 
-    with open("hashes.json", "w", encoding="utf8") as f:
+    with open(SCRIPT_DIR / "hashes.json", "w", encoding="utf8") as f:
         f.write(json.dumps(NAME_HASH, indent=4))
 
 
-def extract(brh_path: Path, brp_path: Path, out_path: Path) -> None:
+def extract(out_path: Path, brh_path: Path, brp_path: Path) -> None:
     out_path.mkdir(parents=True, exist_ok=True)
 
     with open(brh_path, "rb") as header:
@@ -115,10 +120,9 @@ def extract(brh_path: Path, brp_path: Path, out_path: Path) -> None:
                 f.write(blob)
 
 
-def overlay(brh_path: Path, brp_path: Path, in_path: Path) -> None:
-    out_brh: Path = brh_path.with_name(f"NEW_{brh_path.name}")
-    out_brp: Path = brp_path.with_name(f"NEW_{brp_path.name}")
-
+def overlay(
+    in_path: Path, brh_path: Path, brp_path: Path, out_brh: Path, out_brp: Path
+) -> None:
     input_files: dict[int, Path] = dict()
 
     for p in in_path.rglob("*"):
@@ -147,6 +151,9 @@ def overlay(brh_path: Path, brp_path: Path, in_path: Path) -> None:
 
     files.sort(key=lambda x: x.offset)
 
+    out_brh.parent.mkdir(exist_ok=True, parents=True)
+    out_brp.parent.mkdir(exist_ok=True, parents=True)
+
     with open(out_brp, "wb") as brp, open(brp_path, "rb") as og_brp:
         for file in files:
             if file.name_hash in input_files:
@@ -162,7 +169,7 @@ def overlay(brh_path: Path, brp_path: Path, in_path: Path) -> None:
                 file.content_hash = calc_crc(blob)
             else:
                 og_brp.seek(file.offset)
-                blob = og_brp.read((file.size + (LBA_SIZE-1)) & -LBA_SIZE)
+                blob = og_brp.read((file.size + (LBA_SIZE - 1)) & -LBA_SIZE)
 
             file.offset = brp.tell()
             brp.write(blob)
@@ -213,69 +220,113 @@ def parse_args() -> Namespace:
     group.add_argument(
         "--update-hashes",
         nargs="?",
-        const="./paths.txt",
+        const=f"{SCRIPT_DIR}/paths.txt",
         default=False,
         metavar="paths_file",
         help="Update hashes.",
-        type=file_path,
+        type=file_chk,
     )
     group.add_argument(
         "--extract",
         action="store_true",
-        help="Extract content. Optionally specify --header-path, --body-path or --output-folder to specify paths",
+        help="Extract BRP/BRH pair content. Uses hashes.json if available.",
     )
     group.add_argument(
         "--create",
         action="store_true",
-        help="Create BRP/BRH pair from folder",
+        help="Create BRP/BRH pair from folder.",
     )
     group.add_argument(
         "--overlay",
         action="store_true",
-        help="Update BRP/BRH pair from folder of changed files. Optionally specify --header-path, --body-path or --input-folder to specify paths",
+        help="Update BRP/BRH pair from folder of changed files.",
     )
 
     # Define additional arguments for --header-path and --body-path
     parser.add_argument(
-        "--header-path",
-        default="_FINAL.BRH",
-        type=file_path,
-        help="Path to header content. Only used if --extract or --insert is specified.",
+        "--in-header",
+        help="Path to header content. Required if --extract or --overlay is specified.",
     )
     parser.add_argument(
-        "--body-path",
-        default="__FINAL.BRP",
-        type=file_path,
-        help="Path to body content. Only used if --extract or --insert is specified.",
+        "--in-body",
+        help="Path to body content. Required if --extract or --overlay is specified.",
     )
 
     parser.add_argument(
         "--input-folder",
+        help="Path to the folder for creation (--create) or overlaying (--overlay).",
+    )
+
+    parser.add_argument(
+        "--out-header",
+        help="Path to resulting BRH file. Only used if --create or --overlay is specified.",
+    )
+    parser.add_argument(
+        "--out-body",
+        help="Path to resulting BRP file. Only used if --create or --overlay is specified.",
+    )
+    parser.add_argument(
         "--output-folder",
-        dest="folder_path",
-        default="FINAL",
-        help="Path to the folder for insertion (for --insert) or extraction (for --extract).",
-        type=dir_path,
+        help="Path to the folder where the BRH/BRP content will be extracted to. Used with --extract",
     )
 
     # Parse the arguments
-    return parser.parse_args(namespace=Namespace())
+    args = parser.parse_args(namespace=Namespace())
+
+    # Extra validation
+    if args.extract:
+        if not args.in_header:
+            parser.error("--extract expects --in-header")
+        if not args.in_body:
+            parser.error("--extract expects --in-body")
+        if not args.output_folder:
+            parser.error("--extract expects --output-folder")
+        args.in_header = file_chk(args.in_header)
+        args.in_body = file_chk(args.in_body)
+        args.output_folder = dir_create(args.output_folder)
+
+    if args.overlay:
+        if not args.in_header:
+            parser.error("--overlay expects --in-header")
+        if not args.in_body:
+            parser.error("--overlay expects --in-body")
+        if not args.out_header:
+            parser.error("--overlay expects --out-header")
+        if not args.out_body:
+            parser.error("--overlay expects --out-body")
+        if not args.input_folder:
+            parser.error("--overlay expects --input-folder")
+        args.in_header = file_chk(args.in_header)
+        args.in_body = file_chk(args.in_body)
+        args.out_header = Path(args.out_header).absolute()
+        args.out_body = Path(args.out_body).absolute()
+        args.input_folder = dir_chk(args.input_folder)
+
+    return args
 
 
-def dir_path(path: str) -> Path:
+def dir_create(path: str) -> Path:
     p = Path(path).absolute()
     if p.is_dir():
         return p
     else:
-        raise argparse.ArgumentTypeError(f'"{path}" is not a folder!')
+        p.mkdir(exist_ok=True, parents=True)
 
 
-def file_path(path: str) -> Path:
+def dir_chk(path: str) -> Path:
+    p = Path(path).absolute()
+    if p.is_dir():
+        return p
+    else:
+        raise argparse.ArgumentTypeError(f'"{p}" is not a folder!')
+
+
+def file_chk(path: str) -> Path:
     p = Path(path).absolute()
     if p.is_file():
         return p
     else:
-        raise argparse.ArgumentTypeError(f'"{path}" is not a file!')
+        raise argparse.ArgumentTypeError(f'"{p}" is not a file!')
 
 
 if __name__ == "__main__":
