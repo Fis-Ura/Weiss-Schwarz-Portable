@@ -1,2 +1,2 @@
-python tools/codebase/ext.py --overlay --input-folder 4_patched/FINAL --header-path 0_disc/USRDIR/FILES/_FINAL.BRH --body-path 0_disc/USRDIR/FILES/__FINAL.BRP
+python tools/codebase/ext.py --overlay --input-folder 4_patched/FINAL --in-header 0_disc/USRDIR/FILES/_FINAL.BRH --in-body 0_disc/USRDIR/FILES/__FINAL.BRP --out-header 4_patched/USRDIR/FILES/_FINAL.BRH --out-body 4_patched/USRDIR/FILES/__FINAL.BRP
 pause
