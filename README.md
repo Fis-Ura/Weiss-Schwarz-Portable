@@ -82,7 +82,7 @@ the japanese character in the string in the decompiled lua will be escaped.
 
 # Hacker note 3 compression
 
-Lot of file have gzip compression, they are noted by their magic number.
+Lot of file have gzip compression, they are noted by their magic number 0x1f8b
 
 # Hacker note 4 images
 Most images are gims in a gzip archive. Once decompressed you can access them with a tool like textER. 
