@@ -1,0 +1,47 @@
+[
+	{
+		"file_path": "1_decrypted/SYSDIR/ULJS00420.BIN",
+		"friendly_name": "Eboot",
+		"is_pak": false,
+		"split_sections": false,
+		"base_offset": 0xC0,
+		"safe_areas": [
+			// Offsets are from my eyes need to update
+            //[0x10CA78,0x10D04E], //some disc error message
+			[0x10C598,0x10C74E], //oneigai section
+			[0x10D050,0x10D256], // set number section, 2 embeded at the end
+            [0x10D270,0x126D9E], // Big section with 4 strings for each card, one little embeded section after that seperate them form card effect
+            [0x126E18,0x13FEFA], // card effect
+            //[0x13FFB0,0x14003E], // seems to be the tag used for MC and other stuff embedded maybe
+            //[0x140B50,0x140BD2], // seems to be some message
+            //[0x140D30,0x140DC6], // has some card categorie
+            //[0x1413D0,0x141422], // card rarity and has some card categorie
+		],
+		"sections": [
+			{
+				"section": "Oneigai",
+				"pointers_start": 14AEE0,
+				"pointers_end": 14B2BB,
+				"style": "P8"
+			},
+			{
+				"section": "Card_Effect",
+				"pointers_start": 163828,
+				"pointers_end": 164C92,
+				"style": "P"
+			},
+			{
+				"section": "Cards set first part",
+				"pointers_start": 14B300,
+				"pointers_end": 14B403,
+				"style": "P"
+			},
+			{
+				"section": "CardInfo",//contain 9 sections
+				"pointers_start": 14C1C8,
+				"pointers_end": 15E26f,
+				"style": "PPPPPPPPP"
+			}
+		]
+	}
+]
