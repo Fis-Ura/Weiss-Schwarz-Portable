@@ -20,26 +20,26 @@
 		"sections": [
 			{
 				"section": "Oneigai",
-				"pointers_start": 14AEE0,
-				"pointers_end": 14B2BB,
+				"pointers_start": 0x14AEE0,
+				"pointers_end": 0x14B2BB,
 				"style": "P8"
 			},
 			{
 				"section": "Card_Effect",
-				"pointers_start": 163828,
-				"pointers_end": 164C92,
+				"pointers_start": 0x163828,
+				"pointers_end": 0x164C92,
 				"style": "P"
 			},
 			{
 				"section": "Cards set first part",
-				"pointers_start": 14B300,
-				"pointers_end": 14B403,
+				"pointers_start": 0x14B300,
+				"pointers_end": 0x14B403,
 				"style": "P"
 			},
 			{
 				"section": "CardInfo",//contain 9 sections
-				"pointers_start": 14C1C8,
-				"pointers_end": 15E26f,
+				"pointers_start": 0x14C1C8,
+				"pointers_end": 0x15E26f,
 				"style": "PPPPPPPPP"
 			}
 		]
